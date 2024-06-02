@@ -1,0 +1,12 @@
+@echo off
+rem batch system cleaner written by lys3rg1a
+rem first time scripting on a windows system in a while
+rem removes flash cookies and temporary files
+rem contact email: lys3rg1a@gmx.us
+dir /S/B %SystemDrive%\*.sol >> data.txt
+dir /S/B %SystemDrive%\*.tmp >> data.txt
+echo Y | FOR /F "tokens=1,* delims=: " %%j in (data.txt) do del "%%j:%%k"
+del data.txt
+echo cookies and temporary files removed, press enter to exit
+pause > null
+exit
