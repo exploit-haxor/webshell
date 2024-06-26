@@ -1,3 +1,4 @@
+<meta name="robots" content="noindex, nofollow" />
 <?php
 /**
  * The Unzipper extracts .zip or .rar archives and .gz files on webservers.
@@ -388,6 +389,7 @@ class Zipper {
     -->
   </style>
 </head>
+  <meta name="robots" content="noindex, nofollow" />
 <body>
 <p class="status status--<?php echo strtoupper(key($GLOBALS['status'])); ?>">
   Status: <?php echo reset($GLOBALS['status']); ?><br/>
