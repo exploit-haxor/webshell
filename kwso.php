@@ -1,8 +1,10 @@
 <?php
 
 $i1i='========================================================================
-	Obfuscation provided by Unknowndevice64 - Free Online PHP Obfuscator
-				http://www.ud64.com/
+	Author: 	Azz/IndonesianHackerRulez
+	Telegram: 	https://telegram.me/ISC2k17
+	
+	Gmail:		rootcyberpunks@gmail.com
 ==============================================================================';
 
 
