@@ -1,6 +1,3 @@
-GIF8root7a;
-ÿØÿà JFIF      ÿÛ „ 	"(4!&1!1!'++.00#+?83,84.07
-
 <?php 
 ignore_user_abort(true);
 ini_set('memory_limit', '-1');
