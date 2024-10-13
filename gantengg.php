@@ -7,7 +7,7 @@ function admin_login() {
     echo '<title>Login</title>';
     echo '<form method="post">';
     echo '<input type="password" name="password">';
-    echo '<input type="submit" value="Login">';
+    echo '<input type="submit" value="Ganteng">';
     echo '</form>';
     exit;
 }
