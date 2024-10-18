@@ -16,7 +16,7 @@ if (time() < $exp_time) {
 }
 }
 setcookie(md5($_SERVER['HTTP_HOST']), true, time() + 25200); 
-session_start();
+
 
 // This file is part of Moodle - http://moodle.org/
 //
