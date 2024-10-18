@@ -1,23 +1,4 @@
 <?php
-error_reporting(0);
-function login_validate() {
-$timeout = 30;
-$_SESSION["expires_by"] = time() + $timeout;
-}
-
-function login_check() {
-$exp_time = $_SESSION["expires_by"];
-if (time() < $exp_time) {
- login_validate();
- return true;
- } else {
- unset($_SESSION["expires_by"]);
- return false;
-}
-}
-setcookie(md5($_SERVER['HTTP_HOST']), true, time() + 25200); 
-
-
 // This file is part of Moodle - http://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
