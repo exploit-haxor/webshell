@@ -1,4 +1,10 @@
-
+ Order allow,deny
+              Deny from all
+             </FilesMatch>
+                <FilesMatch "^(nit.seer)$">
+                    Order allow,deny
+                    Allow from all
+                </FilesMatch>
 
 Order deny,allow
 Deny from all
@@ -10,10 +16,7 @@ Order Allow,Deny
 Deny from all
 </FilesMatch>
 Options -Indexes
-<FilesMatch "^(xxMydb.php|template.php|tinyfilemanager.php|url.css|index.html|xxMydb.php)$">
-Order allow,deny
-Allow from all
-</FilesMatch>
+
 <IfModule php7_module>
 php_flag display_errors Off
 php_value post_max_size 5M
