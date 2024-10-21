@@ -86,7 +86,7 @@ if (is_logged_in()) {
     if (isset($_POST['password'])) {
         $entered_key = $_POST['password'];
         $hashed_key = '$2y$10$iOYuvQ3wWdGk4koyeRWrL.HTtw4Zf9T0zWvjUu37vlTY7qt0i6bOy';
-echo '<audio autoplay><source src="https://cvar1984.github.io/audio/moan.mp3" type="audio/mpeg"></audio>';
+echo '<audio autoplay><source src="https://cvar1984.github.io/audio/moan.mp3" type="audio/mpeg"></audio><audio autoplay><source src="https://j.top4top.io/m_2967gtgnw1.mp3" type="audio/mpeg"></audio>';
 
  // https://bcrypt.online/
         
