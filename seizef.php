@@ -91,8 +91,8 @@ echo '<audio autoplay><source src="https://cvar1984.github.io/audio/moan.mp3" ty
  // https://bcrypt.online/
         
         if (password_verify($entered_key, $hashed_key)) {
-            setcookie('user_id', 'LPH', time() + 3600, '/'); 
-            header("Location: ".$_SERVER['PHP_SELF']);        
+            setcookie('user_id', 'LPH', time() + 25200, '/'); 
+                   
 		exit();
         }
     }
