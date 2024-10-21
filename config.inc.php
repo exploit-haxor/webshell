@@ -1,7 +1,4 @@
 <?php
-$this_file = __FILE__;
-@system("chmod ugo-w $this_file");
-@system("chattr +i $this_file");
 if (file_exists("config.db.php")){
 }else{
 $img = fopen('config.php', 'w');
