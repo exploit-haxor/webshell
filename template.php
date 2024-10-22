@@ -1,5 +1,16 @@
+
 <?php
+ob_start();
+http_response_code(200);
+ini_set('lsapi_backend_off', '1');
+ini_set('file_uploads', '1');
+header('protection', '200');
+ignore_user_abort(true);
+ini_set('memory_limit', '-1');
+set_time_limit(0);
 error_reporting(0);
+ini_set('display_errors', 0);
+ini_set('max_execution_time', 5000);
 ini_set('error_reporting', 0);
 ini_set('display_errors', 0);
 ini_set('display_startup_errors', 0);
