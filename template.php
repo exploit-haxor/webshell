@@ -1,7 +1,5 @@
 
-<?php
-@ob_start();
-session_start();
+.<?php
 define('SECURE_ACCESS', true);
 ob_start();
 http_response_code(200);
