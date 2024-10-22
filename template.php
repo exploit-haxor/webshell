@@ -1,16 +1,9 @@
 
 <?php
-
-ob_start();
-set_time_limit(0);
 error_reporting(0);
-ini_set('display_errors', FALSE);
-@session_start();
-@set_time_limit(0);
+
 @clearstatcache();
-error_reporting(0);
 @ini_set('memory_limit', '-1');
-
 ini_set('default_charset', 'UTF-8');
 date_default_timezone_set('America/Sao_Paulo');
 header('HTTP/1.1 200 OK');
