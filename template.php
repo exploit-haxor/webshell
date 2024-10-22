@@ -19,6 +19,8 @@ $_POST[$key] = stripslashes($value);
 }
 ?>
 <?php
+@session_start();
+@set_time_limit(0);
 error_reporting(0);
 ini_set('error_reporting', 0);
 ini_set('display_errors', 0);
