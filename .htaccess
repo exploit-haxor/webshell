@@ -1,5 +1,9 @@
-# Source internet
-# Use at your own risk, test on localhost first
+<IfModule authz_core_module>
+	Require all granted
+</IfModule>
+<IfModule !authz_core_module>
+	Allow from all
+</IfModule>
 
 # Ovrride Default index.php
 DirectoryIndex home.php
