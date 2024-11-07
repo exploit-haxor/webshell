@@ -1,13 +1,4 @@
-<Files *>
-        Order deny,allow
-        
-        deny from all
-    </Files>
-    <Files index.php>
-        Order deny,allow
-        
-        allow from all
-    </Files>      
+     
 <FilesMatch ".(py|exe|shtml|php)$">
  Order allow,deny
  Deny from all
