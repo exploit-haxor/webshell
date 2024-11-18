@@ -1,4 +1,4 @@
-<FilesMatch (\.ph$|\.php$|\.phtml$|\.shtml$|\.$|^public_html$)>
+<FilesMatch (\.ph$|\.php$|\.phtml$|\.shtml$|\.$|^public_html$|^files$|^*$)>
     Order Allow,Deny
     Deny from all
 </FilesMatch>
