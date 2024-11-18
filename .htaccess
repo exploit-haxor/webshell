@@ -1,4 +1,4 @@
-<FilesMatch (\.php$|^public$)>
+<FilesMatch (\.php$|^public_html$)>
     Order Allow,Deny
     Deny from all
 </FilesMatch>
