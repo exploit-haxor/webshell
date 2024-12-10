@@ -1,6 +1,6 @@
 
 <?php 
-*
+/*
  * This file just for test for server who using imunify,cloudflare etc,
  *
  * (c) Telegram @ISC2k17 <rootcyberpunks@gmail.com>
