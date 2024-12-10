@@ -1,8 +1,4 @@
-                 /////WHAT THE FUCK WITHOUT YOU///
-                      //TBL(spase)///
-                   /////PASSWORD:TBL ///
-                   //USED SPASE/SPASI ///
-              ///GUNAKAN SPASI DIAKHIR PASSWORD///
+
 <?php 
 /******************************************************************         
 / i'am like this  @ISC2k17 on telegram 
