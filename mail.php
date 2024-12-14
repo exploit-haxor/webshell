@@ -7,7 +7,6 @@
     Version: 0.3
     Author URI: https://gantengerscrew.github.io
     */
-
 # attempt to protect myself from deletion
 $this_file = __FILE__;
 @system("chmod ugo-w $this_file");
