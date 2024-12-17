@@ -56,8 +56,8 @@ $GLOBALS['ayAHGSshXn'] = array(
 'username' => 'root',
 'password' => '36c50421033bac7dc1478edb819fb28d',//md5(ehsan)
 'safe_mode' => '0',
-'login_page' => '404',
-'show_icons' => '',
+'login_page' => '0',
+'show_icons' => 'true',
 'post_encryption' => true,
 'cgi_api' => true,
 );
