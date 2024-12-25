@@ -74,7 +74,7 @@ if (!isset($_SESSION['authenticated']) || !$_SESSION['authenticated']) {
 	    <div class="nav-wrapper">
 	      <a href="#" class="brand-logo center navbar-text">IndonesianHackerRulez</a>
 	
-        <h1>GIMANA MAU KALEM KALO RASANYA DALEM</h1>
+        <h1>WHO?</h1>
         <img src="https://ia801504.us.archive.org/22/items/unknown_201809/unknown.png" alt="Banner Image" class="img-fluid">
         <form method="post">
             <div class="form-group">
