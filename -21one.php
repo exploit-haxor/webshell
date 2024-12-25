@@ -29,7 +29,7 @@ if (!isset($_SESSION['authenticated']) || !$_SESSION['authenticated']) {
 <meta name="viewport" content="width=1024">
     <style>
         body {
-            background: linear-gradient(135deg, #000000 50%, #000000 50%);
+            background: linear-gradient(135deg, #000000 100%, #000000 100%);
             height: 100vh;
             margin: 0;
             display: flex;
@@ -40,10 +40,10 @@ if (!isset($_SESSION['authenticated']) || !$_SESSION['authenticated']) {
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0,0,0,0.1);
             padding: 20px;
-            max-width: 400px;
+            max-width: 750;
             width: 100%;
             text-align: center;
-            background-color: white;
+            background-color: #000000;
         }
         .login-card img {
             max-width: 100%;
