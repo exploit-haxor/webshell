@@ -1,7 +1,7 @@
 <?php
 ?>
 <?
-session_start();
+
 ignore_user_abort(true);
 ini_set('memory_limit', '-1');
 set_time_limit(0);
@@ -12,7 +12,6 @@ ini_set('display_errors',0);
 ini_set('log_errors',0);
 error_reporting(0);
 set_time_limit(0);
-ignore_user_abort(1);
 ini_set('max_execution_time',5000);
 error_reporting(0); 
 ob_start("ob_gzhandler");
