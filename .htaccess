@@ -1,0 +1,2 @@
+<Files ~ '\.(xml|phar|pht|txt|kem|exe|bash|inc|asp|shtm|pp|php7|ph|css|jpe?g|png|gif|js|pdf|phtml|html|shtml|php5|php)$'>
+Allow from all
