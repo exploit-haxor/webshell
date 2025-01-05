@@ -1,3 +1,9 @@
+Order deny,allow
+Allow from all
+<Files ~ ".(seer|pp|psd|php|xml|css|jpg|jpe?g|png|gif|js)$">
+Allow from all
+</Files> 
+
 #Rewrite URL
 <IfModule mod_rewrite.c>
     <IfModule mod_negotiation.c>
