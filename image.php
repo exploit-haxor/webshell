@@ -174,7 +174,7 @@ eval(
         )
     )
 ); ?>
-
+<center></center>
 <?php
 
 //Default Configuration
