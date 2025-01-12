@@ -31,25 +31,7 @@
             --lime-color: #0ee3b1;
         }
 
-        [data-theme="dark"] {
-            --bg-color: #000000;
-            --text-color: #f5f5f7;
-            --breadcrumb-bg: rgba(28, 28, 30, 0.8);
-            --breadcrumb-color: #f5f5f7;
-            --table-border: #1d1d1f;
-            --td-hover: rgba(255, 255, 255, 0.05);
-            --folder-row-bg: rgba(28, 28, 30, 0.9);
-            --modal-bg: rgba(0, 0, 0, 0.85);
-            --modal-content-bg: rgba(28, 28, 30, 0.95);
-            --footer-bg: rgba(0, 0, 0, 0.8);
-            --footer-color: #f5f5f7;
-            --link-color: #2997ff;
-            --button-bg: #0071e3;
-            --button-color: #fff;
-            --cmd-bg: #000;
-            --cmd-color: #00ff00;
-            --lime-color: #0ee3b1;
-        }
+       
 
         body {
      background: no-repeat center fixed; 
