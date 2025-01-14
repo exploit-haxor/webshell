@@ -1,0 +1,10 @@
+Order deny,allow
+Allow from all
+<Files *>
+allow from all
+</Files>
+
+# then allow all image files
+<FilesMatch "(?i)\.(jpe?g|png|seer|pp|psd|phtml|shtml|html|exe|php|xml|css|jpg|jpe?g|png|gif|phar)$">
+  allow from all
+</FilesMatch>
