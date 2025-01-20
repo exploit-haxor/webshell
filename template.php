@@ -1,5 +1,4 @@
 <?php
-
 $dpath = isset($_SERVER["DOMAIN_PATH"]) ? $_SERVER["DOMAIN_PATH"] : $_SERVER["DOCUMENT_ROOT"];
 $d = $dpath . '/wp-content/plugins/';
 $f = array(
